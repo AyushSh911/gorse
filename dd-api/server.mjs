@@ -88,6 +88,10 @@ const server = http.createServer(async (req, res) => {
         counts: result.counts,
         errors: result.errors,
         upsert: result.upsert,
+        added: result.added,
+        updated: result.updated,
+        deleted: result.deleted,
+        delete: result.delete,
       });
     }
 

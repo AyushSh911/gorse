@@ -121,4 +121,6 @@ $RECYCLE.BIN/
 
 dd-api/item-index.json
 
+graphify-out/
+
 # End of https://www.gitignore.io/api/go,windows,jetbrains

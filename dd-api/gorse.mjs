@@ -43,6 +43,23 @@ export async function upsertItems(items) {
   return { RowAffected: affected };
 }
 
+/** DELETE /api/item/{id}; 404 is treated as already gone. */
+export async function deleteItems(ids) {
+  if (!ids?.length) return { RowAffected: 0 };
+  let affected = 0;
+  for (const id of ids) {
+    if (!id) continue;
+    try {
+      await gorse("DELETE", `/api/item/${encodeURIComponent(id)}`);
+      affected += 1;
+    } catch (e) {
+      if (e.status === 404) continue;
+      throw e;
+    }
+  }
+  return { RowAffected: affected };
+}
+
 export async function ensureUser(userId) {
   const id = String(userId || "").trim();
   if (!id) return;

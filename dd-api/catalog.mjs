@@ -8,23 +8,31 @@ import {
   toGorseItemId,
 } from "./ids.mjs";
 import { buildLabels } from "./labels.mjs";
-import { upsertItems } from "./gorse.mjs";
+import { upsertItems, deleteItems } from "./gorse.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
+const JSONS_DIR = join(ROOT, "jsons");
+const SOURCES_FILE = join(JSONS_DIR, "sources.json");
 
-export const CDN = {
-  content: "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-content_v2.json",
-  layout: "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-layout.json",
-  abhishek: "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/abhishek3D.json",
-  home: "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/aaj-ke-darshan/latestdarshanlinksV2.json",
-  blogs: "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/ReactUI/Blog.json",
-  live: "https://ddappcdn.techxr.co/DurlabhDarshan/Jsons/NewUI/LiveDarshan.sample.json",
+/** Live network sources (not snapshotted into jsons/). */
+export const LIVE = {
   aarti: [
     "https://devgateway.techxrdev.in/api/content/open/aarti/temples",
     "https://gateway.techxr.co/api/content/open/aarti/temples",
   ],
   reelsMeta: "https://durlabhdarshan-shorts-2.firebaseio.com/meta.json",
   reelsBrandMeta: "https://durlabhdarshan-shorts-2.firebaseio.com/brandReelsMeta.json",
+};
+
+/** @deprecated Prefer LIVE + loadSource; kept for callers that still reference CDN. */
+export const CDN = {
+  ...LIVE,
+  content: "local:content",
+  layout: "local:layout",
+  abhishek: "local:abhishek",
+  home: "local:home",
+  blogs: "local:blogs",
+  live: "local:live",
 };
 
 const REEL_PER_CATEGORY = Number(process.env.REEL_PER_CATEGORY || 80);
@@ -34,6 +42,32 @@ const LIVE_FALLBACK = [
   { id: "kashi-vishwanath", templeName: "Kashi Vishwanath", location: "Varanasi" },
   { id: "siddhivinayak", templeName: "Siddhivinayak", location: "Mumbai" },
 ];
+
+let sourcesManifest = null;
+const sourceCache = new Map();
+
+async function getSources() {
+  if (!sourcesManifest) {
+    sourcesManifest = JSON.parse(await readFile(SOURCES_FILE, "utf8"));
+  }
+  return sourcesManifest;
+}
+
+/** Read a static catalog JSON from dd-api/jsons/ (source of truth). */
+export async function loadSource(key) {
+  if (sourceCache.has(key)) return sourceCache.get(key);
+  const sources = await getSources();
+  const entry = sources[key];
+  if (!entry?.file) throw new Error(`unknown local source: ${key}`);
+  const path = join(JSONS_DIR, entry.file);
+  const data = JSON.parse(await readFile(path, "utf8"));
+  sourceCache.set(key, data);
+  return data;
+}
+
+function clearSourceCache() {
+  sourceCache.clear();
+}
 
 async function fetchJson(url) {
   const res = await fetch(url, { headers: { Accept: "application/json" } });
@@ -116,7 +150,7 @@ function gorseItem({ itemId, kind, appId, title, categories, hidden, timestamp, 
   };
 }
 
-function keepSet(layout) {
+export function keepSet(layout) {
   const status = layout?.status || {};
   const approved = new Set(status.approvedShowIds || status.approvedVideoShowIds || []);
   const disactive = new Set(status.disactiveShowIds || status.disactiveVideoShowIds || []);
@@ -132,7 +166,7 @@ function keepSet(layout) {
   return { keep, disactive, comingSoon, approved };
 }
 
-function fromShows(shows, keep, comingSoon) {
+export function fromShows(shows, keep, comingSoon) {
   const items = [];
   for (const show of shows || []) {
     const id = show.id;
@@ -354,67 +388,66 @@ function fromBlogs(raw) {
   return items;
 }
 
+/** Exported for unit tests — maps Blog.json categories → Gorse blog items. */
+export { fromBlogs };
+
 async function fromReels() {
+  const meta = await fetchJson(LIVE.reelsMeta);
+  const cats = parseLatestBuckets(meta);
   try {
-    const meta = await fetchJson(CDN.reelsMeta);
-    const cats = parseLatestBuckets(meta);
-    try {
-      const brand = await fetchJson(CDN.reelsBrandMeta);
-      const bucket = Number.parseInt(String(brand?.latestBucket), 10);
-      if (Number.isFinite(bucket) && bucket >= 0 && brand?.enabled !== false) {
-        cats.unshift({ cat: "BrandReels", bucket });
-      }
-    } catch {
-      /* optional */
+    const brand = await fetchJson(LIVE.reelsBrandMeta);
+    const bucket = Number.parseInt(String(brand?.latestBucket), 10);
+    if (Number.isFinite(bucket) && bucket >= 0 && brand?.enabled !== false) {
+      cats.unshift({ cat: "BrandReels", bucket });
     }
-    const items = [];
-    const seen = new Set();
-    for (const { cat, bucket } of cats) {
-      try {
-        const buckets = await fetchJson(
-          `https://durlabhdarshan-shorts-2.firebaseio.com/${encodeURIComponent(cat)}/buckets/${bucket}.json`,
-        );
-        const entries =
-          buckets && typeof buckets === "object" && !Array.isArray(buckets)
-            ? Object.entries(buckets)
-            : [];
-        for (const [firebaseKey, dto] of entries.slice(0, REEL_PER_CATEGORY)) {
-          if (!firebaseKey || seen.has(firebaseKey)) continue;
-          seen.add(firebaseKey);
-          const title = dto?.title || firebaseKey;
-          const itemId = toGorseItemId("reel", firebaseKey);
-          const labels = buildLabels({
+  } catch {
+    /* optional */
+  }
+  const items = [];
+  const seen = new Set();
+  for (const { cat, bucket } of cats) {
+    try {
+      const buckets = await fetchJson(
+        `https://durlabhdarshan-shorts-2.firebaseio.com/${encodeURIComponent(cat)}/buckets/${bucket}.json`,
+      );
+      const entries =
+        buckets && typeof buckets === "object" && !Array.isArray(buckets)
+          ? Object.entries(buckets)
+          : [];
+      for (const [firebaseKey, dto] of entries.slice(0, REEL_PER_CATEGORY)) {
+        if (!firebaseKey || seen.has(firebaseKey)) continue;
+        seen.add(firebaseKey);
+        const title = dto?.title || firebaseKey;
+        const itemId = toGorseItemId("reel", firebaseKey);
+        const labels = buildLabels({
+          kind: "reel",
+          appId: firebaseKey,
+          title,
+          namespace: "bhakti",
+          showKind: "reel",
+          contentKind: "reel",
+          extra: { reel_category: cat, reel_bucket: bucket },
+        });
+        items.push(
+          gorseItem({
+            itemId,
             kind: "reel",
             appId: firebaseKey,
             title,
-            namespace: "bhakti",
-            showKind: "reel",
-            contentKind: "reel",
-            extra: { reel_category: cat, reel_bucket: bucket },
-          });
-          items.push(
-            gorseItem({
-              itemId,
-              kind: "reel",
-              appId: firebaseKey,
-              title,
-              categories: ["reel", "bhakti", cat],
-              labels,
-            }),
-          );
-        }
-      } catch {
-        /* skip category */
+            categories: ["reel", "bhakti", cat],
+            labels,
+          }),
+        );
       }
+    } catch {
+      /* skip category */
     }
-    return items;
-  } catch {
-    return [];
   }
+  return items;
 }
 
 async function fetchAartiRows() {
-  for (const url of CDN.aarti) {
+  for (const url of LIVE.aarti) {
     try {
       const data = await fetchJson(url);
       if (Array.isArray(data) && data.length) return data;
@@ -427,7 +460,7 @@ async function fetchAartiRows() {
 
 async function fetchLiveRows() {
   try {
-    const raw = await fetchJson(CDN.live);
+    const raw = await loadSource("live");
     const rows = Array.isArray(raw?.schedule) ? raw.schedule : Array.isArray(raw) ? raw : [];
     if (rows.length) return rows;
   } catch {
@@ -437,8 +470,8 @@ async function fetchLiveRows() {
 }
 
 async function fromSadhana() {
-  const rows = JSON.parse(await readFile(join(ROOT, "sadhana.json"), "utf8"));
-  return rows.map((row) => {
+  const rows = await loadSource("sadhana");
+  return (Array.isArray(rows) ? rows : []).map((row) => {
     const itemId = toGorseItemId("sadhana", row.id);
     const labels = buildLabels({
       kind: "sadhana",
@@ -460,13 +493,14 @@ async function fromSadhana() {
   });
 }
 
-/** gorse ItemId → { kind, appId } for BFF responses after sync */
+/** gorse ItemId → { kind, appId, source } for BFF responses after sync */
 export const itemIndex = new Map();
 
-function remember(item) {
+function remember(item, source) {
   itemIndex.set(item.ItemId, {
     kind: item.Labels?.kind,
     appId: item.Labels?.app_id || item.ItemId,
+    source,
   });
 }
 
@@ -487,37 +521,85 @@ async function saveItemIndex() {
   await writeFile(INDEX_FILE, JSON.stringify(Object.fromEntries(itemIndex)), "utf8");
 }
 
+/**
+ * Diff old index vs newly built items per source.
+ * Failed sources never contribute deletes (keeps previous ids).
+ */
+export function diffSourceIds(oldIndex, newItemsBySource, failedSources) {
+  const failed = new Set(failedSources || []);
+  const toDelete = [];
+  const added = [];
+  const updated = [];
+
+  const oldBySource = new Map();
+  for (const [id, meta] of oldIndex instanceof Map ? oldIndex : Object.entries(oldIndex || {})) {
+    const src = meta?.source;
+    if (!src) continue;
+    if (!oldBySource.has(src)) oldBySource.set(src, new Set());
+    oldBySource.get(src).add(id);
+  }
+
+  for (const [source, items] of Object.entries(newItemsBySource || {})) {
+    if (failed.has(source)) continue;
+    const newIds = new Set((items || []).map((i) => i.ItemId).filter(Boolean));
+    const oldIds = oldBySource.get(source) || new Set();
+    for (const id of newIds) {
+      if (oldIds.has(id)) updated.push(id);
+      else added.push(id);
+    }
+    for (const id of oldIds) {
+      if (!newIds.has(id)) toDelete.push(id);
+    }
+  }
+
+  return { toDelete, added, updated };
+}
+
 export async function buildCatalogItems() {
+  clearSourceCache();
   const errors = [];
   const counts = {};
   const all = [];
-
-  const premium = await fetchJson(CDN.content);
-  const layout = await fetchJson(CDN.layout);
-  const { keep, comingSoon } = keepSet(layout);
-  const shows = fromShows(premium.shows, keep, comingSoon);
-  const series = fromSeries(premium.webseries, keep);
-  all.push(...shows, ...series);
-  counts.shows = shows.length;
-  counts.series = series.length;
-  counts.keep = keep.size;
+  const itemsBySource = {};
+  const failedSources = [];
 
   async function add(name, fn) {
     try {
       const items = await fn();
+      itemsBySource[name] = items;
       all.push(...items);
       counts[name] = items.length;
     } catch (e) {
+      failedSources.push(name);
       errors.push({ source: name, error: String(e.message || e) });
       counts[name] = 0;
     }
   }
 
-  await add("abhishek", async () => fromAbhishek(await fetchJson(CDN.abhishek)));
-  await add("temple", async () => fromHomeDarshan(await fetchJson(CDN.home)));
+  let premium = null;
+  let keep = new Set();
+  let comingSoon = new Set();
+  try {
+    premium = await loadSource("content");
+    const layout = await loadSource("layout");
+    ({ keep, comingSoon } = keepSet(layout));
+    counts.keep = keep.size;
+  } catch (e) {
+    failedSources.push("shows", "series");
+    errors.push({ source: "content/layout", error: String(e.message || e) });
+    counts.keep = 0;
+  }
+
+  if (premium) {
+    await add("shows", async () => fromShows(premium.shows, keep, comingSoon));
+    await add("series", async () => fromSeries(premium.webseries, keep));
+  }
+
+  await add("abhishek", async () => fromAbhishek(await loadSource("abhishek")));
+  await add("temple", async () => fromHomeDarshan(await loadSource("home")));
   await add("live", async () => fromLive(await fetchLiveRows()));
   await add("aarti", async () => fromAarti(await fetchAartiRows()));
-  await add("blog", async () => fromBlogs(await fetchJson(CDN.blogs)));
+  await add("blog", async () => fromBlogs(await loadSource("blogs")));
   await add("reel", fromReels);
   await add("sadhana", fromSadhana);
 
@@ -527,14 +609,51 @@ export async function buildCatalogItems() {
     if (!it.ItemId || seen.has(it.ItemId)) continue;
     seen.add(it.ItemId);
     unique.push(it);
-    remember(it);
   }
-  await saveItemIndex();
-  return { items: unique, counts, errors };
+  return { items: unique, itemsBySource, failedSources, counts, errors };
+}
+
+function applyIndexMerge(oldIndex, itemsBySource, failedSources) {
+  const failed = new Set(failedSources || []);
+  itemIndex.clear();
+  for (const [id, meta] of oldIndex) {
+    if (meta?.source && failed.has(meta.source)) {
+      itemIndex.set(id, meta);
+    }
+  }
+  for (const [source, items] of Object.entries(itemsBySource || {})) {
+    if (failed.has(source)) continue;
+    for (const it of items || []) {
+      if (!it?.ItemId) continue;
+      remember(it, source);
+    }
+  }
 }
 
 export async function syncCatalog() {
+  if (itemIndex.size === 0) await loadItemIndex();
+  const oldIndex = new Map(itemIndex);
+
   const built = await buildCatalogItems();
-  const result = await upsertItems(built.items);
-  return { ...built, upsert: result, itemCount: built.items.length };
+  const upsert = await upsertItems(built.items);
+
+  const { toDelete, added, updated } = diffSourceIds(
+    oldIndex,
+    built.itemsBySource,
+    built.failedSources,
+  );
+  const deleted = await deleteItems(toDelete);
+
+  applyIndexMerge(oldIndex, built.itemsBySource, built.failedSources);
+  await saveItemIndex();
+
+  return {
+    ...built,
+    upsert,
+    delete: deleted,
+    added: added.length,
+    updated: updated.length,
+    deleted: toDelete.length,
+    itemCount: itemIndex.size,
+  };
 }

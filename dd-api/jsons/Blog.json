@@ -1,0 +1,1624 @@
+{
+  "explorerPanel": [
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/chalisa.jpg",
+      "blogCategoryID": "BC_01"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/story.jpg",
+      "blogCategoryID": "BC_02"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/temple.jpg",
+      "blogCategoryID": "BC_03"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/festival.jpg",
+      "blogCategoryID": "BC_05"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/puja%20vidhi.jpg",
+      "blogCategoryID": "BC_06"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/vrat.jpg",
+      "blogCategoryID": "BC_09"
+    },
+    {
+      "urlImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/CategoryImage/thumbnail_literature/mantra.jpg",
+      "blogCategoryID": "BC_10"
+    }
+  ],
+  "categories": [
+    {
+      "blogCategoryID": "BC_01",
+      "blogCategoryName": {
+        "en": "Chalisa and Aarti",
+        "hi": "चालीसा और आरती"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_078",
+          "Blog_Title": {
+            "en": "Shri Parvati Ji Ki Aarti",
+            "hi": "श्री पार्वती जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/a6/a6/f2/a6a6f2a8573a91a9492d8a1a6873c514.jpg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "9 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_078.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_078.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_077",
+          "Blog_Title": {
+            "en": "Shri Ambe Gauri Ki Aarti",
+            "hi": "श्री अम्बे गौरी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/1200x/e0/89/56/e0895625475ecbe28bc99ea50f256aae.jpg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "9 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_077.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_077.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_076",
+          "Blog_Title": {
+            "en": "Shri Surya Dev Ki Aarti",
+            "hi": "श्री सूर्य देव की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/cb/5a/6b/cb5a6baa5e0252efa76edeaa97fff40b.jpg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_076.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_076.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_075",
+          "Blog_Title": {
+            "en": "Shri Brihaspati Dev Ki Aarti",
+            "hi": "श्री बृहस्पति देव की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://blocksinfotech.com/Aarti-Chalisa-Sangrah/images-aarti/shri-Brihaspati-Dev-Ki-Aarti.jpg",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "6 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_075.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_075.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_074",
+          "Blog_Title": {
+            "en": "Shri Shani Dev Ji Ki Aarti",
+            "hi": "श्री शनि देव जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/f7/2b/42/f72b4265ee9700ee7392e12bb996eff8.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_074.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_074.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_073",
+          "Blog_Title": {
+            "en": "Shri Chitragupt Ji Ki Aarti",
+            "hi": "श्री चित्रगुप्त जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/1200x/63/a0/78/63a0788c2d003d64807e3c74cdeebed7.jpg",
+          "Blog_Duration": {
+            "en": "10 Minutes",
+            "hi": "10 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_073.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_073.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_072",
+          "Blog_Title": {
+            "en": "Shri Kunj Bihari Ki Aarti",
+            "hi": "श्री कुंज बिहारी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/46/d6/43/46d6438cdb65dc63ce9e022aa84a6222.jpg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "9 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_072.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_072.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_071",
+          "Blog_Title": {
+            "en": "Shri Krishna Ji Ki Aarti",
+            "hi": "श्री कृष्ण जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/1d/7b/87/1d7b87734a0e818d7018bda6f4fca207.jpg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_071.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_071.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_070",
+          "Blog_Title": {
+            "en": "Shri Shiv Ji Ki Aarti",
+            "hi": "श्री शिव जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/12/23/bb/1223bb43ceb79f02b9608771ca81071c.jpg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "8 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_070.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_070.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_069",
+          "Blog_Title": {
+            "en": "Shri Hanuman Ji Ki Aarti",
+            "hi": "श्री हनुमान जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/ReactUI_image/Gemini_Generated_Image_9qhbzx9qhbzx9qhb.png",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_069.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_069.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_057",
+          "Blog_Title": {
+            "en": "Shri Ganesh Ji Ki Aarti",
+            "hi": "श्री गणेश जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/8f/c0/a1/8fc0a1ffef23c4f2a793a1d5f29600c7.jpg",
+          "Blog_Duration": {
+            "en": "4 Minutes",
+            "hi": "4 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_057.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_057.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_058",
+          "Blog_Title": {
+            "en": "Shri Ganesh Aarti (marathi aarti)",
+            "hi": "श्री गणेश जी की आरती (मराठी आरती)"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/44/79/df/4479df0d329d3e3834abc1889c7439ea.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_058.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_058.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_059",
+          "Blog_Title": {
+            "en": "Shri Hari Vishnu Ji Ki Aarti",
+            "hi": "श्री हरि विष्णु जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/f5/b3/6f/f5b36f5bb4c9ec2362ec354d8fa4eddb.jpg",
+          "Blog_Duration": {
+            "en": "12 Minutes",
+            "hi": "12 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_059.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_059.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_060",
+          "Blog_Title": {
+            "en": "Shri Satyanarayan Ji Ki Aarti",
+            "hi": "श्री सत्यनारायण जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/1200x/3a/bd/b4/3abdb4f38f931e9d455405a9ccef0439.jpg",
+          "Blog_Duration": {
+            "en": "15 Minutes",
+            "hi": "15 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_060.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_060.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_061",
+          "Blog_Title": {
+            "en": "Shri Ramchandra Ji Ki Stuti",
+            "hi": "श्री रामचन्द्र जी की स्तुति"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/be/07/6c/be076c6760060e003d3033ca78ca048e.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_061.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_061.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_001",
+          "Blog_Title": {
+            "en": "Hanuman Chalisa",
+            "hi": "हनुमान चालीसा"
+          },
+          "Blog_Thumbnail_Link": "https://th.bing.com/th/id/R.df56c79a2889e9f9083efa2de5c5b227?rik=N2Bt5GV3qnWlvA&riu=http%3a%2f%2fwww.indiadivine.org%2fwp-content%2fuploads%2f2015%2f11%2fhanuman-v01.jpg&ehk=tuk7E1hajHvX7TiPGQt0%2bTS2WdpeZu2lM6HUMPYxf%2f4%3d&risl=&pid=ImgRaw&r=0",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "The Hanuman Chalisa is composed by Saint Goswami Tulsidas...",
+            "hi": "हनुमान जी को प्रसन्न करने के लिए नित्य पाठ करें हनुमान चालीसा का"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_001.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_001.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_002",
+          "Blog_Title": {
+            "en": "Aarti Shri Hanumanji",
+            "hi": "आरती श्री हनुमानजी"
+          },
+          "Blog_Thumbnail_Link": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/ReactUI_image/Gemini_Generated_Image_qytzl8qytzl8qytz.png",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "6 मिनट"
+          },
+          "Blog_Description": {
+            "en": "One of the most famous Aartis of Lord Hanuman.",
+            "hi": "भगवान हनुमान की सबसे प्रसिद्ध आरती"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_002.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_002.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_004",
+          "Blog_Title": {
+            "en": "Shiv Chalisa",
+            "hi": "शिव चालीसा"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImageAtsJlA.jpeg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_004.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_004.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_005",
+          "Blog_Title": {
+            "en": "Durga Chalisa",
+            "hi": "दुर्गा चालीसा"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImagesxtl07.jpeg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "8 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_005.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_005.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_006",
+          "Blog_Title": {
+            "en": "Hanuman Baan",
+            "hi": "बजरंग बाण"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImageXnK3II.jpeg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_006.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_006.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_007",
+          "Blog_Title": {
+            "en": "Hanumanashtak",
+            "hi": "हनुमानाष्टक"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImageiqqWc7.jpeg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "9 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_007.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_007.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_008",
+          "Blog_Title": {
+            "en": "Hanuman Ji Ki Aarti",
+            "hi": "हनुमान जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/de/c9/cc/dec9ccf45502499a8a6579bfd0470f5d.jpg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "7 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_008.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_008.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_009",
+          "Blog_Title": {
+            "en": "Om Jai Jagdish Hare",
+            "hi": "ओम् जय जगदीश हरे"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImagekTCAXF.jpeg",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "6 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_009.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_009.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_010",
+          "Blog_Title": {
+            "en": "Ganesh Ji Ki Aarti",
+            "hi": "श्री गणेश जी की आरती"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImageubv16p.jpeg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "8 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_010.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_010.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_012",
+          "Blog_Title": {
+            "en": "Shiv Ji Ki Aarti",
+            "hi": "शिव जी आरती"
+          },
+          "Blog_Thumbnail_Link": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/BlogPhotos/tempImageBuV2n8.jpeg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "8 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BE_012.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/AartiChalisa/BH_012.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_02",
+      "blogCategoryName": {
+        "en": "Stories",
+        "hi": "कथायें"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_048",
+          "Blog_Title": {
+            "en": "Lord Krishna Dwarka",
+            "hi": "श्रीकृष्ण नगरी"
+          },
+          "Blog_Thumbnail_Link": "https://www.indiadivine.org/wp-content/uploads/2015/12/krishna002.jpg",
+          "Blog_Duration": {
+            "en": "14 Minutes",
+            "hi": "14 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Lord Krishna's Dwarka is the sacred city he established as his kingdom, symbolizing divine love, leadership, and spiritual prosperity.",
+            "hi": "श्रीकृष्ण नगरी पवित्र है, जहाँ उन्होंने अपने राज्य की स्थापना कर धर्म और भक्ति का संदेश दिया।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_048.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_048.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_047",
+          "Blog_Title": {
+            "en": "Shri Krishna and Rukmini’s Marriage Story",
+            "hi": "श्रीकृष्ण और रुक्मिणी विवाह कथा"
+          },
+          "Blog_Thumbnail_Link": "https://wiralfeed.wordpress.com/wp-content/uploads/2015/11/krishna-rukmani.jpg",
+          "Blog_Duration": {
+            "en": "16 Minutes",
+            "hi": "16 मिनट"
+          },
+          "Blog_Description": {
+            "en": "The marriage of Shri Krishna and Rukmini is a divine tale of love and devotion, where Krishna heroically rescues Rukmini and marries her against all odds.",
+            "hi": "श्रीकृष्ण और रुक्मिणी का विवाह एक अद्भुत प्रेम और समर्पण की कथा है, जिसमें कृष्ण रुक्मिणी का हरण कर वीरता से उनका परिणय करते हैं।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_047.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_047.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_045",
+          "Blog_Title": {
+            "en": "Shri Krishna’s Birth Story",
+            "hi": "श्रीकृष्ण जन्म कथा"
+          },
+          "Blog_Thumbnail_Link": "https://images.bhaskarassets.com/web2images/521/2020/07/30/krishna-janmashtami-cover_1596119256.jpg",
+          "Blog_Duration": {
+            "en": "15 Minutes",
+            "hi": "15 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shri Krishna was born to Devaki and Vasudeva in a prison cell in Mathura, under divine prophecy, to rid the world of evil.",
+            "hi": "श्री कृष्णा का जन्म देवकी और वसुदेव के यहां मथुरा के कारागार में हुआ, ताकि वह दुनिया से अधर्म का नाश करें।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_045.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_045.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_046",
+          "Blog_Title": {
+            "en": "The Story of Kansa’s Defeat",
+            "hi": "कंस वध की कथा"
+          },
+          "Blog_Thumbnail_Link": "https://static.sadhguru.org/d/46272/1633191712-1633191711454.jpg",
+          "Blog_Duration": {
+            "en": "14 Minutes",
+            "hi": "14 मिनट"
+          },
+          "Blog_Description": {
+            "en": "The story of Kansa's death depicts Lord Krishna slaying the tyrant Kansa to restore righteousness.",
+            "hi": "कंस वध की कथा में भगवान श्री कृष्ण ने अत्याचारी कंस का वध कर धर्म की स्थापना की।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_046.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_046.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_003",
+          "Blog_Title": {
+            "en": "Story of the marriage of Satyavati and Shantanu",
+            "hi": "सत्यवती और शांतनु के विवाह की कथा"
+          },
+          "Blog_Thumbnail_Link": "https://th.bing.com/th/id/R.47ffdd0eaedd0e566c9aa516193ba6cc?rik=0%2b5WeFAfiSuz3g&riu=http%3a%2f%2f3.bp.blogspot.com%2f_JbkfdQvU5jA%2fTFQOJNtwoGI%2fAAAAAAAACMw%2fAYAKycT0bX0%2fs320%2fSatyawati%2bphoto.jpg&ehk=VOOrGpp0qCgdp%2fO6wcBZTVJ5BqD6W2v%2f3CO0vei%2fpf0%3d&risl=&pid=ImgRaw&r=0",
+          "Blog_Duration": {
+            "en": "10 Minutes",
+            "hi": "10 मिनट"
+          },
+          "Blog_Description": {
+            "en": "King Shantanu's love for the fisherwoman Satyavati led to a series of events that shaped the destiny of the Kuru dynasty.",
+            "hi": "राजा शांतनु ने मछुआरे की बेटी सत्यवती से प्रेम किया, जिससे कुरु वंश का भाग्य बदल गया।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_003.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_003.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_014",
+          "Blog_Title": {
+            "en": "Somnath Jyotirling Kathaayein ",
+            "hi": "सोमनाथ ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://api.somnath.org/upload/Photo%20Gallery%20Cover/1.png",
+          "Blog_Duration": {
+            "en": "11 Minutes",
+            "hi": "11 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_014.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_014.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_015",
+          "Blog_Title": {
+            "en": "Mallikarjuna Jyotirling Kathaayein",
+            "hi": "मल्लिकार्जुन ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://nepal-indiatourism.com/uploads/itinerary/mallikarjun-jyotirlinga/mallikarjun-jyotirlinga.jpg",
+          "Blog_Duration": {
+            "en": "12 Minutes",
+            "hi": "12 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_015.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_015.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_016",
+          "Blog_Title": {
+            "en": "Mahakaleshwar Jyotirling Kathaayein",
+            "hi": "महाकालेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWpLJvF08WNpNfkllRJo5uYTlLvqakUxK1A&s",
+          "Blog_Duration": {
+            "en": "13 Minutes",
+            "hi": "13 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_016.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_016.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_017",
+          "Blog_Title": {
+            "en": "Omkareshwar Jyotirling Kathaayein",
+            "hi": "ओंकारेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://sannidhi.net/wp-content/uploads/2022/12/mamleshwar_jyotirlinga.jpeg",
+          "Blog_Duration": {
+            "en": "11 Minutes",
+            "hi": "11 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_017.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_017.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_018",
+          "Blog_Title": {
+            "en": "Shri Kedarneshwar Jyotirling Kathaayein",
+            "hi": "श्री केदारेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/564x/6a/4e/6e/6a4e6e66c7551eaf366923f52b26b87d.jpg",
+          "Blog_Duration": {
+            "en": "10 Minutes",
+            "hi": "10 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_018.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_018.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_019",
+          "Blog_Title": {
+            "en": "Shri Bhimashankar Jyotirling Kathaayein",
+            "hi": "श्री भीमाशंकर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://www.bhagwanapp.in/assets/upload/Blog/bheemshankar_jyotirlinga.jpg",
+          "Blog_Duration": {
+            "en": "14 Minutes",
+            "hi": "14 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_019.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_019.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_020",
+          "Blog_Title": {
+            "en": "Shri Kashi Vishwanath Kathaayein",
+            "hi": "श्री काशी विश्वनाथ ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://static.punjabkesari.in/multimedia/2021_8image_11_59_414522753kashivishwnath.jpg",
+          "Blog_Duration": {
+            "en": "12 Minutes",
+            "hi": "12 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_020.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_020.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_021",
+          "Blog_Title": {
+            "en": "The Legend of Trimbakeshwar Jyotirlinga",
+            "hi": "श्री त्र्यंबकेश्वर ज्योतिर्लिंग कथा "
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPiOJsnSMU3Al7xpTXlJ7g_mgYCFuzZ0D4uA&s",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "05 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_021.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_021.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_022",
+          "Blog_Title": {
+            "en": "The Legend of Baidyanath Jyotirlinga",
+            "hi": "श्री बैद्यनाथ ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8q5UgAjYNo9aKAo1EGd_33QGdPOwtRW6UQ&s",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "06 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_022.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_022.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_023",
+          "Blog_Title": {
+            "en": "The Legend of Nageshwar Jyotirlinga",
+            "hi": "श्री नागेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://s7ap1.scene7.com/is/image/incredibleindia/nageshwar-jyotirlinga-temple-dwarka-gujarat-3-musthead-hero?qlt=82&ts=1726734619195",
+          "Blog_Duration": {
+            "en": "4 Minutes",
+            "hi": "04 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_023.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_023.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_024",
+          "Blog_Title": {
+            "en": "The Legend of Rameshwar Jyotirlinga",
+            "hi": "श्री रामेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://static.abplive.com/wp-content/uploads/sites/4/2018/02/13130216/Jyotirling-Rameshwaram.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "05 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_024.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_024.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_025",
+          "Blog_Title": {
+            "en": "The Legend of Grishneshwar Jyotirlinga",
+            "hi": "श्री घृष्णेश्वर ज्योतिर्लिंग कथा"
+          },
+          "Blog_Thumbnail_Link": "https://www.talesofsanatan.com/wp-content/uploads/2023/09/the-story-of-the-origin-of-the-grishneshwar-jyotirlinga.jpg",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "07 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Shiv Puran ke Anusaar, Bhagwan Shiv ke 12 Jyotirling Hain, Jo Bharat ke Vibhinna Hisssso Mein Sthit Hain",
+            "hi": "शिव पुराण के अनुसार, भगवान शिव के 12 ज्योतिर्लिंग हैं, जो भारत के विभिन्न हिस्सों में स्थित हैं"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BE_025.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Stories/BH_025.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_049",
+          "Blog_Title": {
+            "en": "Shiv Puran Sati’s Sacrifice",
+            "hi": "शिव पुराण माता सती का त्याग"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/564x/b4/11/b1/b411b19f4241f260b8cd79e671f56f91.jpg",
+          "Blog_Duration": {
+            "en": "4 Minutes",
+            "hi": "4 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Sati’s self-sacrifice after Daksha's insult to Shiva reflects deep devotion and led to Shiva’s profound detachment.",
+            "hi": "शिव के अपमान पर उनकी आत्मा की आहुति और भक्ति का प्रतीक है"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BE_049.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BH_049.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_050",
+          "Blog_Title": {
+            "en": "Shiv Puran Descent of River Ganga to Earth",
+            "hi": "शिव पुराण मां गंगा का धरती पर अवतरण"
+          },
+          "Blog_Thumbnail_Link": "https://www.holydham.com/wp-content/uploads/2014/10/Ganges-Descent-From-The-Spiritual-World.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BE_050.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BH_050.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_051",
+          "Blog_Title": {
+            "en": "Shiv Puran Battle Between Jalandhar and Shiva",
+            "hi": "शिव पुराण जलंधर और शिव का युद्ध"
+          },
+          "Blog_Thumbnail_Link": "https://staticimg.amarujala.com/assets/images/myjyotish.com/2021/07/16/shiv-ji-ke-avtaar_1626446089.jpeg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BE_051.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BH_051.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_052",
+          "Blog_Title": {
+            "en": "Ravana’s Establishment of Baidyanath Jyotirlinga",
+            "hi": "बैद्यनाथ ज्योतिर्लिंग की स्थापना"
+          },
+          "Blog_Thumbnail_Link": "https://production-instaastro-blog-media.s3.ap-south-1.amazonaws.com/old-uploads/2021/12/Ravan_Downfall_Of_The_Most_Gifted_Shiv-Bhakt_-_InstaAstro.jpg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BE_052.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BH_052.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_053",
+          "Blog_Title": {
+            "en": "The Story of Shiva and Banasura",
+            "hi": "शिव और बाणासुर की कथा"
+          },
+          "Blog_Thumbnail_Link": "https://miro.medium.com/v2/resize:fit:1024/1*WlEjL0YvXLNOj1biJ6cuiw.jpeg",
+          "Blog_Duration": {
+            "en": "5 Minutes",
+            "hi": "5 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BE_053.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Spirituality/BH_053.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_03",
+      "blogCategoryName": {
+        "en": "Temples",
+        "hi": "मंदिर"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_043",
+          "Blog_Title": {
+            "en": "Omkareshwar Jyotirling",
+            "hi": "ओंकारेश्वर ज्योतिर्लिंग"
+          },
+          "Blog_Thumbnail_Link": "https://static-gi.asianetnews.com/images/01hqajdx0bs4cz70ybt0j154rt/Omkareshwar-Jyotirlinga-3-1708678116363.jpg",
+          "Blog_Duration": {
+            "en": "22 Minutes",
+            "hi": "22 मिनट"
+          },
+          "Blog_Description": {
+            "en": "Omkareshwar Temple is a Hindu temple dedicated to Shiva, located in Mandhata, nearby Khandwa city in Khandwa district of the Indian state of Madhya Pradesh.",
+            "hi": "ओंकारेश्वर मंदिर एक हिंदू मंदिर है जो शिव को समर्पित है, जो भारतीय राज्य मध्य प्रदेश के खंडवा जिले के पास खंडवा शहर के मांधाता में स्थित है।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BE_043.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BH_043.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_044",
+          "Blog_Title": {
+            "en": "Sharda Mata",
+            "hi": " शारदा माता"
+          },
+          "Blog_Thumbnail_Link": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/ReactUI_image/1649147388812136707.jpg",
+          "Blog_Duration": {
+            "en": "25 Minutes",
+            "hi": "25 मिनट"
+          },
+          "Blog_Description": {
+            "en": "The Sharda Mata temple is a famous temple in the village of Maihar, in the Satna district of Madhya Pradesh, India.",
+            "hi": "मां शारदा को विद्या, बुद्धि, और कला की देवी माना जाता है. सनातन परंपरा में उन्हें सरस्वती भी कहा जाता है।"
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BE_044.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BH_044.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_054",
+          "Blog_Title": {
+            "en": "Lord Shiva Somnath Jyotirlinga",
+            "hi": "भगवान शिव सोमनाथ ज्योतिर्लिंग"
+          },
+          "Blog_Thumbnail_Link": "https://youtellme.ai/wp-content/uploads/2024/08/Blog-image_IMG_9713-1080-x-720px.jpg",
+          "Blog_Duration": {
+            "en": "25 Minutes",
+            "hi": "25 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BE_054.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BH_054.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_055",
+          "Blog_Title": {
+            "en": "Lord Shiva Mallikarjuna Jyotirlinga",
+            "hi": "भगवान शिव मल्लिकार्जुन ज्योतिर्लिंग"
+          },
+          "Blog_Thumbnail_Link": "https://jyotirlingatemples.in/images/mallikarjun/mallikarjun_4.jpg",
+          "Blog_Duration": {
+            "en": "23 Minutes",
+            "hi": "23 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BE_055.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Temples/BH_055.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_05",
+      "blogCategoryName": {
+        "en": "Festivals",
+        "hi": "त्योहार"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_067",
+          "Blog_Title": {
+            "en": "Makar Sankranti 2026",
+            "hi": "मकर संक्रांति 2026"
+          },
+          "Blog_Thumbnail_Link": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/ReactUI_image/Gemini_Generated_Image_w45idww45idww45i.png",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "08 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BE_067.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BH_067.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_026",
+          "Blog_Title": {
+            "en": "Char Dham Yatra",
+            "hi": "चार धाम यात्रा"
+          },
+          "Blog_Thumbnail_Link": "https://www.allinharidwar.com/wp-content/uploads/2018/04/Rishikesh-to-Chardham-Yatra.jpg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "08 मिनट"
+          },
+          "Blog_Description": {
+            "en": "India is home to four sacred pilgrimage sites located in the four cardinal directions, collectively known as the 'Char Dham.",
+            "hi": "भारत की चार दिशाओं में चार पवित्र तीर्थ स्थल स्थित हैं जिन्हें 'चार धाम' कहा जाता है। "
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BE_026.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BH_026.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_027",
+          "Blog_Title": {
+            "en": "Mahakumbh",
+            "hi": "महाकुंभ"
+          },
+          "Blog_Thumbnail_Link": "https://www.aajsamaaj.com/wp-content/uploads/2024/12/Counting-of-devotees-coming-to-Mahakumbh-will-be-done-through-AI-and-other-technologies.jpg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "09 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BE_027.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BH_027.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_029",
+          "Blog_Title": {
+            "en": "Makar Sankranti",
+            "hi": "मकर संक्रांति"
+          },
+          "Blog_Thumbnail_Link": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/Blogs/ReactUI_image/Gemini_Generated_Image_33j9st33j9st33j9.png",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "06 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BE_029.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BH_029.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_030",
+          "Blog_Title": {
+            "en": "Basant Panchami",
+            "hi": "बसंत पंचमी"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6VZQq3B37NaL7aoopcx8JD826J8EBkuYiw&s",
+          "Blog_Duration": {
+            "en": "7 Minutes",
+            "hi": "07 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BE_030.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Festivals/BH_030.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_06",
+      "blogCategoryName": {
+        "en": "Puja Vidhi",
+        "hi": "पूजन विधि"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_066",
+          "Blog_Title": {
+            "en": "Chhath Puja",
+            "hi": "छठ पर्व का परिचय"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWdr6vt-08soakETELnmAC7vzA6kmqjczwQ&s",
+          "Blog_Duration": {
+            "en": "22 Minutes",
+            "hi": "22 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_066.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_066.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_036",
+          "Blog_Title": {
+            "en": "Monday Puja",
+            "hi": "सोमवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://staticimg.amarujala.com/assets/images/2023/02/06/shiv-ji_1675658881.jpeg?w=750",
+          "Blog_Duration": {
+            "en": "22 Minutes",
+            "hi": "22 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_036.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_036.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_037",
+          "Blog_Title": {
+            "en": "Tuesday Puja",
+            "hi": "मंगलवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6FI7aCsqdwIxyXotrggTlVbxTXtmtLo5rw&s",
+          "Blog_Duration": {
+            "en": "25 Minutes",
+            "hi": "25 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_037.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_037.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_038",
+          "Blog_Title": {
+            "en": "Wednesday Puja",
+            "hi": "बुधवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrfo_8Tz4cQf-c1cWaJUKmO4wC_3k5Bm99Uw&s",
+          "Blog_Duration": {
+            "en": "20 Minutes",
+            "hi": "20 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_038.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_038.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_039",
+          "Blog_Title": {
+            "en": "Thursday Puja",
+            "hi": "गुरुवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://navbharattimes.indiatimes.com/thumb/91385810/thursday-vrat-poojan-vidhi-aur-katha-91385810.jpg?imgsize=276454&width=380&height=214&resizemode=75",
+          "Blog_Duration": {
+            "en": "23 Minutes",
+            "hi": "23 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_039.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_039.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_040",
+          "Blog_Title": {
+            "en": "Friday Puja",
+            "hi": "शुक्रवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://sampurnchalisa.com/wp-content/uploads/2024/05/maa-lakshmi.jpg",
+          "Blog_Duration": {
+            "en": "21 Minutes",
+            "hi": "21 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_040.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_040.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_041",
+          "Blog_Title": {
+            "en": "Saturday Puja",
+            "hi": "शनिवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://telugu.cdn.zeenews.com/telugu/sites/default/files/styles/zm_700x400/public/2022/09/24/246062-shani-dev-puja.png?itok=0KZcWsb3",
+          "Blog_Duration": {
+            "en": "24 Minutes",
+            "hi": "24 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_041.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_041.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_042",
+          "Blog_Title": {
+            "en": "Sunday Puja",
+            "hi": "रविवार पूजा"
+          },
+          "Blog_Thumbnail_Link": "https://hindi.cdn.zeenews.com/hindi/sites/default/files/2024/09/08/3209841-untitled-design-2024-09-08t111247.994.jpg",
+          "Blog_Duration": {
+            "en": "20 Minutes",
+            "hi": "20 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BE_042.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/PujaVidhi/BH_042.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_09",
+      "blogCategoryName": {
+        "en": "Vrat",
+        "hi": "व्रत"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_068",
+          "Blog_Title": {
+            "en": "Saturday Fast (Shanivar Vrat Katha)",
+            "hi": "शनिवार व्रत कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/1200x/32/96/dd/3296dd3bee4968219c9ae0aad8196cad.jpg",
+          "Blog_Duration": {
+            "en": "15 Minutes",
+            "hi": "15 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_068.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_068.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_065",
+          "Blog_Title": {
+            "en": "Sixteen Mondays (Solah Somvar) Vrat Katha",
+            "hi": "सोलह सोमवार व्रत कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/ac/00/3e/ac003e07cb1f1f574967af5b89bc083e.jpg",
+          "Blog_Duration": {
+            "en": "14 Minutes",
+            "hi": "14 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_065.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_065.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_064",
+          "Blog_Title": {
+            "en": "Nag Panchami Katha",
+            "hi": "नागपंचमी की कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/36/02/4c/36024cdcf67c7076f2e98aed9e216b5b.jpg",
+          "Blog_Duration": {
+            "en": "11 Minutes",
+            "hi": "11 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_064.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_064.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_063",
+          "Blog_Title": {
+            "en": "Mangala Gauri Vrat Katha",
+            "hi": "मंगला गौरी व्रत कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/06/13/55/061355e9e46f031e793c450096223bf2.jpg",
+          "Blog_Duration": {
+            "en": "15 Minutes",
+            "hi": "15 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_063.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_063.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_062",
+          "Blog_Title": {
+            "en": "Ganesh Chaturthi Vrat Katha",
+            "hi": "गणेश चतुर्थी व्रत कथा"
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/736x/98/72/27/9872271765c22855c0a28264c9009ca7.jpg",
+          "Blog_Duration": {
+            "en": "8 Minutes",
+            "hi": "8 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_062.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_062.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_028",
+          "Blog_Title": {
+            "en": "Saphala Ekadashi",
+            "hi": "सफला एकादशी"
+          },
+          "Blog_Thumbnail_Link": "https://dkscore.b-cdn.net/avatar/saphala-ekadashi-dkscore_1729593328919.png",
+          "Blog_Duration": {
+            "en": "6 Minutes",
+            "hi": "15 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_028.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_028.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_034",
+          "Blog_Title": {
+            "en": "Mangalvar Vrat",
+            "hi": "मंगलवार व्रत"
+          },
+          "Blog_Thumbnail_Link": "https://www.jagranimages.com/images/19_12_2016-hanumanlala.jpg",
+          "Blog_Duration": {
+            "en": "16 Minutes",
+            "hi": "16 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_034.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_034.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_035",
+          "Blog_Title": {
+            "en": "Brihaspativar Vrat",
+            "hi": "बृहस्पतिवार व्रत"
+          },
+          "Blog_Thumbnail_Link": "https://images.herzindagi.info/image/2023/May/guruwar-vrat-katha-hindi.jpg",
+          "Blog_Duration": {
+            "en": "17 Minutes",
+            "hi": "17 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BE_035.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Vrat/BH_035.json"
+          }
+        }
+      ]
+    },
+    {
+      "blogCategoryID": "BC_10",
+      "blogCategoryName": {
+        "en": "Mantra",
+        "hi": "मंत्र"
+      },
+      "BlogCategory_Thumbnail_Link": "",
+      "blogs": [
+        {
+          "Blog_ID": "BE_056",
+          "Blog_Title": {
+            "en": "Shri Narmada Ashtakam ",
+            "hi": "श्री नर्मदा अष्टकम "
+          },
+          "Blog_Thumbnail_Link": "https://i.pinimg.com/564x/47/80/71/478071345808d31b35cfd83089c87c22.jpg",
+          "Blog_Duration": {
+            "en": "9 Minutes",
+            "hi": "9 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BE_056.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BH_056.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_031",
+          "Blog_Title": {
+            "en": "Achyutashtakam",
+            "hi": "अच्युतस्याष्टकम् "
+          },
+          "Blog_Thumbnail_Link": "https://i.ytimg.com/vi/xjUzIilNQHw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZQINksU-zmqTx-VKN-sFkYy4vsQ",
+          "Blog_Duration": {
+            "en": "16 Minutes",
+            "hi": "16 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BE_031.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BH_031.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_032",
+          "Blog_Title": {
+            "en": "Vakratunda Mahakaya",
+            "hi": "वक्रतुण्ड महाकाय"
+          },
+          "Blog_Thumbnail_Link": "https://www.bhaktimarg.com/wp-content/uploads/2023/10/Vakratunda-Mahakaya-Mantra.jpg",
+          "Blog_Duration": {
+            "en": "18 Minutes",
+            "hi": "18 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BE_032.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BH_032.json"
+          }
+        },
+        {
+          "Blog_ID": "BE_033",
+          "Blog_Title": {
+            "en": "Madhurashtakam",
+            "hi": "मधुराष्टकम् "
+          },
+          "Blog_Thumbnail_Link": "https://www.bhaktimarg.com/wp-content/uploads/2023/10/Shri-krishna-mantra.jpg",
+          "Blog_Duration": {
+            "en": "13 Minutes",
+            "hi": "13 मिनट"
+          },
+          "Blog_Description": {
+            "en": "",
+            "hi": ""
+          },
+          "Blog_Link": {
+            "en": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BE_033.json",
+            "hi": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/Mantra/BH_033.json"
+          }
+        }
+      ]
+    }
+  ]
+}

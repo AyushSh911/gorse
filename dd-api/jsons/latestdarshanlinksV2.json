@@ -1,0 +1,2753 @@
+[
+  {
+    "id": "28",
+    "templeName": {
+      "hi": "महाकालेश्वर",
+      "en": "Mahakaleshwar"
+    },
+    "cityName": {
+      "hi": "उज्जैन",
+      "en": "Ujjain"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Mahakaleshwar.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahakaleshwar/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahakaleshwar/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahakaleshwar/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahakaleshwar/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahakaleshwar/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Jai Shri Mahakal! Har Har Mahadev! 🔱",
+    "day": "Wednesday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Mahakleshwar/index.m3u8",
+      "hi": "अवन्तिकायां विहितावतारं मुक्तिप्रदानाय च सज्जनानाम्। अकालमृत्योः परिरक्षणार्थं वन्दे महाकालमहासुरेशम्॥",
+      "en": "Avantikayaam Vihitavataaram Muktipradaanaaya Cha Sajjanaanaam, Akaala Mrityoh Parirakshanaartham Vande Mahakaala Mahaasuresham ||",
+      "title": {
+        "hi": "महाकालेश्वर स्तुति",
+        "en": "Mahakaleshwar Stuti"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/Mahakaleshwar/2026-09-11/morning.jpg"
+    },
+    "dbId": "69ce4909f0f02fa62e17de65",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Mahakaleshwar Jyotirlinga",
+          "Mahakaleshwar",
+          "Mahakal",
+          "Mahakaal",
+          "Ujjain Mahakal"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "महाकालेश्वर ज्योतिर्लिंग",
+          "महाकालेश्वर",
+          "महाकाल",
+          "उज्जैन महाकाल"
+        ]
+      }
+    }
+  },
+  {
+    "id": "1",
+    "templeName": {
+      "hi": "ओंकारेश्वर ज्योतिर्लिंग",
+      "en": "Omkareshwar Jyotirlinga"
+    },
+    "cityName": {
+      "hi": "ओंकारेश्वर",
+      "en": "Omkareshwar"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Omkareshwar_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Omkareshwar/omkareshwar_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Omkareshwar/omkareshwar_ios_v4",
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Omkareshwar/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Omkareshwar/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Omkareshwar/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Omkareshwar/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-06",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Omkareshwar/2026-09-06/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Omkareshwar/omkareshwar_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Omkareshwar/omkareshwar_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Omkareshwar Jyotirlinga ki jai! Bholenath ki kripa se sabhi sankat dur ho jaate hain. Har Har Mahadev! 🔱",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriOmkareshwarJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Omkareshwar/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Omkareshwar/iOS_v2",
+      "osx": null
+    },
+    "day": "Monday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Omkareshwar/index.m3u8",
+      "hi": "कावेरिकानर्मदयोः पवित्रे समागमे सज्जनतारणाय। सदैव मांधातृपुरे वसंतं ॐकारमीशं शिवमेकमीडे ॥",
+      "en": "Kaaverikaa Narmadayoḥ Pavitree Samaagame Sajjana Taaranaaya, Sadaiva Maandhaatripure Vasantam Omkaarameesham Shivamekameede ||",
+      "title": {
+        "hi": "शिव ध्यान मंत्र",
+        "en": "Shiva Dhyan Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/Omkareshwar/2026-09-11/morning.jpg"
+    },
+    "dbId": "695ca4b064add50d10069f18",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Omkareshwar Jyotirlinga",
+          "Omkareshwar"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "ओंकारेश्वर ज्योतिर्लिंग",
+          "ओंकारेश्वर"
+        ]
+      }
+    }
+  },
+  {
+    "id": "2",
+    "templeName": {
+      "hi": "द्वारकाधीश मंदिर",
+      "en": "Dwarkadhish Temple"
+    },
+    "cityName": {
+      "hi": "द्वारका",
+      "en": "Dwarka"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/DwarkadhishTemple_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Dwarkadhish/dwarkadhish_android_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Dwarkadhish/dwarkadhish_ios_v3",
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/DwarkadhishTemple/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/DwarkadhishTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/DwarkadhishTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/DwarkadhishTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/DwarkadhishTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Dwarkadhish/dwarakadhish_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Dwarkadhish/dwarakadhish_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Dwarkadhish ji ki jai! Krishna ji sabki manokamnaen puri karte hain. Jai Shri Krishna! 🕉️",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KrishnaVasudevMantra/index.m3u8",
+      "hi": "ॐ कृष्णाय वासुदेवाय हरये परमात्मने, प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः",
+      "en": "Om Krishnaya Vasudevaya Haraye Paramatmane, Pranatah Kleshanashaya Govindaya Namo Namah",
+      "title": {
+        "hi": "कृष्ण मूल मंत्र",
+        "en": "Krishna Mool Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/DwarkadhishTemple/2026-09-11/morning.jpg"
+    },
+    "dbId": "695bba4964add594b638d83c",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कन्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "3",
+    "templeName": {
+      "hi": "सिद्धिविनायक",
+      "en": "Siddhivinayak"
+    },
+    "cityName": {
+      "hi": "मुंबई",
+      "en": "Mumbai"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/SiddhiVinayak_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SiddhiVinayak/siddhivinayak_AndroidV3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SiddhiVinayak/siddhivinayak_iOSV3",
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SiddhiVinayak/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SiddhiVinayak/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SiddhiVinayak/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SiddhiVinayak/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SiddhiVinayak/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SiddhiVinayak/siddhivinayak_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SiddhiVinayak/siddhivinayak_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Siddhivinayak ji ki jai! Ganpati Bappa sabhi vighn dur karte hain. Ganpati Bappa Morya! 🙏",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriSiddhiVinayak.jpg",
+    "day": "Wednesday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/GanpatiMantra/index.m3u8",
+      "hi": "एकदन्तं शूर्पकर्ण गजवक्त्रं चतुर्भुजम्। पाशान्कुशधरं देवं ध्यायेत् सिद्धिविनायकम्।।",
+      "en": "Ekadantam Shurpakarna Gajavaktram Chaturbhujam. Pashankushdharam Devam Dhyayet Siddhivinayakam.",
+      "title": {
+        "hi": "सिद्धिविनायक ध्यान मंत्र",
+        "en": "Siddhivinayak Dhyan Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/SiddhiVinayak/2026-09-11/morning.jpg"
+    },
+    "dbId": "695bbb2964add594b638d83d",
+    "Deity": {
+      "en": "Ganesh Ji",
+      "hi": "गणेश जी",
+      "aliases": {
+        "en": [
+          "Ganesh",
+          "Ganesha",
+          "Ganpati",
+          "Vinayak",
+          "Siddhivinayak",
+          "Ganeshji"
+        ],
+        "hi": [
+          "गणेश",
+          "गणपति",
+          "विनायक",
+          "सिद्धिविनायक"
+        ]
+      }
+    }
+  },
+  {
+    "id": "4",
+    "templeName": {
+      "hi": "सोमनाथ",
+      "en": "Somnath"
+    },
+    "cityName": {
+      "hi": "सोमनाथ",
+      "en": "Somnath"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Somnath_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Somnath/somnath_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Somnath/somnath_ios_v4",
+      "osx": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Somnath/somnath_mac_universal_v1"
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SomnathJyotirling/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SomnathJyotirling/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SomnathJyotirling/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SomnathJyotirling/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SomnathJyotirling/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Somnath/somnath_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Somnath/somnath_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Somnath Jyotirlinga ki jai! Pehla Jyotirlinga hai ye. Somnath ji ki kripa se sabhi paap dur ho jaate hain. Har Har Mahadev! 🔱",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriSomnathJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Somnath/android_v2",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Somnath/iOS_v3",
+      "osx": null
+    },
+    "day": "Monday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Somnath/index.m3u8",
+      "hi": "सौराष्ट्रदेशे विशदेऽतिरम्ये ज्योतिर्मयं चन्द्रकलावतंसम। भक्तिप्रदानाय कृपावतीर्णं तं सोमनाथं शरणं प्रपद्ये ।।",
+      "en": "Saurashtra Deshe Vishade’tiramyye Jyotirmayam Chandra-Kalaavatamsam | Bhakti-Pradaanaaya Kripaavatirnam Tam Somanaatham Sharanam Prapadye ||",
+      "title": {
+        "hi": "शिव ध्यान मंत्र",
+        "en": "Shiva Dhyan Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/SomnathJyotirling/2026-09-11/morning.jpg"
+    },
+    "dbId": "695bbc4b64add594b638d83e",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Somnath Jyotirlinga",
+          "Somnath"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "सोमनाथ ज्योतिर्लिंग",
+          "सोमनाथ"
+        ]
+      }
+    }
+  },
+  {
+    "id": "5",
+    "templeName": {
+      "hi": "बांके बिहारी",
+      "en": "Banke Bihari"
+    },
+    "cityName": {
+      "hi": "वृंदावन",
+      "en": "Vrindavan"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/BankeBihari_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-07/morning.jpg",
+        "videoUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BankeBihari/2026-09-07/morning/playlist.m3u8",
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Banke Bihari ji ki jai! Radha-Krishna dono ek hi roop mein hain. Radhe Radhe! 💙",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriBankeBihari.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/BankeBihari/bankebihari_3dabhishek_android_V4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/BankeBihari/bankebihari_3dabhishek_ios_V4",
+      "osx": null
+    },
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KrishnaVasudevMantra/index.m3u8",
+      "hi": "ॐ कृष्णाय वासुदेवाय हरये परमात्मने, प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः",
+      "en": "Om Krishnaya Vasudevaya Haraye Paramatmane, Pranatah Kleshanashaya Govindaya Namo Namah",
+      "title": {
+        "hi": "कृष्ण मूल मंत्र",
+        "en": "Krishna Mool Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/BankeBihari/2026-09-11/morning.jpg"
+    },
+    "dbId": "695cd37d64add5e2447ad7a9",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कन्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "7",
+    "templeName": {
+      "hi": "सालासर बालाजी",
+      "en": "Salasar Balaji"
+    },
+    "cityName": {
+      "hi": "सालासर",
+      "en": "Salasar"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/SalasarBalaji_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SarasarBalaji/abhishekfeaturecontroller_salasar_ANDROID_v3",
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SarasarBalaji/salasar_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SarasarBalaji/salasar_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Salasar Balaji ki jai! Balaji ji sabhi sankat dur karte hain. Jai Shri Balaji! 🚩",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriSalasarBalaji.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SarasarBalaji/salasarbalaji_3dabhishek_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/SarasarBalaji/salasarbalaji_3dabhishek_ios_v4",
+      "osx": null
+    },
+    "day": "Tuesday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/SalasarBalajiMantra/index.m3u8",
+      "hi": "अतुलितबलधामं हेमशैलाभदेहं दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्। सकलगुणनिधानं वानराणामधीशं रघुपतिप्रियभक्तं वातजातं नमामि॥",
+      "en": "Atulitabaladhaamam Hemashailaabhadeham Danujavanakrishaanung Gyaaninaamagraganyam | Sakalagunanidhanam Vanaranamadhisham Raghupatiprivabhaktam Vaatjaatam Namaami ||",
+      "title": {
+        "hi": "हनुमान ध्यान मंत्र",
+        "en": "Hanuman Dhyan Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/SalasarBalaji/2026-09-11/morning.jpg"
+    },
+    "dbId": "695cd3da64add5e2447ad7aa",
+    "Deity": {
+      "en": "Hanuman Ji",
+      "hi": "हनुमान जी",
+      "aliases": {
+        "en": [
+          "Hanuman",
+          "Bajrangbali",
+          "Maruti",
+          "Balaji",
+          "Hanumanji",
+          "Pawan Putra",
+          "Salasar Balaji"
+        ],
+        "hi": [
+          "हनुमान",
+          "बजरंगबली",
+          "मारुति",
+          "बालाजी",
+          "पवन पुत्र",
+          "सालासर बालाजी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "8",
+    "templeName": {
+      "hi": "राम जन्मभूमि",
+      "en": "Ram Janmbhoomi"
+    },
+    "cityName": {
+      "hi": "अयोध्या",
+      "en": "Ayodhya"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/RamJanmbhoomi_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/rammandir_android_v5",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/rammandir_ios_v5",
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RamJanmbhoomi/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RamJanmbhoomi/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RamJanmbhoomi/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RamJanmbhoomi/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RamJanmbhoomi/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/rammandir_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/rammandir_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Ram Janmbhoomi ki jai! Ram ji ki kripa se ghar mein sukh-shanti aati hai. Jai Shri Ram! 🏹",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriRamLalla.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/ramlalla_3dabhishek_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/RamMandirAyodhya/ramlalla_3dabhishek_ios_v4",
+      "osx": null
+    },
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Ramlallamantra/index.m3u8",
+      "hi": "लोकाभिरामं रणरंगधीरं राजीवनेत्रं रघुवंशनाथम्। कारुण्यरूपं करुणाकरन्तं श्रीरामचन्द्रं शरणं प्रपद्ये।।",
+      "en": "Lokaabhi-Raamam Ranna-Rangga-Dhiiram Raajiiva-Netram Raghu-Vamsha-Naatham | Kaarunnya-Rupam Karunnaa-Karantam Shriiraamacamdram Sharannam Prapadye ||",
+      "title": {
+        "hi": "श्री राम ध्यान मंत्र",
+        "en": "Shri Ram Dhyan Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/RamJanmbhoomi/2026-09-11/morning.jpg"
+    },
+    "dbId": "695cd44164add5e2447ad7ab",
+    "Deity": {
+      "en": "Ram Ji",
+      "hi": "राम जी",
+      "aliases": {
+        "en": [
+          "Ram",
+          "Rama",
+          "Shri Ram",
+          "Raghav",
+          "Ramji",
+          "Ayodhyapati"
+        ],
+        "hi": [
+          "राम",
+          "श्री राम",
+          "रघव",
+          "रामजी",
+          "अयोध्यापति"
+        ]
+      }
+    }
+  },
+  {
+    "id": "9",
+    "templeName": {
+      "hi": "केदारनाथ",
+      "en": "Kedarnath"
+    },
+    "cityName": {
+      "hi": "रुद्रप्रयाग",
+      "en": "Rudraprayag"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Kedarnath.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kedarnath/kedarnath_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kedarnath/kedarnath_ios_v4",
+      "osx": null
+    },
+    "darshans": null,
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kedarnath/kedarnath_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kedarnath/kedarnath_ios_pb",
+      "osx": null
+    },
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriKedarnathJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kedarnath/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kedarnath/iOS_v2",
+      "osx": null
+    },
+    "dbId": "695cd4b464add5e2447ad7ac",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Kedarnath Jyotirlinga",
+          "Kedarnath"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "केदारनाथ ज्योतिर्लिंग",
+          "केदारनाथ"
+        ]
+      }
+    }
+  },
+  {
+    "id": "10",
+    "templeName": {
+      "hi": "नागेश्वर",
+      "en": "Nageshwar"
+    },
+    "cityName": {
+      "hi": "द्वारका",
+      "en": "Dwarka"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Nageshwar.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Nageshwar/nageshwar_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Nageshwar/nageshwar_ios_v4",
+      "osx": null
+    },
+    "darshans": null,
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Nageshwar/nageshwar_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Nageshwar/nageshwar_ios_pb",
+      "osx": null
+    },
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriNageshwarJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Nageshwar/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Nageshwar/iOS_v2",
+      "osx": null
+    },
+    "dbId": "695cd6ae64add5e2447ad7ad",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Nageshwar Jyotirlinga",
+          "Nageshwar"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "नागेश्वर ज्योतिर्लिंग",
+          "नागेश्वर"
+        ]
+      }
+    }
+  },
+  {
+    "id": "11",
+    "templeName": {
+      "hi": "भीमाशंकर",
+      "en": "Bhimashankar"
+    },
+    "cityName": {
+      "hi": "पुणे",
+      "en": "Pune"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Bhimashankar.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Bhimashankar/bhimashankar_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Bhimashankar/bhimashankar_ios_v4",
+      "osx": null
+    },
+    "darshans": null,
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Bhimashankar/bhima_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Bhimashankar/bhima_ios_pb",
+      "osx": null
+    },
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriBhimashankarJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Bhimashankar/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Bhimashankar/iOS_v2",
+      "osx": null
+    },
+    "dbId": "695cdd8c64add5e2447ad7ae",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Bhimashankar Jyotirlinga",
+          "Bhimashankar"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "भीमाशंकर ज्योतिर्लिंग",
+          "भीमाशंकर"
+        ]
+      }
+    }
+  },
+  {
+    "id": "12",
+    "templeName": {
+      "hi": "घृष्णेश्वर",
+      "en": "Grishneshwar"
+    },
+    "cityName": {
+      "hi": "औरंगाबाद",
+      "en": "Aurangabad"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/GrishneshwarTemple.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Grishneshwar/grishneshwar_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Grishneshwar/grishneshwar_ios_v4",
+      "osx": null
+    },
+    "darshans": [],
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriGrishneshwarJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Grishneshwar/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Grishneshwar/iOS_v2",
+      "osx": null
+    },
+    "dbId": "695cde4764add5e2447ad7af",
+    "mantra": {
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/Grishneshwar/2026-03-19/morning.jpg"
+    },
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Grishneshwar Jyotirlinga",
+          "Grishneshwar"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "घृष्णेश्वर ज्योतिर्लिंग",
+          "घृष्णेश्वर"
+        ]
+      }
+    }
+  },
+  {
+    "id": "13",
+    "templeName": {
+      "hi": "वैद्यनाथ",
+      "en": "Baidyanath"
+    },
+    "cityName": {
+      "hi": "बैद्यनाथ",
+      "en": "Baidyanath"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Baidhnath.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Baidyanath/baidyanath_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Baidyanath/baidyanath_ios_v4",
+      "osx": null
+    },
+    "darshans": null,
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Baidyanath/badr_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Baidyanath/badr_ios_pb",
+      "osx": null
+    },
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriBaidyanathJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Badiyanath/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Badiyanath/iOS_v2",
+      "osx": null
+    },
+    "dbId": "695cdf5664add5e2447ad7b0",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Baidyanath Jyotirlinga",
+          "Vaidyanath Jyotirlinga",
+          "Baidyanath",
+          "Vaidyanath"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "बैद्यनाथ ज्योतिर्लिंग",
+          "वैद्यनाथ ज्योतिर्लिंग",
+          "बैद्यनाथ",
+          "वैद्यनाथ"
+        ]
+      }
+    }
+  },
+  {
+    "id": "14",
+    "templeName": {
+      "hi": "वैष्णोदेवी",
+      "en": "Vaishnodevi"
+    },
+    "cityName": {
+      "hi": "कटरा",
+      "en": "Katra"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/VaishnodeviTemple_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Vaishnodevi/vaishnodevi_android_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Vaishnodevi/vaishnodevi_ios_v3",
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Vaishnodevi/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Vaishnodevi/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Vaishnodevi/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Vaishnodevi/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-06",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Vaishnodevi/2026-09-06/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Vaishnodevi/vaishnodevi_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Vaishnodevi/vaishnodevi_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Vaishnodevi Mata ki jai! Mata Rani sabki manokamnaen puri karti hain. Jai Mata Di! 🙏",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/shrimatavaishnodevi_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Vaishnodevi/android_v1",
+      "ios": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Vaishnodevi/iOS_v1",
+      "osx": null
+    },
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Vaishnodevo/index.m3u8",
+      "hi": "ओम ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "en": "Om Aim Hreem Kleem Chamundayai Viche",
+      "title": {
+        "hi": "दुर्गा शक्ति मंत्र",
+        "en": "Durga Shakti Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/Vaishnodevi/2026-09-11/morning.jpg"
+    },
+    "dbId": "6965ef8964add5fa0bd149ea",
+    "Deity": {
+      "en": "Durga Mata",
+      "hi": "दुर्गा माता",
+      "aliases": {
+        "en": [
+          "Durga",
+          "Mata Rani",
+          "Sherawali",
+          "Shakti",
+          "Ambe",
+          "Vaishno Devi",
+          "Bhadrakali",
+          "Chamunda",
+          "DurgaJi"
+        ],
+        "hi": [
+          "दुर्गा",
+          "माता रानी",
+          "शेरांवाली",
+          "शक्ति",
+          "अंबे",
+          "वैष्णो देवी",
+          "भद्रकाली",
+          "चामुंडा"
+        ]
+      }
+    }
+  },
+  {
+    "id": "6",
+    "templeName": {
+      "hi": "काशी विश्वनाथ",
+      "en": "Kashi Vishwanath"
+    },
+    "cityName": {
+      "hi": "वाराणसी",
+      "en": "Varanasi"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/KashiVishwanath_v2.jpg",
+    "planType": 0,
+    "abhishekUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kashi/kashi_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kashi/kashi_ios_v4",
+      "osx": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kashi/kashi_mac_universal_v1"
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KashiVishwanath/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KashiVishwanath/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KashiVishwanath/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KashiVishwanath/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KashiVishwanath/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "abhishekBundleAsGameObjectUrl": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kashi/kashi_android_pb",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Kashi/kashi_ios_pb",
+      "osx": null
+    },
+    "shareMsg": "Kashi Vishwanath ki jai! Moksh ki nagri hai Kashi. Har Har Mahadev! 🔱",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriKashiVishwanathJyotrilinga_v2.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kashi/android_v1",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kashi/iOS_v2",
+      "osx": null
+    },
+    "day": "Monday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Kashimantra/index.m3u8",
+      "hi": "सानन्दमानन्दवने वसन्तम आनन्दकन्दं हतपापवृन्दम्। वाराणसीनाथमनाथनाथं श्रीविश्वनाथं शरणं प्रपद्ये॥",
+      "en": "Saanandam Aanandavane Vasantam Aanandakandam Hatapapavrindam| Varanashinatham Anathanatham Shri Vishwanatham Sharanam Prapadye||",
+      "title": {
+        "hi": "काशी विश्वनाथ स्तुति",
+        "en": "Kashi Vishwanath Stuti"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/KashiVishwanath/2026-09-11/morning.jpg"
+    },
+    "dbId": "656100000000000000000006",
+    "Deity": {
+      "en": "Shiv Ji",
+      "hi": "शिव जी",
+      "aliases": {
+        "en": [
+          "Shiva",
+          "Shiv",
+          "Bholenath",
+          "Mahadev",
+          "Shankar",
+          "Mahesh",
+          "Bhole Baba",
+          "Shivji",
+          "Har Har Mahadev",
+          "Jyotirlinga",
+          "Jyotirling",
+          "Jyotrilinga",
+          "Dwadash Jyotirlinga",
+          "12 Jyotirlinga",
+          "Kashi Vishwanath Jyotirlinga",
+          "Vishwanath Jyotirlinga",
+          "Kashi Vishwanath",
+          "Vishwanath"
+        ],
+        "hi": [
+          "शिव",
+          "भोलेनाथ",
+          "महादेव",
+          "शंकर",
+          "महेश",
+          "भोले बाबा",
+          "हर हर महादेव",
+          "ज्योतिर्लिंग",
+          "ज्योतिर्लिंगा",
+          "द्वादश ज्योतिर्लिंग",
+          "बारह ज्योतिर्लिंग",
+          "काशी विश्वनाथ ज्योतिर्लिंग",
+          "विश्वनाथ ज्योतिर्लिंग",
+          "काशी विश्वनाथ"
+        ]
+      }
+    }
+  },
+  {
+    "id": "15",
+    "templeName": {
+      "hi": "महालक्ष्मी",
+      "en": "Mahalakshmi"
+    },
+    "cityName": {
+      "hi": "कोल्हापुर",
+      "en": "Kolhapur"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/MahaLaxmiKolhapur_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahalakshmi/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahalakshmi/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahalakshmi/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahalakshmi/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/Mahalakshmi/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Mahalakshmi Mata ki jai! Mata ki kripa se dhan-daulat aur sukh-shanti milti hai. Jai Mahalakshmi! 💰",
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Mahalakshmi/index.m3u8",
+      "hi": "ॐ महालक्ष्यै नमो नमः विष्णुप्रिये नमो नमः धनप्रदाये नमो नमः विश्वजनन्यै नमो नमः",
+      "en": "Om Mahaalakshmyai Namo Namah Vishnupriye Namo Namah Dhanapradaaye Namo Namah Vishva-Jananyai Namo Namah",
+      "title": {
+        "hi": "महालक्ष्मी मंत्र",
+        "en": "Mahalakshmi Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/Mahalakshmi/2026-09-11/morning.jpg"
+    },
+    "dbId": "6965f03364add5fa0bd149eb",
+    "Deity": {
+      "en": "Lakshmi Ji",
+      "hi": "लक्ष्मी जी",
+      "aliases": {
+        "en": [
+          "Lakshmi",
+          "Mahalakshmi",
+          "Laxmi",
+          "Lakshmiji",
+          "Devi",
+          "Devi Ji"
+        ],
+        "hi": [
+          "लक्ष्मी",
+          "महालक्ष्मी",
+          "देवी",
+          "देवी जी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "16",
+    "templeName": {
+      "hi": "विट्ठल रुक्मिणी",
+      "en": "VitthalRukmini"
+    },
+    "cityName": {
+      "hi": "पंढरपुर",
+      "en": "Pandharpur"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/VitthalRukmini_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VitthalRukmini/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VitthalRukmini/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VitthalRukmini/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VitthalRukmini/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-05",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VitthalRukmini/2026-09-05/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Vitthal-Rukmini ji ki jai! Pandharpur mein dono saath mein virajman hain. Jai Vitthal! 🕉️",
+    "day": "Saturday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/VitthalRukmini/index.m3u8",
+      "hi": "श्री विट्ठल रुक्मिणी नमो नमः",
+      "en": "Shri Vitthal rukmini namo namah",
+      "title": {
+        "hi": "विठ्ठल स्तुति",
+        "en": "Vitthal Stuti"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/VitthalRukmini/2026-09-11/morning.jpg"
+    },
+    "dbId": "6965f1cb64add5fa0bd149ec",
+    "Deity": {
+      "en": "Vitthal Ji",
+      "hi": "विठ्ठल जी",
+      "aliases": {
+        "en": [
+          "Vitthal",
+          "Vithoba",
+          "Panduranga",
+          "Vittal",
+          "Rukmini Vitthal",
+          "Vitthal Rukmini"
+        ],
+        "hi": [
+          "विठ्ठल",
+          "विटोबा",
+          "पांडुरंग",
+          "विट्ठल",
+          "रुक्मिणी विठ्ठल"
+        ]
+      }
+    }
+  },
+  {
+    "id": "17",
+    "templeName": {
+      "hi": "खाटूश्याम",
+      "en": "Khatushyam"
+    },
+    "cityName": {
+      "hi": "सीकर",
+      "en": "Sikar"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Khatushyam_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KhatuShyam/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KhatuShyam/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KhatuShyam/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KhatuShyam/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-06",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/KhatuShyam/2026-09-06/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Khatushyam Baba ki jai! Jai Shri Shyam! 🚩",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRAbhishekThumbnails/ShriKhatushyam.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Khatushyam/khatushyam_3dabhishek_android_v4",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/TempleAbhishek/Khatushyam/khatushyam_3dabhishek_ios_v4",
+      "osx": null
+    },
+    "day": "Sunday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KhatuShyam/index.m3u8",
+      "hi": "ॐ श्री श्याम देवाय नमः जय श्री श्याम ! 🚩",
+      "en": "Om Shri Shyam Devaya Namah. Jai Shri Shyam! 🚩",
+      "title": {
+        "hi": "खाटूश्याम मंत्र",
+        "en": "Khatushyam Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/KhatuShyam/2026-09-11/morning.jpg"
+    },
+    "dbId": "6965f23664add5fa0bd149ed",
+    "Deity": {
+      "en": "Shyam Ji",
+      "hi": "श्याम जी",
+      "aliases": {
+        "en": [
+          "Shyam",
+          "Khatu Shyam",
+          "Khatushyam",
+          "Barbarik",
+          "Shyam Baba"
+        ],
+        "hi": [
+          "श्याम",
+          "खाटू श्याम",
+          "बर्बरीक",
+          "श्याम बाबा"
+        ]
+      }
+    }
+  },
+  {
+    "id": "18",
+    "templeName": {
+      "hi": "गोविंद देवजी",
+      "en": "GovindDevji"
+    },
+    "cityName": {
+      "hi": "जयपुर",
+      "en": "Jaipur"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/GovindDevji_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GovindDevji/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GovindDevji/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GovindDevji/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GovindDevji/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GovindDevji/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Govind Devji ki jai! Vrindavan se aaye Krishna ji yahan virajman hain. Radhe Govind! 💙",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/HareKrishna/index.m3u8",
+      "hi": "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे। हरे राम हरे राम राम राम हरे हरे॥",
+      "en": "Hare Krishna Hare Krishna Krishna Krishna Hare Hare. Hare Rama Hare Rama Rama Rama Hare Hare.",
+      "title": {
+        "hi": "हरे कृष्ण महामंत्र",
+        "en": "Hare Krishna Mahamantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/GovindDevji/2026-09-11/morning.jpg"
+    },
+    "dbId": "6965f2dd64add5fa0bd149ee",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कन्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "19",
+    "templeName": {
+      "hi": "विंध्यवासिनी देवी",
+      "en": "Vindhyavasini Devi"
+    },
+    "cityName": {
+      "hi": "मिर्जापुर",
+      "en": "Mirzapur"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/Vindhyavasini_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VindhyavasiniDevi/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VindhyavasiniDevi/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VindhyavasiniDevi/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VindhyavasiniDevi/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/VindhyavasiniDevi/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "Vindhyawasini devi ki jai! Jai Mata Di! 🙏",
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Vaishnodevo/index.m3u8",
+      "hi": "ओम ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "en": "Om Aim Hreem Kleem Chamundayai Viche",
+      "title": {
+        "hi": "दुर्गा शक्ति मंत्र",
+        "en": "Durga Shakti Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/VindhyavasiniDevi/2026-09-11/morning.jpg"
+    },
+    "dbId": "699473fc64add5dbc12627db",
+    "Deity": {
+      "en": "Durga Mata",
+      "hi": "दुर्गा माता",
+      "aliases": {
+        "en": [
+          "Durga",
+          "Mata Rani",
+          "Sherawali",
+          "Shakti",
+          "Ambe",
+          "Bhadrakali",
+          "Chamunda",
+          "DurjaJi",
+          "Devi",
+          "Devi Ji"
+        ],
+        "hi": [
+          "दुर्गा",
+          "माता रानी",
+          "शेरांवाली",
+          "शक्ति",
+          "अंबे",
+          "भद्रकाली",
+          "चामुंडा",
+          "देवी",
+          "देवी जी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "20",
+    "templeName": {
+      "hi": "मां हरसिद्धि मंदिर",
+      "en": "Harsiddhi"
+    },
+    "cityName": {
+      "hi": "उज्जैन",
+      "en": "Ujjain"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/MaaHarsiddhiTemple_v2.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/HarsiddhiTemple/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/HarsiddhiTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/HarsiddhiTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/HarsiddhiTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/HarsiddhiTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "मां हरसिद्धि की जय! माता रानी की कृपा से जीवन में शक्ति और सुख-समृद्धि बनी रहती है। जय माता दी! 🙏",
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/Vaishnodevo/index.m3u8",
+      "hi": "ओम ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
+      "en": "Om Aim Hreem Kleem Chamundayai Viche",
+      "title": {
+        "hi": "दुर्गा शक्ति मंत्र",
+        "en": "Durga Shakti Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/HarsiddhiTemple/2026-09-11/morning.jpg"
+    },
+    "dbId": "69e615e64c8de900011484fd",
+    "Deity": {
+      "en": "Durga Mata",
+      "hi": "दुर्गा माता",
+      "aliases": {
+        "en": [
+          "Durga",
+          "Mata Rani",
+          "Sherawali",
+          "Shakti",
+          "Ambe",
+          "Bhadrakali",
+          "Chamunda",
+          "DurjaJi",
+          "Devi",
+          "Devi Ji"
+        ],
+        "hi": [
+          "दुर्गा",
+          "माता रानी",
+          "शेरांवाली",
+          "शक्ति",
+          "अंबे",
+          "भद्रकाली",
+          "चामुंडा",
+          "देवी",
+          "देवी जी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "21",
+    "templeName": {
+      "hi": "हनुमान गढ़ी",
+      "en": "Hanuman Garhi"
+    },
+    "cityName": {
+      "hi": "अयोध्या",
+      "en": "Ayodhya"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/HanumanGadhi.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [],
+    "shareMsg": "हनुमान गढ़ी की जय! बजरंगबली की कृपा से सभी संकट दूर होते हैं और साहस बढ़ता है। जय श्री हनुमान! 🚩",
+    "day": "Tuesday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/SalasarBalajiMantra/index.m3u8",
+      "hi": "अतुलितबलधामं हेमशैलाभदेहं दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्। सकलगुणनिधानं वानराणामधीशं रघुपतिप्रियभक्तं वातजातं नमामि॥",
+      "en": "Atulitabaladhaamam Hemashailaabhadeham Danujavanakrishaanung Gyaaninaamagraganyam | Sakalagunanidhanam Vanaranamadhisham Raghupatiprivabhaktam Vaatjaatam Namaami ||",
+      "title": {
+        "hi": "हनुमान ध्यान मंत्र",
+        "en": "Hanuman Dhyan Mantra"
+      },
+      "stutiImage": ""
+    },
+    "dbId": "69e616e34c8de900011484fe",
+    "Deity": {
+      "en": "Hanuman Ji",
+      "hi": "हनुमान जी",
+      "aliases": {
+        "en": [
+          "Hanuman",
+          "Bajrangbali",
+          "Maruti",
+          "Balaji",
+          "Hanumanji",
+          "Pawan Putra",
+          "Salasar Balaji"
+        ],
+        "hi": [
+          "हनुमान",
+          "बजरंगबली",
+          "मारुति",
+          "बालाजी",
+          "पवन पुत्र",
+          "सालासर बालाजी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "22",
+    "templeName": {
+      "hi": "भद्रकाली शक्तिपीठ",
+      "en": "Bhadrakali Shaktipeeth"
+    },
+    "cityName": {
+      "hi": "कुरुक्षेत्र",
+      "en": "Kurukshetra"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/BhadrakaliShaktipeeth.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BhadrakaliShaktipeeth/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BhadrakaliShaktipeeth/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BhadrakaliShaktipeeth/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-03",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BhadrakaliShaktipeeth/2026-09-03/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-02",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BhadrakaliShaktipeeth/2026-09-02/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "भद्रकाली माता की जय! देवी की कृपा से भय और बाधाएं दूर होकर जीवन में मंगल होता है। जय माता दी! 🌺",
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/OmJayantiMangalaKal/index.m3u8",
+      "hi": "ॐ जयन्ती मंगला काली भद्रकाली कपालिनी। दुर्गा क्षमा शिवा धात्री स्वाहा स्वधा नमोस्तुते",
+      "en": "Om Jayanti Mangala Kali Bhadrakali Kapalini, Durga Kshama Shiva Dhatri Swaha Swadha Namostute",
+      "title": {
+        "hi": "भद्रकाली मंत्र",
+        "en": "Bhadrakali Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/BhadrakaliShaktipeeth/2026-09-09/morning.jpg"
+    },
+    "dbId": "69e617084c8de900011484ff",
+    "Deity": {
+      "en": "Maa Kali",
+      "hi": "मां काली",
+      "aliases": {
+        "en": [
+          "Kali",
+          "Mata Kali",
+          "Bhadrakali",
+          "Kalika",
+          "Kapalini",
+          "Shakti",
+          "Mata Rani",
+          "Chamunda",
+          "Durga",
+          "Devi",
+          "Devi Ji"
+        ],
+        "hi": [
+          "काली",
+          "माता काली",
+          "भद्रकाली",
+          "कालिका",
+          "कपालिनी",
+          "शक्ति",
+          "माता रानी",
+          "चामुंडा",
+          "दुर्गा",
+          "देवी",
+          "देवी जी"
+        ]
+      }
+    }
+  },
+  {
+    "id": "23",
+    "templeName": {
+      "hi": "गोपीनाथ जी मंदिर",
+      "en": "Gopinath Ji Temple"
+    },
+    "cityName": {
+      "hi": "वृंदावन",
+      "en": "Vrindavan"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/GopinathJiTemple.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GopinathJiTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GopinathJiTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GopinathJiTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GopinathJiTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-05",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GopinathJiTemple/2026-09-05/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "श्री गोपीनाथ जी की जय! राधा-कृष्ण की कृपा से हृदय में प्रेम, भक्ति और आनंद बना रहता है। राधे राधे! 💙",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KrishnaVasudevMantra/index.m3u8",
+      "hi": "ॐ कृष्णाय वासुदेवाय हरये परमात्मने, प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः",
+      "en": "Om Krishnaya Vasudevaya Haraye Paramatmane, Pranatah Kleshanashaya Govindaya Namo Namah",
+      "title": {
+        "hi": "कृष्ण मूल मंत्र",
+        "en": "Krishna Mool Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/GopinathJiTemple/2026-09-10/morning.jpg"
+    },
+    "dbId": "69e617454c8de90001148500",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कन्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "24",
+    "templeName": {
+      "hi": "बरसाना राधा जी मंदिर",
+      "en": "Barsana Radha Ji Temple"
+    },
+    "cityName": {
+      "hi": "बरसाना",
+      "en": "Barsana"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/BarsanaRadhaJiTemple.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BarsanaRadhaJiTemple/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BarsanaRadhaJiTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BarsanaRadhaJiTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BarsanaRadhaJiTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/BarsanaRadhaJiTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "श्री राधा रानी की जय! बरसाना धाम की कृपा से जीवन में प्रेम, करुणा और भक्ति का प्रकाश बना रहता है। राधे राधे! 🌸",
+    "day": "Friday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/ShriradhanRadhikanVande/index.m3u8",
+      "hi": "श्रीराधां राधिकां वन्दे, कुञ्ज-कुञ्जेषु-शोभिताम् । व्रजन्तीं सह कृष्णेन, व्रज-वृन्दावने शुभाम् ॥",
+      "en": "Shri Radham Radhikam Vande, Kunja-Kunjheshu-Shobhitaam. Vrajanteem Saha Krishnena, Vraja-Vrindavane Shubhaam ||",
+      "title": {
+        "hi": "राधा मंत्र",
+        "en": "Radha Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/BarsanaRadhaJiTemple/2026-09-11/morning.jpg"
+    },
+    "dbId": "69e61df7d7c724000151a6c0",
+    "Deity": {
+      "en": "Radha Ji",
+      "hi": "राधा जी",
+      "aliases": {
+        "en": [
+          "Radha",
+          "Radharani",
+          "Radhe",
+          "Radhaji",
+          "Radhika"
+        ],
+        "hi": [
+          "राधा",
+          "राधारानी",
+          "राधे",
+          "राधाजी",
+          "राधिका"
+        ]
+      }
+    }
+  },
+  {
+    "id": "25",
+    "templeName": {
+      "hi": "राधारमण जी मंदिर",
+      "en": "Radharaman Ji Temple"
+    },
+    "cityName": {
+      "hi": "वृंदावन",
+      "en": "Vrindavan"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/RadharamanJiTemple.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadharamanJiTemple/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadharamanJiTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadharamanJiTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadharamanJiTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 2,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadharamanJiTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "श्री राधारमण जी की जय! ठाकुर जी की कृपा से जीवन में शांति, प्रेम और हरि-स्मरण बना रहता है। राधे राधे! 🕉️",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KrishnaVasudevMantra/index.m3u8",
+      "hi": "ॐ कृष्णाय वासुदेवाय हरये परमात्मने, प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः",
+      "en": "Om Krishnaya Vasudevaya Haraye Paramatmane, Pranatah Kleshanashaya Govindaya Namo Namah",
+      "title": {
+        "hi": "कृष्ण मूल मंत्र",
+        "en": "Krishna Mool Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/RadharamanJiTemple/2026-09-11/morning.jpg"
+    },
+    "dbId": "69e61e5cd7c724000151a6c1",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कान्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "26",
+    "templeName": {
+      "hi": "राधावल्लभ जी मंदिर",
+      "en": "Radhavallabh Ji Temple"
+    },
+    "cityName": {
+      "hi": "वृंदावन",
+      "en": "Vrindavan"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/RadhavallabhJiTemple.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadhavallabhJiTemple/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadhavallabhJiTemple/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadhavallabhJiTemple/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadhavallabhJiTemple/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/RadhavallabhJiTemple/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "श्री राधावल्लभ जी की जय! राधा-कृष्ण की अनुकंपा से मन में प्रेम-रस और भक्ति का भाव निरंतर बना रहता है। जय श्री राधे! 💫",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/KrishnaVasudevMantra/index.m3u8",
+      "hi": "ॐ कृष्णाय वासुदेवाय हरये परमात्मने, प्रणतः क्लेशनाशाय गोविन्दाय नमो नमः",
+      "en": "Om Krishnaya Vasudevaya Haraye Paramatmane, Pranatah Kleshanashaya Govindaya Namo Namah",
+      "title": {
+        "hi": "कृष्ण मूल मंत्र",
+        "en": "Krishna Mool Mantra"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/RadhavallabhJiTemple/2026-09-11/morning.jpg"
+    },
+    "dbId": "69e61e6dd7c724000151a6c2",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कान्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  },
+  {
+    "id": "27",
+    "templeName": {
+      "hi": "गिरिराज जी",
+      "en": "Giriraj Ji"
+    },
+    "cityName": {
+      "hi": "जतीपुरा",
+      "en": "Jatipura"
+    },
+    "iconUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/TempleGuide/TempleImages/GirirajJi.jpg",
+    "planType": 1,
+    "abhishekUrl": {
+      "android": null,
+      "ios": null,
+      "osx": null
+    },
+    "darshans": [
+      {
+        "date": "2026-09-11",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GirirajJi/2026-09-11/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-10",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GirirajJi/2026-09-10/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-09",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GirirajJi/2026-09-09/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-08",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GirirajJi/2026-09-08/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
+        "date": "2026-09-07",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/GirirajJi/2026-09-07/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      }
+    ],
+    "shareMsg": "श्री गिरिराज जी महाराज की जय! गोवर्धन धाम की कृपा से भक्तों के सभी कष्ट दूर होते हैं और घर में मंगल बना रहता है। जय गिरिराज जी! 🙏",
+    "day": "Thursday0",
+    "mantra": {
+      "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Mantra/ShriGiriraj/index.m3u8",
+      "hi": "श्री गिरिराज धरण की जय\\nश्री गोवर्धननाथ की जय",
+      "en": "Shri Giriraj Dharan Ki Jai\\nShri Govardhannath Ki Jai",
+      "title": {
+        "hi": "गिरिराज स्तुति",
+        "en": "Giriraj Stuti"
+      },
+      "stutiImage": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan-Image3D/GirirajJi/2026-09-11/morning.jpg"
+    },
+    "dbId": "69e61e82d7c724000151a6c3",
+    "Deity": {
+      "en": "Krishna Ji",
+      "hi": "कृष्ण जी",
+      "aliases": {
+        "en": [
+          "Krishna",
+          "Krishn",
+          "Govind",
+          "Gopal",
+          "Kanha",
+          "Madhav",
+          "Vasudev",
+          "Dwarkadhish",
+          "Banke Bihari",
+          "Giriraj",
+          "Govardhan",
+          "KrishnaJi"
+        ],
+        "hi": [
+          "कृष्ण",
+          "गोविंद",
+          "गोपाल",
+          "कन्हा",
+          "माधव",
+          "वासुदेव",
+          "द्वारकाधीश",
+          "बांके बिहारी",
+          "गिरिराज",
+          "गोवर्धन"
+        ]
+      }
+    }
+  }
+]

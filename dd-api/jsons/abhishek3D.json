@@ -1,0 +1,98 @@
+[
+  {
+    "id": "Mata Vaishnodevi",
+    "dbId": "14",
+    "hiText": "माता वैष्णोदेवी",
+    "location": "Katra",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Vaishnodevi.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Vaishnodevi/vaishnodeviprefab_v2",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/vaishnodeviprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": "Shri Grishneshwar Jyotirling",
+    "dbId": "12",
+    "hiText": "श्री घृष्णेश्वर ज्योतिर्लिंग",
+    "location": "Verul",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Grishneshwar.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Grishneshwar/grishneshwarprefab_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/grishneshwarprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": "Shri Kedarnath Jyotirling",
+    "dbId": "9",
+    "hiText": "श्री केदारनाथ ज्योतिर्लिंग",
+    "location": "Kedarnath",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Kedarnath.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kedarnath/kedarnathprefab_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/kedarnathprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": "Shri Nageshwar Jyotirling",
+    "dbId": "10",
+    "hiText": "श्री नागेश्वर ज्योतिर्लिंग",
+    "location": "Dwarka",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Nageshwar.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Nageshwar/nageshwarprefab_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/nageshwarprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": "Shri Kashi Vishwanath Jyotirling",
+    "dbId": "6",
+    "hiText": "श्री काशी विश्वनाथ ज्योतिर्लिंग",
+    "location": "Varanasi",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/KashiVishwanath.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kashi/kashiprefab_v3",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/kashiprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": " Shri Baidyanath Jyotirling",
+    "dbId": "11",
+    "hiText": "श्री बैद्यनाथ ज्योतिर्लिंग",
+    "location": "Deoghar",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Baidhnath.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Badiyanath/baidyanathprefab_v2",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/baidyanathprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": " Shri Bhimashankar Jyotirling",
+    "dbId": "11",
+    "hiText": "श्री भीमाशंकर ज्योतिर्लिंग",
+    "location": "Pune",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Bhimashankar.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Bhimashankar/bhimashankarprefab_v2",
+      "ios": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanReact/3DAbhishek/IOS/bhimashankarprefab",
+      "osx": null
+    }
+  },
+  {
+    "id": " Shri Omkareshwar Jyotirling",
+    "dbId": "13",
+    "hiText": "श्री ओंकारेश्वर ज्योतिर्लिंग",
+    "location": "Khandwa",
+    "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Omkareshwar.jpg",
+    "abhishekUrl_3D": {
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Omkareshwar/omkareshwarprefab_v2",
+      "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/omkareshwarprefab",
+      "osx": null
+    }
+  }
+]

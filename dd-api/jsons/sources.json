@@ -1,0 +1,29 @@
+{
+  "content": {
+    "file": "premium-content_v2.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-content_v2.json"
+  },
+  "layout": {
+    "file": "premium-layout.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-layout.json"
+  },
+  "abhishek": {
+    "file": "abhishek3D.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/abhishek3D.json"
+  },
+  "home": {
+    "file": "latestdarshanlinksV2.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/aaj-ke-darshan/latestdarshanlinksV2.json"
+  },
+  "blogs": {
+    "file": "Blog.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/Blogs/ReactUI/Blog.json"
+  },
+  "live": {
+    "file": "LiveDarshan.sample.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshan/Jsons/NewUI/LiveDarshan.sample.json"
+  },
+  "sadhana": {
+    "file": "sadhana.json"
+  }
+}

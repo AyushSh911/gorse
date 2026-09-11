@@ -1,0 +1,114 @@
+{
+  "live": true,
+  "date": "2026-09-11",
+  "schedule": [
+    {
+      "id": "ram_lalla",
+      "templeName": {
+        "en": "Shri Ram Lalla",
+        "hi": "श्री राम लल्ला"
+      },
+      "city": {
+        "en": "Ayodhya",
+        "hi": "अयोध्या"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/RamLalla.jpg",
+      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Ram_Lalla.jpg",
+      "startTime": "06:10",
+      "endTime": "06:35",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://ddappcdn.techxr.co/AajKiAarti/ram_lalla/2026-07-21/stream.m3u8"
+    },
+    {
+      "id": "dwarkadhish",
+      "templeName": {
+        "en": "Shri Dwarkadhish",
+        "hi": "श्री द्वारकाधीश"
+      },
+      "city": {
+        "en": "Dwarka",
+        "hi": "द्वारका"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/Dwarkadesh.jpg",
+      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Dwarkadhish.jpg",
+      "startTime": "11:00",
+      "endTime": "11:55",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+    },
+    {
+      "id": "siddhivinayak",
+      "templeName": {
+        "en": "Shree Siddhivinayak",
+        "hi": "श्री सिद्धिविनायक"
+      },
+      "city": {
+        "en": "Mumbai",
+        "hi": "मुंबई"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/ShriSiddhivinayak.jpg",
+      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Shri_Siddhivinayak.jpg",
+      "startTime": "12:35",
+      "endTime": "13:30",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+    },
+    {
+      "id": "omkareshwara",
+      "templeName": {
+        "en": "Omkareshwara",
+        "hi": "ओंकारेश्वर"
+      },
+      "city": {
+        "en": "Omkareshwar",
+        "hi": "ओंकारेश्वर"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/Omkareshwara.jpg",
+      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Omkareshwar.jpg",
+      "startTime": "16:53",
+      "endTime": "17:45",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+    },
+    {
+      "id": "banke_bihari",
+      "templeName": {
+        "en": "Shri Banke Bihari",
+        "hi": "श्री बांके बिहारी"
+      },
+      "city": {
+        "en": "Vrindavan",
+        "hi": "वृंदावन"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/BankeBihari.jpg",
+      "notificationImageUrl": "",
+      "startTime": "18:05",
+      "endTime": "18:40",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+    },
+    {
+      "id": "salasar_balaji",
+      "templeName": {
+        "en": "Salasar Balaji",
+        "hi": "सालासर बालाजी"
+      },
+      "city": {
+        "en": "Salasar",
+        "hi": "सालासर"
+      },
+      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/SalasarBalaji.jpg",
+      "notificationImageUrl": "",
+      "startTime": "08:05",
+      "endTime": "10:00",
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+    }
+  ]
+}
