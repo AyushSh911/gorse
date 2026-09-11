@@ -1,0 +1,412 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Gorse – Find Items",
+    "description": "Local Gorse recommender endpoints for finding items.\n\nBase URL: http://localhost:8087 (gorse-server)\nDashboard: http://localhost:8088\n\nImport into ApiDog: File → Import → this JSON (Postman Collection v2.1).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8087"
+    },
+    {
+      "key": "userId",
+      "value": "bob"
+    },
+    {
+      "key": "itemId",
+      "value": "ollama:ollama"
+    },
+    {
+      "key": "category",
+      "value": "python"
+    },
+    {
+      "key": "n",
+      "value": "10"
+    },
+    {
+      "key": "apiKey",
+      "value": ""
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Recommend for user",
+      "item": [
+        {
+          "name": "GET recommend by user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/recommend/{{userId}}?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "recommend", "{{userId}}"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}",
+                  "description": "Number of items to return"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "description": "Filter by category",
+                  "disabled": true
+                },
+                {
+                  "key": "write-back-type",
+                  "value": "read",
+                  "description": "Auto-write read feedback",
+                  "disabled": true
+                },
+                {
+                  "key": "write-back-delay",
+                  "value": "10m",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Main personalized recommendation. Returns an array of item IDs."
+          },
+          "response": []
+        },
+        {
+          "name": "GET collaborative filtering",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/collaborative-filtering/{{userId}}?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "collaborative-filtering", "{{userId}}"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "disabled": true
+                },
+                {
+                  "key": "user-id",
+                  "value": "{{userId}}",
+                  "description": "Hide items already read by this user",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Collaborative-filtering candidates with scores: [{Id, Score}]."
+          },
+          "response": []
+        },
+        {
+          "name": "POST session recommend",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"FeedbackType\": \"star\",\n    \"UserId\": \"session-user\",\n    \"ItemId\": \"ollama:ollama\",\n    \"Value\": 1,\n    \"Timestamp\": \"2026-09-10T00:00:00Z\"\n  },\n  {\n    \"FeedbackType\": \"star\",\n    \"UserId\": \"session-user\",\n    \"ItemId\": \"huggingface:transformers\",\n    \"Value\": 1,\n    \"Timestamp\": \"2026-09-10T00:01:00Z\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/session/recommend?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "session", "recommend"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Recommend from in-request feedback (anonymous / session user)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Similar / neighbors",
+      "item": [
+        {
+          "name": "GET item-to-item neighbors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/item-to-item/neighbors/{{itemId}}?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "item-to-item", "neighbors", "{{itemId}}"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "disabled": true
+                },
+                {
+                  "key": "user-id",
+                  "value": "{{userId}}",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Similar items via configured recommender name `neighbors` (see config.toml)."
+          },
+          "response": []
+        },
+        {
+          "name": "GET item neighbors (legacy path)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/item/{{itemId}}/neighbors?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "item", "{{itemId}}", "neighbors"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Neighbors of an item (alternate path)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Latest / non-personalized",
+      "item": [
+        {
+          "name": "GET latest items",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/latest?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "latest"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "disabled": true
+                },
+                {
+                  "key": "user-id",
+                  "value": "{{userId}}",
+                  "description": "Hide items already read by this user",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Newest items by timestamp."
+          },
+          "response": []
+        },
+        {
+          "name": "GET non-personalized leaderboard",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/non-personalized/most_starred_weekly?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "non-personalized", "most_starred_weekly"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "category",
+                  "value": "{{category}}",
+                  "disabled": true
+                },
+                {
+                  "key": "user-id",
+                  "value": "{{userId}}",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Uses `most_starred_weekly` from default config.toml [[recommend.non-personalized]]."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Lookup items",
+      "item": [
+        {
+          "name": "GET list items",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/items?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "items"],
+              "query": [
+                {
+                  "key": "n",
+                  "value": "{{n}}"
+                },
+                {
+                  "key": "cursor",
+                  "value": "",
+                  "description": "Pagination cursor from previous response",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Paginated catalog listing. Response: { Cursor, Items }."
+          },
+          "response": []
+        },
+        {
+          "name": "GET one item",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/item/{{itemId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "item", "{{itemId}}"]
+            },
+            "description": "Fetch a single item by ID (IDs must not contain `/`)."
+          },
+          "response": []
+        },
+        {
+          "name": "GET feedbacks for item",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/item/{{itemId}}/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "item", "{{itemId}}", "feedback"]
+            },
+            "description": "All feedback events for an item."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET health ready",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/health/ready",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "health", "ready"]
+            },
+            "description": "Readiness probe for gorse-server."
+          },
+          "response": []
+        },
+        {
+          "name": "GET health live",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/health/live",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "health", "live"]
+            },
+            "description": "Liveness probe for gorse-server."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

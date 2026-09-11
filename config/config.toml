@@ -177,10 +177,13 @@ columns = ["item.Comment"]
 [recommend.data_source]
 
 # The feedback types for positive events.
-positive_feedback_types = ["star","like","read>=3"]
+positive_feedback_types = ["like", "download", "share", "watch>=5"]
 
 # The feedback types for read events.
-read_feedback_types = ["read"]
+read_feedback_types = ["read", "watch"]
+
+# Explicit hide / not-interested.
+negative_feedback_types = ["dislike"]
 
 # The time-to-live (days) of positive feedback, 0 means disabled. The default value is 0.
 positive_feedback_ttl = 0
@@ -191,10 +194,10 @@ item_ttl = 0
 [[recommend.non-personalized]]
 
 # The name of the leaderboard.
-name = "most_starred_weekly"
+name = "most_engaged_weekly"
 
 # The score function for items in the leaderboard.
-score = "count(feedback, .FeedbackType == 'star')"
+score = "count(feedback, .FeedbackType == 'like' || .FeedbackType == 'watch' || .FeedbackType == 'download')"
 
 # The filter for items in the leaderboard.
 filter = "(now() - item.Timestamp).Hours() < 168"
@@ -208,10 +211,10 @@ name = "neighbors"
 #   embedding: recommend by Euclidean distance of embeddings.
 #   tags: recommend by number of common tags.
 #   users: recommend by number of common users.
-type = "embedding"
+type = "tags"
 
-# The column of the item embeddings. Leave blank if type is "users".
-column = "item.Labels.embedding"
+# Tag source for neighbors (deities, temple, kind, circuits live in Labels.search_tags).
+column = "item.Labels.search_tags"
 
 [[recommend.user-to-user]]
 
@@ -231,14 +234,7 @@ name = "trending"
 
 # The script to fetch external recommended items. The script should return a list of item IDs.
 script = """
-const response = fetch("https://cdn.jsdelivr.net/gh/isboyjc/github-trending-api/data/daily/all.json");
-if (!response.ok) {
-  throw new Error(`${response.status} ${response.body}`);
-}
-const data = JSON.parse(response.body);
-data["items"].map((item) => {
-  return item["title"].toLowerCase().replace("/", ":");
-})
+[]
 """
 
 [recommend.collaborative]
@@ -288,7 +284,7 @@ type = "fm"
 cache_expire = "120h"
 
 # The recommenders used to fetch candidate items before ranking. The default values is all recommenders.
-recommenders = ["latest", "collaborative", "non-personalized/most_starred_weekly", "item-to-item/neighbors", "user-to-user/neighbors"]
+recommenders = ["latest", "collaborative", "non-personalized/most_engaged_weekly", "item-to-item/neighbors", "user-to-user/neighbors"]
 
 # The time period for model fitting. The default value is "60m".
 fit_period = "60m"
@@ -304,11 +300,11 @@ optimize_trials = 10
 
 # The prompt template for query.
 query_template = """
-You are a GitHub repository recommender system. Given a user is interested in the following repositories:
+You are a Durlabh Darshan recommender. The user engaged with:
 {% for repo in feedback -%}
 - {{ repo.Comment }}
 {% endfor -%}
-Please sort repositories by the user's interests.
+Please sort remaining darshan / bhakti items by the user's interests.
 """
 
 # The prompt template for documents.

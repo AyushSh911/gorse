@@ -1,0 +1,792 @@
+{
+  "info": {
+    "_postman_id": "dd-gorse-v1-recommend",
+    "name": "Durlabh Darshan – Gorse v1",
+    "description": "App-facing BFF in front of local Gorse.\n\nUserId is always auth profile.id (never DD userId).\n\nImport: ApiDog → Import → Postman Collection v2.1 → this file.\nServer: `cd dd-api && node server.mjs` (http://localhost:8090).\n\nSuggested run order in **1. Test flow**.\nCategories: vr360, theatre3d, flat2d, abhishek, temple, live, aarti, blog, reel, sadhana, tirth, bhakti.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "https://apis.hindusanatanapp.com/gorse" },
+    { "key": "baseUrlLocal", "value": "http://localhost:8090" },
+    { "key": "profileId", "value": "1" },
+    { "key": "n", "value": "10" },
+    { "key": "kind", "value": "vr360" },
+    { "key": "itemId", "value": "tirth:vr:159" },
+    { "key": "templeId", "value": "9" },
+    { "key": "liveId", "value": "kashi-vishwanath" },
+    { "key": "reelId", "value": "-OdmMLfPs1qNXeEUfRMG" },
+    { "key": "blogId", "value": "BE_078" },
+    { "key": "abhishekId", "value": "Shri Omkareshwar Jyotirling" },
+    { "key": "aartiId", "value": "69e60c21c075d7000163a09b" },
+    { "key": "sadhanaId", "value": "stotra-vishnu-sahasranama" },
+    { "key": "theatreId", "value": "bhakti:3d:series:14" }
+  ],
+  "item": [
+    {
+      "name": "1. Test flow",
+      "description": "Run these in order. Expect native ids like tirth:vr:159 — never show:… and never tirth:vr:160.",
+      "item": [
+        {
+          "name": "1. Health",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "health"]
+            },
+            "description": "200 when BFF + Gorse are ready. `{ ok: true }`."
+          },
+          "response": []
+        },
+        {
+          "name": "2. Latest VR (sanity)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=vr360",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "vr360" }
+              ]
+            },
+            "description": "Cold-start list. First hit should be tirth:vr:159 (or another high VR id). Must not include tirth:vr:160."
+          },
+          "response": []
+        },
+        {
+          "name": "3. Post watch on VR",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    {\n      \"kind\": \"vr360\",\n      \"id\": \"{{itemId}}\",\n      \"feedbackType\": \"watch\",\n      \"value\": 8\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            },
+            "description": "Simulates PlaybackSession.end at 80% watched. value is 0–10 (watch>=5 counts as positive). Wait a few seconds, then run step 4. Collaborative ranks may stay latest-like until Gorse workers finish."
+          },
+          "response": []
+        },
+        {
+          "name": "4. Recommend VR for profile",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=vr360",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "vr360" }
+              ]
+            },
+            "description": "`source` is recommend or latest (fallback). Items are `{ kind, id, score, itemId }`."
+          },
+          "response": []
+        },
+        {
+          "name": "5. Similar to that VR",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/similar?kind={{kind}}&id={{itemId}}&n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "similar"],
+              "query": [
+                { "key": "kind", "value": "{{kind}}" },
+                { "key": "id", "value": "{{itemId}}" },
+                { "key": "n", "value": "{{n}}" }
+              ]
+            },
+            "description": "Item-to-item neighbors. Empty until Gorse finishes neighbors; retry later."
+          },
+          "response": []
+        },
+        {
+          "name": "6. Guest recommend (no profileId)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?n={{n}}&category=vr360",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "vr360" },
+                { "key": "profileId", "value": "", "disabled": true }
+              ]
+            },
+            "description": "Logged-out path. Omits profileId so the BFF returns `{ source: \"latest\" }`."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "2. Catalog sync",
+      "item": [
+        {
+          "name": "POST sync catalog",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/sync",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "sync"]
+            },
+            "description": "Pulls CDN + Firebase reels + gateway aarti + sadhana into Gorse. Slow (~10s). Already synced if latest VR works. Expect ~811 items; reel > 0; live ~6; no errors."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "3. Recommend",
+      "item": [
+        {
+          "name": "All categories",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" }
+              ]
+            },
+            "description": "Unfiltered For You / empty-search ranking."
+          },
+          "response": []
+        },
+        {
+          "name": "VR",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=vr360",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "vr360" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Theatre 3D",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=theatre3d",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "theatre3d" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Temples (Aaj Ke Darshan)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=temple",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "temple" }
+              ]
+            },
+            "description": "`id` is the app temple id (e.g. \"9\"), not aaj:darshan:9."
+          },
+          "response": []
+        },
+        {
+          "name": "Live 3D",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=live",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "live" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reels",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=reel",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "reel" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Abhishek",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=abhishek",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "abhishek" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Blogs",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}&category=blog",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "recommend"],
+              "query": [
+                { "key": "profileId", "value": "{{profileId}}" },
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "blog" }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "4. Latest (guest / cold start)",
+      "item": [
+        {
+          "name": "Unfiltered",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [{ "key": "n", "value": "{{n}}" }]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "VR",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=vr360",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "vr360" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Theatre 3D",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=theatre3d",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "theatre3d" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Temples",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=temple",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "temple" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Live 3D",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=live",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "live" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aarti",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=aarti",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "aarti" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reels",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=reel",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "reel" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Blogs",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=blog",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "blog" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Abhishek",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=abhishek",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "abhishek" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Sadhana",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/latest?n={{n}}&category=sadhana",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "latest"],
+              "query": [
+                { "key": "n", "value": "{{n}}" },
+                { "key": "category", "value": "sadhana" }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "5. Similar",
+      "item": [
+        {
+          "name": "Similar VR",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/similar?kind=vr360&id={{itemId}}&n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "similar"],
+              "query": [
+                { "key": "kind", "value": "vr360" },
+                { "key": "id", "value": "{{itemId}}" },
+                { "key": "n", "value": "{{n}}" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Similar theatre",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/similar?kind=theatre3d&id={{theatreId}}&n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "similar"],
+              "query": [
+                { "key": "kind", "value": "theatre3d" },
+                { "key": "id", "value": "{{theatreId}}" },
+                { "key": "n", "value": "{{n}}" }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Similar temple",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/similar?kind=temple&id={{templeId}}&n={{n}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "similar"],
+              "query": [
+                { "key": "kind", "value": "temple" },
+                { "key": "id", "value": "{{templeId}}" },
+                { "key": "n", "value": "{{n}}" }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "6. Feedback",
+      "description": "All events keyed by profileId. kinds: vr360, theatre3d, flat2d, abhishek, temple, live, aarti, blog, reel, sadhana.",
+      "item": [
+        {
+          "name": "Watch (80%)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"watch\", \"value\": 8 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            },
+            "description": "value 0–10. Positive threshold is watch>=5 (50%+)."
+          },
+          "response": []
+        },
+        {
+          "name": "Read (open / play start)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"read\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Like",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"like\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unlike",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"kind\": \"vr360\",\n  \"id\": \"{{itemId}}\",\n  \"feedbackType\": \"like\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            },
+            "description": "Sends JSON body on DELETE (same as the RN client). If ApiDog strips DELETE bodies, use the POST unlike workaround is not needed — retry with body enabled."
+          },
+          "response": []
+        },
+        {
+          "name": "Download",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"download\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Share reel",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"reel\", \"id\": \"{{reelId}}\", \"feedbackType\": \"share\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read blog",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"blog\", \"id\": \"{{blogId}}\", \"feedbackType\": \"read\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Read reel",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"reel\", \"id\": \"{{reelId}}\", \"feedbackType\": \"read\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            },
+            "description": "id is the Firebase key (starts with -), not the YouTube id."
+          },
+          "response": []
+        },
+        {
+          "name": "Watch live",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"live\", \"id\": \"{{liveId}}\", \"feedbackType\": \"watch\", \"value\": 6 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Like temple",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"temple\", \"id\": \"{{templeId}}\", \"feedbackType\": \"like\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Like abhishek",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"abhishek\", \"id\": \"{{abhishekId}}\", \"feedbackType\": \"like\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            },
+            "description": "App id is the display name; BFF slugs it to abhishek:3d:…"
+          },
+          "response": []
+        },
+        {
+          "name": "Batch mixed events",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Accept", "value": "application/json" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"read\", \"value\": 1 },\n    { \"kind\": \"vr360\", \"id\": \"{{itemId}}\", \"feedbackType\": \"watch\", \"value\": 8 },\n    { \"kind\": \"temple\", \"id\": \"{{templeId}}\", \"feedbackType\": \"like\", \"value\": 1 },\n    { \"kind\": \"reel\", \"id\": \"{{reelId}}\", \"feedbackType\": \"share\", \"value\": 1 }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/v1/feedback",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "feedback"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

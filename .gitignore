@@ -119,4 +119,6 @@ $RECYCLE.BIN/
 
 .vscode
 
+dd-api/item-index.json
+
 # End of https://www.gitignore.io/api/go,windows,jetbrains

@@ -1,0 +1,4 @@
+# Daily catalog sync — install as /etc/cron.d/gorse-sync
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+0 4 * * * ayush curl -sS -m 300 -X POST http://127.0.0.1:8090/v1/sync >> /home/ayush/DurlabhDarshan/Gorge/logs/sync.log 2>&1

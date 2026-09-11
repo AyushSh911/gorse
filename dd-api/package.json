@@ -1,0 +1,10 @@
+{
+  "name": "dd-api",
+  "private": true,
+  "type": "module",
+  "description": "Durlabh Darshan BFF in front of Gorse",
+  "scripts": {
+    "start": "node server.mjs",
+    "sync": "node -e \"import('./catalog.mjs').then(m => m.syncCatalog().then(r => { console.log(JSON.stringify(r,null,2)); process.exit(0); }).catch(e => { console.error(e); process.exit(1); }))\""
+  }
+}

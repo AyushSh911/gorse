@@ -1,0 +1,74 @@
+# Gorse stack for GCP VM — MySQL lives in ~/DurlabhDarshan/MySQL (hostname gorse-mysql).
+# Shared network: docker network create durlabh-net
+#
+# Secrets: copy .env.example → .env and set MYSQL_PASSWORD (same as MySQL/.env).
+
+services:
+  worker:
+    image: zhenghaoz/gorse-worker
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8089:8089"
+    command: >
+      --master-host master --master-port 8086
+      --http-host 0.0.0.0 --http-port 8089
+      --log-path /var/log/gorse/worker.log
+      --cache-path /var/lib/gorse/worker_cache.data
+    volumes:
+      - gorse_log:/var/log/gorse
+      - worker_data:/var/lib/gorse
+    depends_on:
+      - master
+    networks:
+      - durlabh-net
+
+  server:
+    image: zhenghaoz/gorse-server
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8087:8087"
+    command: >
+      --master-host master --master-port 8086
+      --http-host 0.0.0.0 --http-port 8087
+      --log-path /var/log/gorse/server.log
+      --cache-path /var/lib/gorse/server_cache.data
+    volumes:
+      - gorse_log:/var/log/gorse
+      - server_data:/var/lib/gorse
+    depends_on:
+      - master
+    networks:
+      - durlabh-net
+
+  master:
+    image: zhenghaoz/gorse-master
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8086:8086"
+      - "127.0.0.1:8088:8088"
+    environment:
+      GORSE_CACHE_STORE: mysql://gorse:${MYSQL_PASSWORD}@tcp(gorse-mysql:3306)/gorse
+      GORSE_DATA_STORE: mysql://gorse:${MYSQL_PASSWORD}@tcp(gorse-mysql:3306)/gorse
+      GORSE_BLOB_URI: /var/lib/gorse/blob
+    command: >
+      -c /etc/gorse/config.toml
+      --log-path /var/log/gorse/master.log
+      --cache-path /var/lib/gorse/master
+    volumes:
+      - ./config/config.toml:/etc/gorse/config.toml
+      - gorse_log:/var/log/gorse
+      - master_data:/var/lib/gorse/master
+      - blob_data:/var/lib/gorse/blob
+    networks:
+      - durlabh-net
+
+volumes:
+  worker_data:
+  server_data:
+  master_data:
+  gorse_log:
+  blob_data:
+
+networks:
+  durlabh-net:
+    external: true
