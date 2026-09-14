@@ -1,0 +1,132 @@
+{
+  "info": {
+    "name": "dd-api (Gorse BFF)",
+    "description": "Durlabh Darshan recommendation BFF in front of Gorse. Import into Apidog / Postman.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://127.0.0.1:8090" },
+    { "key": "baseUrlProd", "value": "https://gorse.hindusanatanapp.com/gorse" },
+    { "key": "profileId", "value": "test-profile-1" },
+    { "key": "kind", "value": "vr360" },
+    { "key": "itemId", "value": "tirth:vr:001" },
+    { "key": "n", "value": "10" },
+    { "key": "category", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": "{{baseUrl}}/v1/health"
+      }
+    },
+    {
+      "name": "Sync catalog",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": "{{baseUrl}}/v1/sync",
+        "description": "Rebuilds catalog from dd-api/jsons + live reels/aarti; upserts/deletes Gorse items. Can take a while."
+      }
+    },
+    {
+      "name": "Recommend (personalized)",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/v1/recommend?profileId={{profileId}}&n={{n}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["v1", "recommend"],
+          "query": [
+            { "key": "profileId", "value": "{{profileId}}" },
+            { "key": "n", "value": "{{n}}" },
+            { "key": "category", "value": "{{category}}", "disabled": true }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Recommend (no profile → latest)",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/v1/recommend?n={{n}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["v1", "recommend"],
+          "query": [
+            { "key": "n", "value": "{{n}}" },
+            { "key": "category", "value": "{{category}}", "disabled": true }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Latest",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/v1/latest?n={{n}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["v1", "latest"],
+          "query": [
+            { "key": "n", "value": "{{n}}" },
+            { "key": "category", "value": "{{category}}", "disabled": true }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Similar",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/v1/similar?kind={{kind}}&id={{itemId}}&n={{n}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["v1", "similar"],
+          "query": [
+            { "key": "kind", "value": "{{kind}}" },
+            { "key": "id", "value": "{{itemId}}" },
+            { "key": "n", "value": "{{n}}" },
+            { "key": "category", "value": "{{category}}", "disabled": true }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Feedback (insert)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Accept", "value": "application/json" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"items\": [\n    {\n      \"kind\": \"{{kind}}\",\n      \"id\": \"{{itemId}}\",\n      \"feedbackType\": \"like\",\n      \"value\": 1\n    },\n    {\n      \"kind\": \"{{kind}}\",\n      \"id\": \"{{itemId}}\",\n      \"feedbackType\": \"read\",\n      \"value\": 1\n    }\n  ]\n}"
+        },
+        "url": "{{baseUrl}}/v1/feedback"
+      }
+    },
+    {
+      "name": "Feedback (delete)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          { "key": "Accept", "value": "application/json" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"profileId\": \"{{profileId}}\",\n  \"kind\": \"{{kind}}\",\n  \"id\": \"{{itemId}}\",\n  \"feedbackType\": \"like\"\n}"
+        },
+        "url": "{{baseUrl}}/v1/feedback"
+      }
+    }
+  ]
+}

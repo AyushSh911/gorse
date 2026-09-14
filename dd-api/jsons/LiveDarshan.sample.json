@@ -1,6 +1,6 @@
 {
   "live": true,
-  "date": "2026-09-11",
+  "date": "2026-09-12",
   "schedule": [
     {
       "id": "ram_lalla",
@@ -34,8 +34,8 @@
       "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Dwarkadhish.jpg",
       "startTime": "11:00",
       "endTime": "11:55",
-      "isLive": false,
-      "isOn": false,
+      "isLive": true,
+      "isOn": true,
       "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
     },
     {

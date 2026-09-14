@@ -1,0 +1,850 @@
+{
+  "schemaVersion": "3.0.0",
+  "trailers": [
+    {
+      "id": "tirth:trailer:013",
+      "namespace": "tirth",
+      "title": {
+        "en": "Kashi Chaurasi Ghats - Part 3",
+        "hi": "काशी चौरासी घाट - भाग 03"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/155.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/84ghatpart_03/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:155"
+      }
+    },
+    {
+      "id": "bhakti:trailer:023",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Maa Ashapura Temple Darshan",
+        "hi": "माँ अशवुरा मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ashapura_temple_thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ashapura_darshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:039"
+      }
+    },
+    {
+      "id": "tirth:trailer:014",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Ram Ki Ayodhya with Ashutosh Rana",
+        "hi": "श्री राम की अयोध्या आशुतोष राना के संग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/156_v3.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ayodhyadarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:156"
+      }
+    },
+    {
+      "id": "tirth:trailer:015",
+      "namespace": "tirth",
+      "title": {
+        "en": "Bada Ganpati",
+        "hi": "बाड़ा गणपति"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/136.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/badaganeshmandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:136"
+      }
+    },
+    {
+      "id": "tirth:trailer:016",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Bageshwar Dham",
+        "hi": "श्री बागेश्वर धाम"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShriBageshwarDham.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bageshwardham/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:101"
+      }
+    },
+    {
+      "id": "bhakti:trailer:024",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Bhartrihari Gufa Darshan",
+        "hi": "श्री भर्तृहरि गुफा दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeBhartrihariGufaMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhartriharigufa/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:025"
+      }
+    },
+    {
+      "id": "bhakti:trailer:025",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Bhimashankar Marathi Aarti",
+        "hi": "श्री भीमाशंकर मराठी आरती"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeBhimashankarMarathiAarti.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhimashankar/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:010"
+      }
+    },
+    {
+      "id": "bhakti:trailer:015",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Bhojeshwar Mandir Darshan",
+        "hi": "श्री भोजेश्वर मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeBhojeshwarMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhojpurmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:011"
+      }
+    },
+    {
+      "id": "bhakti:trailer:016",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Chind Dham Darshan",
+        "hi": "छिंद धाम दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeChhindDhamMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chindhamdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:013"
+      }
+    },
+    {
+      "id": "bhakti:trailer:026",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Chintaman Ganesh Mandir Darshan",
+        "hi": "श्री चिंतामण गणेश मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeChintamanGaneshMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chintamanganesh/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:026"
+      }
+    },
+    {
+      "id": "tirth:trailer:017",
+      "namespace": "tirth",
+      "title": {
+        "en": "Chitrakoot",
+        "hi": "चित्रकूट दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ChitrakootDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chitrakootdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:037"
+      }
+    },
+    {
+      "id": "tirth:trailer:018",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ganga Aarti",
+        "hi": "गंगा आरती"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/GangaAarti.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/gangaaarti/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:010"
+      }
+    },
+    
+    {
+      "id": "tirth:trailer:020",
+      "namespace": "tirth",
+      "title": {
+        "en": "Gopal Temple",
+        "hi": "गोपाल मंदिर"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/135.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/gopalmandir_indore/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:138"
+      }
+    },
+    {
+      "id": "bhakti:trailer:027",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Gopal Mandir Darshan",
+        "hi": "गोपाल मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/GopalMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/gopalmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:014"
+      }
+    },
+    {
+      "id": "tirth:trailer:021",
+      "namespace": "tirth",
+      "title": {
+        "en": "Kanak Bhavan",
+        "hi": "कनक भवन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/148.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/kanakbhawan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:148"
+      }
+    },
+    {
+      "id": "tirth:trailer:022",
+      "namespace": "tirth",
+      "title": {
+        "en": "Kashi Chaurasi Ghats - Part 2",
+        "hi": "काशी चौरासी घाटों - भाग 2"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/154.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/kashichaurasighat_part02/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:154"
+      }
+    },
+   
+    {
+      "id": "bhakti:trailer:021",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Khajarana Ganesh Mandir Darshan",
+        "hi": "श्री खजराना गणेश मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeKhajaranaGaneshMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/khajranaganeshmandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:017"
+      }
+    },
+    {
+      "id": "bhakti:trailer:017",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Maa Harsiddhi Devi Shaktipeeth Aarti",
+        "hi": "माँ हरिसिद्धी देवी शक्तिपीठ आरती"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/MaaHarsiddhiDeviShaktipeethAarti.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/maaharsiddhimandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:018"
+      }
+    },
+    {
+      "id": "bhakti:trailer:018",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Spiritual Journey of Maa Narmada",
+        "hi": "माँ नर्मदा की आध्यात्मिक यात्रा"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/NarmadaParikramaThumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/maanarmadaparikma/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:019"
+      }
+    },
+    {
+      "id": "tirth:trailer:023",
+      "namespace": "tirth",
+      "title": {
+        "en": "Nagchandreshwar Darshan",
+        "hi": "नागचंद्रेश्वर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/159.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/naagchandreshwardarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:159"
+      }
+    },
+    {
+      "id": "tirth:trailer:024",
+      "namespace": "tirth",
+      "title": {
+        "en": "Pitra Parvat Temple",
+        "hi": "पित्र पर्वत मंदिर"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/137.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/pitraparwatdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:137"
+      }
+    },
+    {
+      "id": "tirth:trailer:025",
+      "namespace": "tirth",
+      "title": {
+        "en": "Prachintam Shani",
+        "hi": "प्रचिन्तम शनि"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/143.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/prachintamshanimandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:143"
+      }
+    },
+    {
+      "id": "bhakti:trailer:028",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Ramghat Darshan",
+        "hi": "रामघाट दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/RamghatMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ramghatmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:022"
+      }
+    },
+    {
+      "id": "bhakti:trailer:029",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Sandipani Ashram Darshan",
+        "hi": "श्री संदीपनी आश्रम दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeSandipaniAshramDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/sandipniashram/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:030"
+      }
+    },
+    {
+      "id": "tirth:trailer:026",
+      "namespace": "tirth",
+      "title": {
+        "en": "Sawari Darshan",
+        "hi": "श्री महाकालेश्वर सवारी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeMahakaleshwarSawariDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/sawaridarishan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:002"
+      }
+    },
+    {
+      "id": "bhakti:trailer:031",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Sharda Mata Mandir Darshan",
+        "hi": "शारदा माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShardaMataMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shardamatamandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:024"
+      }
+    },
+      
+    {
+      "id": "bhakti:trailer:033",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Mangalnath Mandir Darshan",
+        "hi": "श्री मंगलनाथ मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeMangalnathMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shrimangalnathdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:029"
+      }
+    },
+    {
+      "id": "tirth:trailer:027",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Ranjeet Hanuman Ji",
+        "hi": "श्री रंजीत हनुमन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/142.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shriranjeethanumanji/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:142"
+      }
+    },
+    {
+      "id": "tirth:trailer:028",
+      "namespace": "tirth",
+      "title": {
+        "en": "Surya Kund Ayodhya",
+        "hi": "सूर्य कुंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/147.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/suryakundayodhya/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:147"
+      }
+    },
+   
+    {
+      "id": "tirth:trailer:029",
+      "namespace": "tirth",
+      "title": {
+        "en": "Yamunotri Dham 01",
+        "hi": "यमुनोत्री धाम"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Yamnotri_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/yamunotridham_01/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:044"
+      }
+    },
+    {
+      "id": "bhakti:trailer:034",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Jagannath Rath Yatra",
+        "hi": "श्री जगन्नाथ रथ यात्रा"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/JagannathRathYatra.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/jagannathrathyathra/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:015"
+      }
+    },
+    {
+      "id": "tirth:trailer:030",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Omkareshwar Jyotirlinga",
+        "hi": "श्री ओंकारेश्वर ज्योतिर्लिंग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/OmkareshwarMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/omkareshwar/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:027"
+      }
+    },
+    {
+      "id": "bhakti:trailer:035",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Radha Raman Ji Temple Darshan",
+        "hi": "राधा रामन जी मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/radha_raman_ji_thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/radharaman/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:021"
+      }
+    },
+    {
+      "id": "bhakti:trailer:036",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Ram Van Gaman Path & Ram Mandir Darshan",
+        "hi": "राम वन गमन पथ एवं राम मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/RamVanGamanPathEvamRamMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ramvangamanpath/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:023"
+      }
+    },
+    {
+      "id": "bhakti:trailer:037",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Char Dham Part-3 Kedarnath Darshan",
+        "hi": "चार धाम भाग-3 केदारनाथ दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/Kedarnath_Thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/kedarnathdham_03/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:016"
+      }
+    },
+    {
+      "id": "bhakti:trailer:038",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Banke Bihari Darshan",
+        "hi": "बाँके बिहारी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShriBankeBihari.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BankeBihari/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:009"
+      }
+    },
+    {
+      "id": "tirth:trailer:012",
+      "namespace": "tirth",
+      "title": {
+        "en": "Orchha Ram Vivah Darshan",
+        "hi": "ओरछा राम विवाह दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/OrchhaRamVivahDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/RamVivah/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:057"
+      }
+    },
+    {
+      "id": "bhakti:trailer:039",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Char Dham Part-4 Badrinath Darshan",
+        "hi": "चार धाम भाग-4 बद्रीनाथ दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/Badrinath_Thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/badrinath_dham_04/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:008"
+      }
+    },
+    {
+      "id": "bhakti:trailer:040",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Char Dham Part-1 Yamunotri Darshan",
+        "hi": "चार धाम भाग-1 यमुनोत्री दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/Yamnotri_Thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/yamunotridham_01/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:033"
+      }
+    },
+    {
+      "id": "tirth:trailer:009",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Gangotri Darshan",
+        "hi": "श्री गंगोत्रि दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3DVr/gangotri.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/gangotridham_02/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:045"
+      }
+    },
+    {
+      "id": "bhakti:trailer:041",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Annapurna Mata Mandir Darshan",
+        "hi": "अन्नपूर्णा माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/AnnapurnaMataMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/Annapurna/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:005"
+      }
+    },
+    {
+      "id": "bhakti:trailer:042",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Trimbakeshwar Mandir Darshan",
+        "hi": "त्र्यंबकेश्वर मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/TrimbakeshwarMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/TrimbakeshwarMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:031"
+      }
+    },
+    {
+      "id": "bhakti:trailer:043",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Kaal Bhairav Mandir Darshan",
+        "hi": "श्री काल भैरव मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeKaalBhairavMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/ShriKaalBhairavMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:028"
+      }
+    },
+       {
+      "id": "bhakti:trailer:045",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Bade Hanuman ji Darshan",
+        "hi": "बड़े हनुमान जी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/BadeHanumanJi_Thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BadeHanumanjiDarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:006"
+      }
+    },
+    
+    {
+      "id": "bhakti:trailer:047",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Shri Gadhkalika Mata Mandir Darshan",
+        "hi": "श्री गढ़कालिका माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeGadhkalikaMataMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/GadhkalikaMataMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:027"
+      }
+    },
+    {
+      "id": "bhakti:trailer:048",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Bhadrakali Shaktipeeth Darshan",
+        "hi": "भद्रकाली शक्तिपीठ दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/bhadrakali_shaktipeeth_thumbnail.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BhadrakaliShaktipeeth/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "bhakti:2d:video:007"
+      }
+    },
+    {
+      "id": "bhakti:trailer:014",
+      "namespace": "theatre",
+      "title": {
+        "en": "Hanuman Charit",
+        "hi": "हनुमन चरित्र"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/HanumanCharit.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/hanumancharittrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:03"
+      }
+    },
+    {
+      "id": "bhakti:trailer:013",
+      "namespace": "theatre",
+      "title": {
+        "en": "Aranya Kand",
+        "hi": "अरण्या कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/ArynyaKaand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/aranyakandtrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:08"
+      }
+    },
+    {
+      "id": "bhakti:trailer:012",
+      "namespace": "theatre",
+      "title": {
+        "en": "Kishkindha Kand",
+        "hi": "किश्किंधा कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/KishkindaKand.jpg",
+      "videoUrl": "https://storage.googleapis.com/durlabh_darshan/ShubhDarshan/Videos/Trailers/kishkindhatrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:09"
+      }
+    },
+    {
+      "id": "bhakti:trailer:011",
+      "namespace": "theatre",
+      "title": {
+        "en": "Sundar Kand",
+        "hi": "सुंदर कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/SundarKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/sundarkandtrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:10"
+      }
+    },
+    {
+      "id": "bhakti:trailer:010",
+      "namespace": "theatre",
+      "title": {
+        "en": "Lanka Kand",
+        "hi": "लंका कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/LankaKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/lankakandtrailer/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:11"
+      }
+    },
+    {
+      "id": "bhakti:trailer:009",
+      "namespace": "theatre",
+      "title": {
+        "en": "Uttar Kand",
+        "hi": "उत्तर कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/UttarKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/UttarKand/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:12"
+      }
+    },
+    {
+      "id": "bhakti:trailer:008",
+      "namespace": "theatre",
+      "title": {
+        "en": "Baal Kand",
+        "hi": "बाल कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/BaalKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/BaalKand/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:3d:series:06"
+      }
+    },
+    {
+      "id": "bhakti:trailer:007",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Hanuman Charit",
+        "hi": "हनुमन चरित्र"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/HanumanCharit.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/hanumancharittrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:05"
+      }
+    },
+    {
+      "id": "bhakti:trailer:006",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Aranya Kand",
+        "hi": "अरण्या कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/ArynyaKaand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/aranyakandtrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:08"
+      }
+    },
+    {
+      "id": "bhakti:trailer:005",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Kishkindha Kand",
+        "hi": "किश्किंधा कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/KishkindaKand.jpg",
+      "videoUrl": "https://storage.googleapis.com/durlabh_darshan/ShubhDarshan/Videos/Trailers/kishkindhatrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:09"
+      }
+    },
+    {
+      "id": "bhakti:trailer:004",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Sundar Kand",
+        "hi": "सुंदर कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/SundarKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/sundarkandtrim/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:10"
+      }
+    },
+    {
+      "id": "bhakti:trailer:003",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Lanka Kand",
+        "hi": "लंका कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/LankaKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/lankakandtrailer/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:11"
+      }
+    },
+    {
+      "id": "bhakti:trailer:002",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Uttar Kand",
+        "hi": "उत्तर कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/UttarKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/UttarKand/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:12"
+      }
+    },
+    {
+      "id": "bhakti:trailer:001",
+      "namespace": "bhakti",
+      "title": {
+        "en": "Baal Kand",
+        "hi": "बाल कंड"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/BaalKand.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/BaalKand/master.m3u8",
+      "target": {
+        "kind": "webseries",
+        "id": "bhakti:2d:series:06"
+      }
+    }
+  ]
+}

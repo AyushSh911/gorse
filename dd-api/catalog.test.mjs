@@ -137,6 +137,14 @@ describe("loadSource", () => {
     const layout = await loadSource("layout");
     assert.ok(layout?.status);
   });
+
+  it("reads premium-trailers.json from jsons/", async () => {
+    const file = await loadSource("trailers");
+    assert.ok(Array.isArray(file?.trailers));
+    assert.ok(file.trailers.length > 0);
+    assert.ok(file.trailers[0].id);
+    assert.ok(file.trailers[0].target?.id);
+  });
 });
 
 describe("fromShows + keepSet", () => {

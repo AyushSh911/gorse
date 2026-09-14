@@ -701,6 +701,14 @@
     },
     "darshans": [
       {
+        "date": "2026-09-12",
+        "slot": "morning",
+        "version": 1,
+        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-12/morning.jpg",
+        "videoUrl": null,
+        "jsonUrl": null
+      },
+      {
         "date": "2026-09-11",
         "slot": "morning",
         "version": 1,
@@ -729,14 +737,6 @@
         "slot": "morning",
         "version": 1,
         "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-08/morning.jpg",
-        "videoUrl": null,
-        "jsonUrl": null
-      },
-      {
-        "date": "2026-09-07",
-        "slot": "morning",
-        "version": 1,
-        "imageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanAssets/App/aaj-ke-darshan/SalasarBalaji/2026-09-07/morning.jpg",
         "videoUrl": null,
         "jsonUrl": null
       }
