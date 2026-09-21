@@ -12,6 +12,11 @@ Environment=HOST=127.0.0.1
 Environment=PORT=8090
 Environment=GORSE_URL=http://127.0.0.1:8087
 Environment=SKIP_BOOT_SYNC=1
+Environment=NODE_OPTIONS=--max-old-space-size=256
+Environment=MEM_LOW_MB=350
+# Soft/hard cgroup caps so the BFF cannot crowd out MySQL/Gorse.
+MemoryHigh=400M
+MemoryMax=512M
 ExecStart=/usr/bin/node server.mjs
 Restart=always
 RestartSec=3

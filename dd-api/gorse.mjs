@@ -1,3 +1,5 @@
+import { memoryGate } from "./memguard.mjs";
+
 const GORSE_URL = process.env.GORSE_URL || "http://127.0.0.1:8087";
 
 async function gorse(method, path, body) {
@@ -36,6 +38,7 @@ export async function upsertItems(items) {
   const chunk = 80;
   let affected = 0;
   for (let i = 0; i < items.length; i += chunk) {
+    await memoryGate("upsert");
     const part = items.slice(i, i + chunk);
     const r = await gorse("POST", "/api/items", part);
     affected += r?.RowAffected || part.length;
@@ -49,6 +52,7 @@ export async function deleteItems(ids) {
   let affected = 0;
   for (const id of ids) {
     if (!id) continue;
+    await memoryGate("delete");
     try {
       await gorse("DELETE", `/api/item/${encodeURIComponent(id)}`);
       affected += 1;

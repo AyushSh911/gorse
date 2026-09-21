@@ -7,6 +7,9 @@ services:
   worker:
     image: zhenghaoz/gorse-worker
     restart: unless-stopped
+    # Cap training spikes so OOM stays inside this cgroup (VM stays up).
+    # 4g on 8GB host — full quality MF+FM; worker may restart, SSH/MySQL stay up.
+    mem_limit: 4096m
     ports:
       - "127.0.0.1:8089:8089"
     command: >
@@ -25,6 +28,7 @@ services:
   server:
     image: zhenghaoz/gorse-server
     restart: unless-stopped
+    mem_limit: 512m
     ports:
       - "127.0.0.1:8087:8087"
     command: >
@@ -43,6 +47,7 @@ services:
   master:
     image: zhenghaoz/gorse-master
     restart: unless-stopped
+    mem_limit: 768m
     ports:
       - "127.0.0.1:8086:8086"
       - "127.0.0.1:8088:8088"

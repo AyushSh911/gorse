@@ -26,8 +26,5 @@
   "live": {
     "file": "LiveDarshan.sample.json",
     "url": "https://ddappcdn.techxr.co/DurlabhDarshan/Jsons/NewUI/LiveDarshan.sample.json"
-  },
-  "sadhana": {
-    "file": "sadhana.json"
   }
 }

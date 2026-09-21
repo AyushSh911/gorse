@@ -9,6 +9,7 @@ import {
 } from "./ids.mjs";
 import { buildLabels } from "./labels.mjs";
 import { upsertItems, deleteItems } from "./gorse.mjs";
+import { memoryGate } from "./memguard.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const JSONS_DIR = join(ROOT, "jsons");
@@ -634,7 +635,9 @@ export async function syncCatalog() {
   if (itemIndex.size === 0) await loadItemIndex();
   const oldIndex = new Map(itemIndex);
 
+  await memoryGate("sync-build");
   const built = await buildCatalogItems();
+  await memoryGate("sync-upsert");
   const upsert = await upsertItems(built.items);
 
   const { toDelete, added, updated } = diffSourceIds(
