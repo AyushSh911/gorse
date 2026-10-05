@@ -16,6 +16,9 @@ services:
       --master-host master --master-port 8086
       --http-host 0.0.0.0 --http-port 8089
       --log-path /var/log/gorse/worker.log
+      --log-max-size 100
+      --log-max-backups 2
+      --log-max-age 1
       --cache-path /var/lib/gorse/worker_cache.data
     volumes:
       - gorse_log:/var/log/gorse
@@ -35,6 +38,9 @@ services:
       --master-host master --master-port 8086
       --http-host 0.0.0.0 --http-port 8087
       --log-path /var/log/gorse/server.log
+      --log-max-size 100
+      --log-max-backups 2
+      --log-max-age 1
       --cache-path /var/lib/gorse/server_cache.data
     volumes:
       - gorse_log:/var/log/gorse
@@ -58,6 +64,9 @@ services:
     command: >
       -c /etc/gorse/config.toml
       --log-path /var/log/gorse/master.log
+      --log-max-size 100
+      --log-max-backups 2
+      --log-max-age 1
       --cache-path /var/lib/gorse/master
     volumes:
       - ./config/config.toml:/etc/gorse/config.toml

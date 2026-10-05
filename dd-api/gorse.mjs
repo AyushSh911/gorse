@@ -87,6 +87,18 @@ export async function insertFeedback(rows) {
   return gorse("POST", "/api/feedback", rows);
 }
 
+export async function userFeedback(userId) {
+  const id = String(userId || "").trim();
+  if (!id) return [];
+  try {
+    const list = await gorse("GET", `/api/user/${encodeURIComponent(id)}/feedback`);
+    return Array.isArray(list) ? list : [];
+  } catch (e) {
+    if (e.status === 404) return [];
+    throw e;
+  }
+}
+
 export async function deleteFeedback(type, userId, itemId) {
   const p = `/api/feedback/${encodeURIComponent(type)}/${encodeURIComponent(userId)}/${encodeURIComponent(itemId)}`;
   return gorse("DELETE", p);

@@ -6,6 +6,12 @@ import {
   toGorseItemId,
 } from "./ids.mjs";
 import * as gorse from "./gorse.mjs";
+import {
+  applyFreshness,
+  catalogPool,
+  impressionRows,
+  parseFeedback,
+} from "./freshness.mjs";
 
 const PORT = Number(process.env.PORT || 8090);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -48,6 +54,8 @@ function mapHits(rows) {
       id,
       score: r.Score,
       itemId: r.Id,
+      watched: Boolean(r.watched),
+      fresh: Boolean(r.fresh),
     };
   }).filter((x) => x.kind && x.id);
 }
@@ -129,15 +137,38 @@ const server = http.createServer(async (req, res) => {
       const category = url.searchParams.get("category") || undefined;
       if (!profileId) {
         const hits = mapHits(await gorse.latest(n, category));
-        return send(res, 200, { source: "latest", items: hits });
+        return send(res, 200, { source: "latest", items: hits, watchedIds: [] });
       }
+      let source = "recommend";
       let hits = mapHits(await gorse.recommend(profileId, n * 3, category));
       hits = dedupeSeries(hits).slice(0, n);
       if (!hits.length) {
         hits = mapHits(await gorse.latest(n, category));
-        return send(res, 200, { source: "latest", items: hits });
+        source = "latest";
       }
-      return send(res, 200, { source: "recommend", items: hits });
+      const { watched, impressions } = parseFeedback(await gorse.userFeedback(profileId));
+      const fresh = applyFreshness({
+        hits,
+        catalog: catalogPool(itemIndex, category),
+        profileId,
+        watched,
+        impressions,
+        now: Date.now(),
+      });
+      if (fresh.newImpressionIds.length) {
+        try {
+          await gorse.insertFeedback(
+            impressionRows(profileId, fresh.newImpressionIds, new Date().toISOString()),
+          );
+        } catch (e) {
+          console.error("impression insert failed", e);
+        }
+      }
+      return send(res, 200, {
+        source,
+        items: fresh.items,
+        watchedIds: fresh.watchedIds,
+      });
     }
 
     if (req.method === "GET" && url.pathname === "/v1/similar") {
