@@ -42,21 +42,32 @@ const (
 )
 
 func init() {
-	Register([]string{storage.XvecPrefix}, func(path, tablePrefix string, _ ...storage.Option) (Database, error) {
+	Register([]string{storage.XvecPrefix}, func(path, tablePrefix string, opts ...storage.Option) (Database, error) {
 		root := strings.TrimPrefix(path, storage.XvecPrefix)
 		if root == "" {
 			return nil, errors.New("xvec path is empty")
 		}
-		return &Xvec{root: root, tablePrefix: tablePrefix}, nil
+		opt := storage.NewOptions(opts...)
+		return &Xvec{
+			root:        root,
+			tablePrefix: tablePrefix,
+			numJobs:     opt.NumJobs,
+			collectionOptions: xvec.CollectionOptions{
+				EnableMmap:            true,
+				SkipUnindexedSegments: opt.SkipUnindexedSegments,
+			},
+		}, nil
 	})
 }
 
 // Xvec stores each Gorse vector collection in a xvec collection directory.
 type Xvec struct {
-	root        string
-	tablePrefix string
-	collections sync.Map // map[string]*xvec.Collection
-	closed      atomic.Bool
+	root              string
+	tablePrefix       string
+	collections       sync.Map // map[string]*xvec.Collection
+	closed            atomic.Bool
+	numJobs           int
+	collectionOptions xvec.CollectionOptions
 }
 
 func (db *Xvec) Init() error {
@@ -78,6 +89,14 @@ func (db *Xvec) Init() error {
 	})
 	if hasCollections {
 		return nil
+	}
+	if db.numJobs > 0 {
+		cfg := xvec.NewRuntimeConfig()
+		cfg.QueryConcurrency = db.numJobs
+		cfg.OptimizeConcurrency = db.numJobs
+		if err := xvec.ConfigureRuntime(cfg); err != nil {
+			return errors.WithStack(err)
+		}
 	}
 	type openedCollection struct {
 		name       string
@@ -106,7 +125,7 @@ func (db *Xvec) Init() error {
 		if name == "" {
 			continue
 		}
-		collection, err := xvec.Open(context.Background(), filepath.Join(db.root, entry.Name()), xvec.CollectionOptions{})
+		collection, err := xvec.Open(context.Background(), filepath.Join(db.root, entry.Name()), db.collectionOptions)
 		if err != nil {
 			cleanup()
 			return errors.WithStack(err)
@@ -179,7 +198,7 @@ func (db *Xvec) DescribeCollection(ctx context.Context, name string) (*Collectio
 	}
 	var metric xvec.MetricType
 	switch params := field.EffectiveIndex().(type) {
-	case xvec.DiskANNIndexParams:
+	case xvec.HNSWIndexParams:
 		metric = params.Metric
 	case xvec.FlatIndexParams:
 		metric = params.Metric
@@ -192,7 +211,7 @@ func (db *Xvec) DescribeCollection(ctx context.Context, name string) (*Collectio
 	}
 	return &CollectionInfo{
 		Name: name, Dimension: int(field.Dimension), Distance: distance,
-		VectorConfig: VectorConfig{Type: QuantizationNone},
+		Type: QuantizationNone,
 	}, nil
 }
 
@@ -209,7 +228,7 @@ func (db *Xvec) AddCollection(ctx context.Context, name string, dimensions int, 
 	if _, found := db.collections.Load(name); found {
 		return fmt.Errorf("collection %s %w", name, storage.ErrAlreadyExists)
 	}
-	collection, err := xvec.CreateAndOpen(ctx, filepath.Join(db.root, physicalName), schema, xvec.CollectionOptions{})
+	collection, err := xvec.CreateAndOpen(ctx, filepath.Join(db.root, physicalName), schema, db.collectionOptions)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -247,7 +266,8 @@ func (db *Xvec) collectionSchema(ctx context.Context, name string, dimensions in
 		}
 		vectorField = xvec.FieldSchema{Name: xvecVectorField, DataType: xvec.DataTypeSparseVectorFP32, Index: xvec.NewFlatIndexParams(metric)}
 	} else {
-		vectorField = xvec.FieldSchema{Name: xvecVectorField, DataType: xvec.DataTypeVectorFP16, Dimension: uint32(dimensions), Index: xvec.NewDiskANNIndexParams(metric)}
+		index := xvec.NewHNSWIndexParams(metric)
+		vectorField = xvec.FieldSchema{Name: xvecVectorField, DataType: xvec.DataTypeVectorFP16, Dimension: uint32(dimensions), Index: index}
 	}
 	physicalName := db.tablePrefix + name
 	schema := xvec.NewCollectionSchema(physicalName,
@@ -408,7 +428,7 @@ func (db *Xvec) QueryVectors(ctx context.Context, name string, q Vector, categor
 		query.Params = xvec.NewFlatQueryParams()
 	} else {
 		query.DenseVector = xvecVectorFP16(q)
-		query.Params = xvec.NewDiskANNQueryParams()
+		query.Params = xvec.NewHNSWQueryParams()
 	}
 	documents, err := collection.Query(ctx, query)
 	if err != nil {
@@ -423,7 +443,7 @@ func (db *Xvec) QueryVectors(ctx context.Context, name string, q Vector, categor
 		if q.IsSparse() && document.Score == 0 {
 			continue
 		}
-		result := ScoredVector{Vector: Vector{Id: document.PrimaryKey}, Score: document.Score}
+		result := ScoredVector{Id: document.PrimaryKey, Score: document.Score}
 		if info.Distance != Dot {
 			result.Score = -result.Score
 		}

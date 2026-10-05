@@ -400,8 +400,9 @@ func (m *Master) LoadDataFromDatabase(
 	for batchItems := range itemChan {
 		snapshot.ItemCount += int64(len(batchItems))
 		snapshot.ItemBytes += deepSize(batchItems)
-		items = append(items, batchItems...)
 		for _, item := range batchItems {
+			labels := ctr.ConvertLabels(item.Labels)
+			item.Labels = ctr.ConvertEmbeddingLabels(item.Labels)
 			dataSet.AddItem(item)
 			itemIndex := dataSet.GetItemDict().Id(item.ItemId)
 			if len(itemLabels) == int(itemIndex) {
@@ -411,7 +412,6 @@ func (m *Master) LoadDataFromDatabase(
 				itemEmbeddings = append(itemEmbeddings, nil)
 			}
 			// load labels
-			labels := ctr.ConvertLabels(item.Labels)
 			itemLabels[itemIndex] = make([]lo.Tuple2[int32, float32], 0, len(labels))
 			for _, feature := range labels {
 				itemLabelCount[feature.Name]++
@@ -451,6 +451,7 @@ func (m *Master) LoadDataFromDatabase(
 				}
 				itemEmbeddingDimension[itemEmbeddingIndex][len(itemEmbeddings[itemIndex][itemEmbeddingIndex])]++
 			}
+			items = append(items, item)
 		}
 		span.Add(len(batchItems))
 	}
@@ -482,6 +483,14 @@ func (m *Master) LoadDataFromDatabase(
 		return items[i].ItemId < items[j].ItemId
 	})
 	itemGroups := parallel.Split(items, m.Config.Master.NumJobs)
+	// SQL collation can differ from Go's item ID ordering. Locate feedback
+	// items directly instead of scanning the group or assuming matching order.
+	itemPositions := make([]int, dataSet.CountItems())
+	for _, group := range itemGroups {
+		for index, item := range group {
+			itemPositions[dataSet.GetItemDict().Id(item.ItemId)] = index
+		}
+	}
 
 	// STEP 3: pull explicit negative feedback (highest priority)
 	var mu sync.Mutex
@@ -601,12 +610,7 @@ func (m *Master) LoadDataFromDatabase(
 					itemFeedback = itemFeedback[:0]
 					itemFeedback = append(itemFeedback, f)
 				}
-				// find item group index
-				for itemGroupIndex = 0; itemGroupIndex < len(itemGroups[i]); itemGroupIndex++ {
-					if itemGroups[i][itemGroupIndex].ItemId == f.ItemId {
-						break
-					}
-				}
+				itemGroupIndex = itemPositions[itemIndex]
 				dataSet.AddFeedback(f.UserId, f.ItemId, f.Timestamp)
 			}
 			span.Add(len(feedback))
@@ -822,6 +826,7 @@ func (m *Master) updateItemToItem(parent context.Context, dataset *dataset.Datas
 	}
 	for _, recommender := range itemToItemRecommenders {
 		if err := recommender.Clean(); err != nil {
+			span.Fail(err)
 			return errors.WithStack(err)
 		}
 	}
@@ -870,6 +875,7 @@ func (m *Master) updateUserToUser(parent context.Context, dataset *dataset.Datas
 	}
 	for _, recommender := range userToUserRecommenders {
 		if err := recommender.Clean(); err != nil {
+			span.Fail(err)
 			return errors.WithStack(err)
 		}
 	}
@@ -959,6 +965,10 @@ func (m *Master) trainCollaborativeFiltering(parent context.Context, trainSet, t
 			return errors.WithStack(err)
 		}
 		indexSpan.Add(end - start)
+	}
+	if err := m.VectorClient.Optimize(indexCtx, collection); err != nil {
+		indexSpan.Fail(err)
+		return errors.WithStack(err)
 	}
 	indexSpan.End()
 	span.Add(1)
