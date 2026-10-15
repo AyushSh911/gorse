@@ -1,5 +1,5 @@
 export const IMPRESSION_TYPE = "impression";
-export const FRESHNESS_MS = 3 * 24 * 60 * 60 * 1000;
+export const FRESHNESS_MS = 24 * 60 * 60 * 1000;
 
 export function parseFeedback(rows) {
   const watched = new Set();
@@ -22,7 +22,7 @@ export function parseFeedback(rows) {
 export function swapQuota(n) {
   const count = Math.max(0, Number(n) || 0);
   if (count === 0) return 0;
-  return Math.max(1, Math.min(3, Math.round(count / 4)));
+  return Math.max(1, Math.min(8, Math.round(count / 2)));
 }
 
 export function windowEpoch(now, windowMs = FRESHNESS_MS) {

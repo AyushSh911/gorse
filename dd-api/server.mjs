@@ -12,6 +12,7 @@ import {
   impressionRows,
   parseFeedback,
 } from "./freshness.mjs";
+import { pinFeatured } from "./pin.mjs";
 
 const PORT = Number(process.env.PORT || 8090);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -136,7 +137,11 @@ const server = http.createServer(async (req, res) => {
       const n = Number(url.searchParams.get("n") || 20);
       const category = url.searchParams.get("category") || undefined;
       if (!profileId) {
-        const hits = mapHits(await gorse.latest(n, category));
+        const hits = pinFeatured(mapHits(await gorse.latest(n, category)), {
+          category,
+          n,
+          now: Date.now(),
+        });
         return send(res, 200, { source: "latest", items: hits, watchedIds: [] });
       }
       let source = "recommend";
@@ -166,7 +171,7 @@ const server = http.createServer(async (req, res) => {
       }
       return send(res, 200, {
         source,
-        items: fresh.items,
+        items: pinFeatured(fresh.items, { category, n, now: Date.now() }),
         watchedIds: fresh.watchedIds,
       });
     }
@@ -185,7 +190,11 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/v1/latest") {
       const n = Number(url.searchParams.get("n") || 20);
       const category = url.searchParams.get("category") || undefined;
-      const hits = mapHits(await gorse.latest(n, category));
+      const hits = pinFeatured(mapHits(await gorse.latest(n, category)), {
+        category,
+        n,
+        now: Date.now(),
+      });
       return send(res, 200, { items: hits });
     }
 

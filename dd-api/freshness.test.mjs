@@ -38,10 +38,10 @@ describe("parseFeedback", () => {
 });
 
 describe("swapQuota", () => {
-  it("is 3 for a 12-item rail and stays between 1 and 3", () => {
-    assert.equal(swapQuota(12), 3);
-    assert.equal(swapQuota(8), 2);
-    assert.equal(swapQuota(40), 3);
+  it("is half the row and stays between 1 and 8", () => {
+    assert.equal(swapQuota(12), 6);
+    assert.equal(swapQuota(8), 4);
+    assert.equal(swapQuota(40), 8);
     assert.equal(swapQuota(1), 1);
     assert.equal(swapQuota(0), 0);
   });
@@ -80,7 +80,7 @@ describe("applyFreshness", () => {
     assert.equal(out.items.find((x) => x.id === "a").watched, false);
   });
 
-  it("swaps stale shown items for unseen catalog items after 3 days", () => {
+  it("swaps stale shown items for unseen catalog items after 1 day", () => {
     const shown = now - FRESHNESS_MS;
     const out = applyFreshness({
       hits,
@@ -103,17 +103,17 @@ describe("applyFreshness", () => {
     assert.deepEqual(out.newImpressionIds.sort(), [...freshIds].sort());
   });
 
-  it("does not swap items shown inside the current 3-day window", () => {
+  it("does not swap items shown inside the current 1-day window", () => {
     const out = applyFreshness({
       hits,
       catalog: pool,
       profileId: "u1",
       watched: new Set(),
       impressions: new Map([
-        ["a", now - DAY],
-        ["b", now - DAY],
-        ["c", now - DAY],
-        ["d", now - DAY],
+        ["a", now - DAY / 2],
+        ["b", now - DAY / 2],
+        ["c", now - DAY / 2],
+        ["d", now - DAY / 2],
       ]),
       now,
     });
@@ -161,8 +161,8 @@ describe("applyFreshness", () => {
     const args = { hits, catalog: pool, watched: new Set(), impressions, now };
     const a = applyFreshness({ ...args, profileId: "alice" }).items.filter((x) => x.fresh).map((x) => x.id);
     const b = applyFreshness({ ...args, profileId: "bob" }).items.filter((x) => x.fresh).map((x) => x.id);
-    assert.equal(a.length, 1);
-    assert.equal(b.length, 1);
+    assert.equal(a.length, swapQuota(hits.length));
+    assert.equal(b.length, swapQuota(hits.length));
     assert.notEqual(a[0], b[0]);
   });
 });
