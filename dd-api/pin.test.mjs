@@ -22,6 +22,18 @@ describe("pinFeatured", () => {
     assert.deepEqual(out.slice(1).map((x) => x.id), ["tirth:vr:001", "tirth:vr:002"]);
   });
 
+  it("runs until end of 15 Nov 2026 IST", () => {
+    assert.equal(PIN_UNTIL, Date.parse("2026-11-15T23:59:59.000+05:30"));
+  });
+
+  it("is active from 27 Oct 2026 for the vr360 category and no category", () => {
+    const now = Date.parse("2026-10-27T10:00:00.000+05:30");
+    for (const category of ["vr360", undefined]) {
+      const out = pinFeatured([hit("tirth:vr:001")], { category, n: 5, now });
+      assert.equal(out[0].id, PIN_ID);
+    }
+  });
+
   it("leaves the list unchanged after the deadline", () => {
     const items = [hit("tirth:vr:001")];
     const out = pinFeatured(items, { n: 5, now: after });
