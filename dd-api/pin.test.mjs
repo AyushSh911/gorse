@@ -10,7 +10,8 @@ const before = PIN_UNTIL - 1000;
 const after = PIN_UNTIL + 1000;
 
 describe("pinFeatured", () => {
-  it("puts tirth:vr:161 first before the deadline", () => {
+  it("puts tirth:vr:163 first before the deadline", () => {
+    assert.equal(PIN_ID, "tirth:vr:163");
     const out = pinFeatured([hit("tirth:vr:001"), hit("tirth:vr:002")], {
       n: 5,
       now: before,

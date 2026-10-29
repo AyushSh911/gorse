@@ -1,4 +1,4 @@
-export const PIN_ID = "tirth:vr:161";
+export const PIN_ID = "tirth:vr:163";
 export const PIN_KIND = "vr360";
 // End of 15 Nov 2026 IST (20 days from 27 Oct).
 export const PIN_UNTIL = Date.parse("2026-11-15T18:29:59.000Z");
