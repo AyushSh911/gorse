@@ -5,7 +5,8 @@
 
 services:
   worker:
-    image: zhenghaoz/gorse-worker
+    # nightly built from 2145bd0 (v0.6.0-alpha.1-2). Rollback: gorse-rollback/worker:v0.5.11 on the VM.
+    image: zhenghaoz/gorse-worker@sha256:d0369c617d73553b3802d855eed75901b63b6ecfbf4fe319ad2977cc802fbf8d
     restart: unless-stopped
     # Cap training spikes so OOM stays inside this cgroup (VM stays up).
     # 4g on 8GB host — full quality MF+FM; worker may restart, SSH/MySQL stay up.
@@ -29,7 +30,7 @@ services:
       - durlabh-net
 
   server:
-    image: zhenghaoz/gorse-server
+    image: zhenghaoz/gorse-server@sha256:2cc55efc86f59b33ef322db7fec5b8b72e0a0da9c00e3a34a3fb152bd256488d
     restart: unless-stopped
     mem_limit: 512m
     ports:
@@ -51,7 +52,7 @@ services:
       - durlabh-net
 
   master:
-    image: zhenghaoz/gorse-master
+    image: zhenghaoz/gorse-master@sha256:4e18537398d428e087b2f559307ff5b51fca67eca3577c77331475bdbeb389b8
     restart: unless-stopped
     mem_limit: 768m
     ports:
@@ -61,6 +62,8 @@ services:
       GORSE_CACHE_STORE: mysql://gorse:${MYSQL_PASSWORD}@tcp(gorse-mysql:3306)/gorse
       GORSE_DATA_STORE: mysql://gorse:${MYSQL_PASSWORD}@tcp(gorse-mysql:3306)/gorse
       GORSE_BLOB_URI: /var/lib/gorse/blob
+      # xvec is opened only by master (worker/server proxy over gRPC); keep it on a volume.
+      GORSE_VECTOR_STORE: xvec:///var/lib/gorse/master/vectors
     command: >
       -c /etc/gorse/config.toml
       --log-path /var/log/gorse/master.log
