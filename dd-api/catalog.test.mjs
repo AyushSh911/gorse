@@ -12,6 +12,7 @@ import {
   validSourceData,
   refreshSources,
   mergePremiumContent,
+  computeFlat2dRailVideoIds,
 } from "./catalog.mjs";
 import { toGorseItemId, kindFromGorseItemId, appIdFromGorseItemId } from "./ids.mjs";
 
@@ -249,6 +250,25 @@ describe("mergePremiumContent", () => {
 });
 
 describe("flat2d series recency", () => {
+  it("rail set keeps approved, active, non-Ramayana standalone 2D videos only", () => {
+    const content = {
+      shows: [
+        { id: "bhakti:2d:video:001", kind: "flat2d", title: { en: "Temple Darshan" } },
+        { id: "bhakti:2d:video:002", kind: "flat2d", title: { en: "Sundar Kand Path" } },
+        { id: "bhakti:2d:video:003", kind: "flat2d", title: { en: "Off" } },
+        { id: "bhakti:2d:video:004", kind: "flat2d", title: { en: "Not approved" } },
+        { id: "bhakti:2d:ep:03:001", kind: "flat2d", title: { en: "Matsya" } },
+      ],
+    };
+    const layout = {
+      status: {
+        approvedShowIds: ["bhakti:2d:video:001", "bhakti:2d:video:002", "bhakti:2d:video:003", "bhakti:2d:ep:03:001"],
+        disactiveShowIds: ["bhakti:2d:video:003"],
+      },
+    };
+    assert.deepEqual([...computeFlat2dRailVideoIds(content, layout)], ["bhakti:2d:video:001"]);
+  });
+
   it("ranks 2D series above standalone 2D videos and episodes", () => {
     const series = Date.parse(timestampForItem("bhakti:2d:series:03", "flat2d"));
     const video = Date.parse(timestampForItem("bhakti:2d:video:042", "flat2d"));

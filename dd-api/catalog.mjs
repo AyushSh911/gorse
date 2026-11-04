@@ -212,9 +212,50 @@ function gorseItem({ itemId, kind, appId, title, categories, hidden, timestamp, 
   };
 }
 
+/** Latest premium-layout approvedShowIds seen by sync. */
+export let approvedShowIds = new Set();
+
+/** Mirrors the app's Ramayana rail split (rankExploreBhaktiRails.RAMAYANA_TITLE_RE). */
+const RAMAYANA_TITLE_RE = /ramayan|रामायण|\bkand\b|काण्ड|कांड/i;
+
+/**
+ * Standalone 2D videos that land in the app's Explore "Bhakti TV" rail:
+ * approved, not disactive / coming soon, not Ramayana-titled.
+ */
+export let flat2dRailVideoIds = new Set();
+
+export function computeFlat2dRailVideoIds(content, layout) {
+  const { keep, comingSoon } = keepSet(layout);
+  const out = new Set();
+  for (const show of content?.shows || []) {
+    const id = String(show?.id || "");
+    if (show?.kind !== "flat2d" || !id.startsWith("bhakti:2d:video:")) continue;
+    if (!keep.has(id) || comingSoon.has(id)) continue;
+    const t = show.title || {};
+    if (RAMAYANA_TITLE_RE.test(`${t.en || ""} ${t.hi || ""}`)) continue;
+    out.add(id);
+  }
+  return out;
+}
+
+/** Load layout-derived sets from the on-disk snapshots (boot, no network). */
+export async function loadApprovedShowIds() {
+  try {
+    const content = mergePremiumContent(
+      await loadSource("content"),
+      await loadSource("contentV2").catch(() => null),
+    );
+    flat2dRailVideoIds = computeFlat2dRailVideoIds(content, await loadSource("layout"));
+  } catch {
+    /* keep previous */
+  }
+  return approvedShowIds.size;
+}
+
 export function keepSet(layout) {
   const status = layout?.status || {};
   const approved = new Set(status.approvedShowIds || status.approvedVideoShowIds || []);
+  approvedShowIds = approved;
   const disactive = new Set(status.disactiveShowIds || status.disactiveVideoShowIds || []);
   const comingSoon = new Set([
     ...(status.comingSoonShowIds || []),
@@ -666,6 +707,7 @@ export async function buildCatalogItems() {
     );
     const layout = await loadSource("layout");
     ({ keep, comingSoon } = keepSet(layout));
+    flat2dRailVideoIds = computeFlat2dRailVideoIds(premium, layout);
     counts.keep = keep.size;
   } catch (e) {
     failedSources.push("shows", "series");

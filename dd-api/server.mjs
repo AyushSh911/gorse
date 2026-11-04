@@ -1,5 +1,11 @@
 import http from "node:http";
-import { itemIndex, loadItemIndex, syncCatalog } from "./catalog.mjs";
+import {
+  flat2dRailVideoIds,
+  itemIndex,
+  loadApprovedShowIds,
+  loadItemIndex,
+  syncCatalog,
+} from "./catalog.mjs";
 import {
   appIdFromGorseItemId,
   kindFromGorseItemId,
@@ -12,7 +18,7 @@ import {
   impressionRows,
   parseFeedback,
 } from "./freshness.mjs";
-import { pinFeatured } from "./pin.mjs";
+import { pickFlat2dVideos, pinFeatured } from "./pin.mjs";
 
 const PORT = Number(process.env.PORT || 8090);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -59,6 +65,12 @@ function mapHits(rows) {
       fresh: Boolean(r.fresh),
     };
   }).filter((x) => x.kind && x.id);
+}
+
+/** Same visible standalone videos for every flat2d response (see pin.mjs). */
+async function flat2dVideos(category) {
+  if (category !== "flat2d") return undefined;
+  return pickFlat2dVideos(mapHits(await gorse.latest(200, "flat2d")), flat2dRailVideoIds);
 }
 
 function dedupeSeries(hits) {
@@ -143,6 +155,7 @@ const server = http.createServer(async (req, res) => {
           category,
           n,
           now: Date.now(),
+          videos: await flat2dVideos(category),
         });
         return send(res, 200, { source: "latest", items: hits, watchedIds: [] });
       }
@@ -173,7 +186,12 @@ const server = http.createServer(async (req, res) => {
       }
       return send(res, 200, {
         source,
-        items: pinFeatured(fresh.items, { category, n, now: Date.now() }),
+        items: pinFeatured(fresh.items, {
+          category,
+          n,
+          now: Date.now(),
+          videos: await flat2dVideos(category),
+        }),
         watchedIds: fresh.watchedIds,
       });
     }
@@ -196,6 +214,7 @@ const server = http.createServer(async (req, res) => {
         category,
         n,
         now: Date.now(),
+        videos: await flat2dVideos(category),
       });
       return send(res, 200, { items: hits });
     }
@@ -208,6 +227,9 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, HOST, () => {
   console.log(`dd-api listening on http://${HOST}:${PORT} (gorse ${gorse.GORSE_URL})`);
+  void loadApprovedShowIds().then(() =>
+    console.log(`flat2d rail videos loaded ${flat2dRailVideoIds.size}`),
+  );
   void loadItemIndex().then((n) => {
     console.log(`itemIndex loaded ${n} rows`);
     if (process.env.SKIP_BOOT_SYNC === "1") return;

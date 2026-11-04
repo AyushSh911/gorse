@@ -1,6 +1,13 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { PIN_IDS, PIN_UNTIL, pinFeatured } from "./pin.mjs";
+import {
+  FLAT2D_APP_VIDEO_SLOTS,
+  FLAT2D_HIDE_IDS,
+  PIN_IDS,
+  PIN_UNTIL,
+  pickFlat2dVideos,
+  pinFeatured,
+} from "./pin.mjs";
 
 function hit(id, kind = "vr360") {
   return { kind, id, score: 1, itemId: id };
@@ -67,19 +74,36 @@ describe("pinFeatured", () => {
   });
 });
 
-describe("pinFeatured flat2d (Bhakti TV)", () => {
+describe("pinFeatured flat2d (Bhakti TV, released app)", () => {
   const f = (id) => hit(id, "flat2d");
-  it("leads with Dashavatar then Krishna Leelayein and drops the two single videos", () => {
-    const out = pinFeatured(
-      [f("bhakti:2d:series:14"), f("bhakti:2d:video:034"), f("bhakti:2d:series:04"), f("bhakti:2d:video:033"), f("bhakti:2d:video:042")],
-      { category: "flat2d", n: 4, now: after },
-    );
-    assert.deepEqual(ids(out), ["bhakti:2d:series:03", "bhakti:2d:series:04", "bhakti:2d:series:14", "bhakti:2d:video:042"]);
-    assert.equal(out[0].kind, "flat2d");
-    assert.equal(out[0].pinned, true);
+  const vid = (n) => f("bhakti:2d:video:" + n);
+  const vids = ["042", "034", "041", "033", "040", "037", "036", "035", "032"].map(vid);
+
+  it("pickFlat2dVideos returns exactly six visible videos, never 033/034", () => {
+    const out = pickFlat2dVideos(vids, null);
+    assert.equal(FLAT2D_APP_VIDEO_SLOTS, 6);
+    assert.deepEqual(ids(out), ["042", "041", "040", "037", "036", "035"].map((n) => "bhakti:2d:video:" + n));
+    for (const id of FLAT2D_HIDE_IDS) assert.ok(!ids(out).includes(id));
   });
-  it("does not apply flat2d pins to other categories", () => {
-    const out = pinFeatured([hit("bhakti:2d:video:033", "flat2d")], { category: "theatre3d", n: 5, now: after });
+
+  it("pickFlat2dVideos honours the rail-eligible set", () => {
+    const out = pickFlat2dVideos(vids, new Set(["bhakti:2d:video:041", "bhakti:2d:video:033"]));
+    assert.deepEqual(ids(out), ["bhakti:2d:video:041"]);
+  });
+
+  it("leads with Dashavatar then Krishna Leelayein, one hit per series, then the fixed videos", () => {
+    const fixed = pickFlat2dVideos(vids, null);
+    const out = pinFeatured(
+      [f("bhakti:2d:ep:04:003"), f("bhakti:2d:series:14"), vid("099"), f("bhakti:2d:ep:14:002"), vid("034")],
+      { category: "flat2d", n: 36, now: after, videos: fixed },
+    );
+    assert.deepEqual(ids(out), ["bhakti:2d:series:03", "bhakti:2d:series:04", "bhakti:2d:series:14", ...ids(fixed)]);
+    assert.equal(out[0].pinned, true);
+    assert.equal(out[0].kind, "flat2d");
+  });
+
+  it("does not touch other categories", () => {
+    const out = pinFeatured([vid("033")], { category: "theatre3d", n: 5, now: after });
     assert.deepEqual(ids(out), ["bhakti:2d:video:033"]);
   });
 });
