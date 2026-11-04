@@ -1,6 +1,6 @@
 {
-  "live": true,
-  "date": "2026-09-12",
+  "live": false,
+  "date": "2026-11-04",
   "schedule": [
     {
       "id": "ram_lalla",
@@ -13,7 +13,7 @@
         "hi": "अयोध्या"
       },
       "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/RamLalla.jpg",
-      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Ram_Lalla.jpg",
+      "notificationImageUrl": "https://ddappcdn.techxr.co/DurlabhDarshan/AppData/Live3DNotificationBanners/ram_lalla.jpg",
       "startTime": "06:10",
       "endTime": "06:35",
       "isLive": false,
@@ -31,12 +31,12 @@
         "hi": "द्वारका"
       },
       "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/Dwarkadesh.jpg",
-      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Dwarkadhish.jpg",
+      "notificationImageUrl": "https://ddappcdn.techxr.co/DurlabhDarshan/AppData/Live3DNotificationBanners/Dwarkadhish.jpg",
       "startTime": "11:00",
       "endTime": "11:55",
-      "isLive": true,
-      "isOn": true,
-      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+      "isLive": false,
+      "isOn": false,
+      "liveStreamUrl": ""
     },
     {
       "id": "siddhivinayak",
@@ -49,17 +49,17 @@
         "hi": "मुंबई"
       },
       "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/ShriSiddhivinayak.jpg",
-      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Shri_Siddhivinayak.jpg",
+      "notificationImageUrl": "https://ddappcdn.techxr.co/DurlabhDarshan/AppData/Live3DNotificationBanners/shree_siddhi_vinayak.jpg",
       "startTime": "12:35",
       "endTime": "13:30",
       "isLive": false,
       "isOn": false,
-      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+      "liveStreamUrl": ""
     },
     {
       "id": "omkareshwara",
       "templeName": {
-        "en": "Omkareshwara",
+        "en": "Omkareshwar",
         "hi": "ओंकारेश्वर"
       },
       "city": {
@@ -67,12 +67,12 @@
         "hi": "ओंकारेश्वर"
       },
       "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/Omkareshwara.jpg",
-      "notificationImageUrl": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshan/AppData/Live3DNotificationBanners/Omkareshwar.jpg",
+      "notificationImageUrl": "https://ddappcdn.techxr.co/DurlabhDarshan/AppData/Live3DNotificationBanners/Omkareshwar.jpg",
       "startTime": "16:53",
       "endTime": "17:45",
       "isLive": false,
       "isOn": false,
-      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+      "liveStreamUrl": ""
     },
     {
       "id": "banke_bihari",
@@ -90,25 +90,7 @@
       "endTime": "18:40",
       "isLive": false,
       "isOn": false,
-      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
-    },
-    {
-      "id": "salasar_balaji",
-      "templeName": {
-        "en": "Salasar Balaji",
-        "hi": "सालासर बालाजी"
-      },
-      "city": {
-        "en": "Salasar",
-        "hi": "सालासर"
-      },
-      "thumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DLiveStreaming/Landscape/SalasarBalaji.jpg",
-      "notificationImageUrl": "",
-      "startTime": "08:05",
-      "endTime": "10:00",
-      "isLive": false,
-      "isOn": false,
-      "liveStreamUrl": "https://storage.googleapis.com/durlabh_darshan/AajKiAarti/owl3d_live/stream.m3u8"
+      "liveStreamUrl": ""
     }
   ]
 }

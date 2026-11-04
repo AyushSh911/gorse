@@ -4,9 +4,10 @@
     "dbId": "14",
     "hiText": "माता वैष्णोदेवी",
     "location": "Katra",
+    "hindiLocation": "कटरा",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Vaishnodevi.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Vaishnodevi/vaishnodeviprefab_v2",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Vaishnodevi/vaishnodeviprefabroot_v2",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/vaishnodeviprefab",
       "osx": null
     }
@@ -16,9 +17,10 @@
     "dbId": "12",
     "hiText": "श्री घृष्णेश्वर ज्योतिर्लिंग",
     "location": "Verul",
+    "hindiLocation": "वेरुल",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Grishneshwar.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Grishneshwar/grishneshwarprefab_v3",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Grishneshwar/grishneshwarprefab_v5",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/grishneshwarprefab",
       "osx": null
     }
@@ -28,9 +30,10 @@
     "dbId": "9",
     "hiText": "श्री केदारनाथ ज्योतिर्लिंग",
     "location": "Kedarnath",
+    "hindiLocation": "केदारनाथ",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Kedarnath.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kedarnath/kedarnathprefab_v3",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kedarnath/kedarnathprefabroot",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/kedarnathprefab",
       "osx": null
     }
@@ -40,9 +43,10 @@
     "dbId": "10",
     "hiText": "श्री नागेश्वर ज्योतिर्लिंग",
     "location": "Dwarka",
+    "hindiLocation": "द्वारका",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Nageshwar.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Nageshwar/nageshwarprefab_v3",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Nageshwar/nageshwarprefabroot_v2",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/nageshwarprefab",
       "osx": null
     }
@@ -52,9 +56,10 @@
     "dbId": "6",
     "hiText": "श्री काशी विश्वनाथ ज्योतिर्लिंग",
     "location": "Varanasi",
+    "hindiLocation": "वाराणसी",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/KashiVishwanath.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kashi/kashiprefab_v3",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Kashi/kashiprefabroot_v2",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/kashiprefab",
       "osx": null
     }
@@ -64,9 +69,10 @@
     "dbId": "11",
     "hiText": "श्री बैद्यनाथ ज्योतिर्लिंग",
     "location": "Deoghar",
+    "hindiLocation": "देवघर",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Baidhnath.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Badiyanath/baidyanathprefab_v2",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Badiyanath/baidyanathprefabroot_v4",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/baidyanathprefab",
       "osx": null
     }
@@ -76,9 +82,10 @@
     "dbId": "11",
     "hiText": "श्री भीमाशंकर ज्योतिर्लिंग",
     "location": "Pune",
+    "hindiLocation": "पुणे",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/AbhishekVR/Bhimashankar.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Bhimashankar/bhimashankarprefab_v2",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Bhimashankar/bhimashankarprefabroot_v2",
       "ios": "https://storage.googleapis.com/durlabh_darshan/DurlabhDarshanReact/3DAbhishek/IOS/bhimashankarprefab",
       "osx": null
     }
@@ -88,9 +95,10 @@
     "dbId": "13",
     "hiText": "श्री ओंकारेश्वर ज्योतिर्लिंग",
     "location": "Khandwa",
+    "hindiLocation": "खंडवा",
     "abhishek3DThumbnailUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/Abhishek3D/Omkareshwar.jpg",
     "abhishekUrl_3D": {
-      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Omkareshwar/omkareshwarprefab_v2",
+      "android": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/AssetBundle/VRAbhishek/Omkareshwar/omkareshwarprefabroot_v2",
       "ios": "https://ddappcdn.techxr.co/DurlabhDarshanReact/3DAbhishek/IOS/omkareshwarprefab",
       "osx": null
     }

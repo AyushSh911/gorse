@@ -8,6 +8,9 @@ import {
   keepSet,
   diffSourceIds,
   loadSource,
+  changedItems,
+  validSourceData,
+  refreshSources,
 } from "./catalog.mjs";
 import { toGorseItemId, kindFromGorseItemId, appIdFromGorseItemId } from "./ids.mjs";
 
@@ -171,5 +174,63 @@ describe("fromShows + keepSet", () => {
     );
     const { toDelete } = diffSourceIds(oldIndex, { shows: after }, []);
     assert.deepEqual(toDelete, ["tirth:vr:002"]);
+  });
+});
+
+describe("changedItems", () => {
+  const ours = {
+    ItemId: "tirth:vr:161",
+    IsHidden: false,
+    Categories: ["vr360", "tirth", "tirth-show"],
+    Timestamp: "2026-06-10T00:00:00.000Z",
+    Labels: { kind: "vr360", deities: ["Shiva"], isFree: 0 },
+    Comment: "Mahakal",
+  };
+
+  it("skips items identical to what Gorse returns (key order, Z format)", () => {
+    const fromGorse = {
+      ItemId: "tirth:vr:161",
+      IsHidden: false,
+      Categories: ["tirth", "vr360", "tirth-show"],
+      Timestamp: "2026-06-10T00:00:00Z",
+      Labels: { isFree: 0, deities: ["Shiva"], kind: "vr360" },
+      Comment: "Mahakal",
+    };
+    assert.deepEqual(changedItems([ours], new Map([[ours.ItemId, fromGorse]])), []);
+  });
+
+  it("returns new and modified items", () => {
+    const hidden = { ...ours, IsHidden: true };
+    const fresh = { ...ours, ItemId: "tirth:vr:163" };
+    const existing = new Map([[ours.ItemId, ours]]);
+    assert.deepEqual(
+      changedItems([hidden, fresh], existing).map((i) => i.ItemId),
+      ["tirth:vr:161", "tirth:vr:163"],
+    );
+  });
+});
+
+describe("validSourceData", () => {
+  it("rejects empty or malformed CDN payloads", () => {
+    assert.equal(validSourceData("content", { shows: [] }), false);
+    assert.equal(validSourceData("content", { shows: [{ id: "x" }] }), true);
+    assert.equal(validSourceData("layout", {}), false);
+    assert.equal(validSourceData("layout", { status: {} }), true);
+    assert.equal(validSourceData("blogs", null), false);
+  });
+});
+
+describe("refreshSources", () => {
+  it("keeps the snapshot when the CDN fetch fails or is malformed", async () => {
+    const before = await loadSource("layout");
+    const r = await refreshSources({
+      fetcher: async (url) => {
+        if (url.includes("premium-layout")) return { nope: true };
+        throw new Error("offline");
+      },
+    });
+    assert.deepEqual(r.refreshed, []);
+    assert.ok(r.failed.some((f) => f.source === "layout"));
+    assert.deepEqual(await loadSource("layout"), before);
   });
 });

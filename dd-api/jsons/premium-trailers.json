@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.0.0",
+  "schemaVersion": "4.0.0",
   "trailers": [
     {
       "id": "tirth:trailer:013",
@@ -27,20 +27,6 @@
       "target": {
         "kind": "show",
         "id": "bhakti:2d:video:039"
-      }
-    },
-    {
-      "id": "tirth:trailer:014",
-      "namespace": "tirth",
-      "title": {
-        "en": "Shri Ram Ki Ayodhya with Ashutosh Rana",
-        "hi": "श्री राम की अयोध्या आशुतोष राना के संग"
-      },
-      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/156_v3.jpg",
-      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ayodhyadarshan/master.m3u8",
-      "target": {
-        "kind": "show",
-        "id": "tirth:vr:156"
       }
     },
     {
@@ -86,17 +72,17 @@
       }
     },
     {
-      "id": "bhakti:trailer:025",
-      "namespace": "bhakti",
+      "id": "tirth:trailer:053",
+      "namespace": "tirth",
       "title": {
-        "en": "Shri Bhimashankar Marathi Aarti",
-        "hi": "श्री भीमाशंकर मराठी आरती"
+        "en": "Shri Bhimashankar Jyotirling",
+        "hi": "श्री भीमाशंकर ज्योतिर्लिंग दर्शन"
       },
-      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeBhimashankarMarathiAarti.png",
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeBhimashankarMandirDarshan.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhimashankar/master.m3u8",
       "target": {
         "kind": "show",
-        "id": "bhakti:2d:video:010"
+        "id": "tirth:vr:018"
       }
     },
     {
@@ -111,20 +97,6 @@
       "target": {
         "kind": "show",
         "id": "bhakti:2d:video:011"
-      }
-    },
-    {
-      "id": "bhakti:trailer:016",
-      "namespace": "bhakti",
-      "title": {
-        "en": "Chind Dham Darshan",
-        "hi": "छिंद धाम दर्शन"
-      },
-      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/ShreeChhindDhamMandirDarshan.png",
-      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chindhamdarshan/master.m3u8",
-      "target": {
-        "kind": "show",
-        "id": "bhakti:2d:video:013"
       }
     },
     {
@@ -169,7 +141,6 @@
         "id": "tirth:vr:010"
       }
     },
-    
     {
       "id": "tirth:trailer:020",
       "namespace": "tirth",
@@ -226,7 +197,6 @@
         "id": "tirth:vr:154"
       }
     },
-   
     {
       "id": "bhakti:trailer:021",
       "namespace": "bhakti",
@@ -242,17 +212,17 @@
       }
     },
     {
-      "id": "bhakti:trailer:017",
-      "namespace": "bhakti",
+      "id": "tirth:trailer:054",
+      "namespace": "tirth",
       "title": {
-        "en": "Maa Harsiddhi Devi Shaktipeeth Aarti",
-        "hi": "माँ हरिसिद्धी देवी शक्तिपीठ आरती"
+        "en": "Harsiddhi Mata Mandir",
+        "hi": "हरसिद्धि माता मंदिर दर्शन"
       },
-      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/MaaHarsiddhiDeviShaktipeethAarti.png",
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/HarsiddhiMataMandirDarshan.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/maaharsiddhimandir/master.m3u8",
       "target": {
         "kind": "show",
-        "id": "bhakti:2d:video:018"
+        "id": "tirth:vr:030"
       }
     },
     {
@@ -343,7 +313,7 @@
       "id": "tirth:trailer:026",
       "namespace": "tirth",
       "title": {
-        "en": "Sawari Darshan",
+        "en": "Shri Mahakaleshwar Sawari Darshan",
         "hi": "श्री महाकालेश्वर सवारी दर्शन"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeMahakaleshwarSawariDarshan.jpg",
@@ -367,7 +337,6 @@
         "id": "bhakti:2d:video:024"
       }
     },
-      
     {
       "id": "bhakti:trailer:033",
       "namespace": "bhakti",
@@ -387,7 +356,7 @@
       "namespace": "tirth",
       "title": {
         "en": "Shri Ranjeet Hanuman Ji",
-        "hi": "श्री रंजीत हनुमन"
+        "hi": "श्री रंजीत हनुमान"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/142.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shriranjeethanumanji/master.m3u8",
@@ -400,7 +369,7 @@
       "id": "tirth:trailer:028",
       "namespace": "tirth",
       "title": {
-        "en": "Surya Kund Ayodhya",
+        "en": "Surya Kund",
         "hi": "सूर्य कुंड"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/147.jpg",
@@ -410,12 +379,11 @@
         "id": "tirth:vr:147"
       }
     },
-   
     {
       "id": "tirth:trailer:029",
       "namespace": "tirth",
       "title": {
-        "en": "Yamunotri Dham 01",
+        "en": "Yamunotri Dham",
         "hi": "यमुनोत्री धाम"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Yamnotri_Thumbnail.jpg",
@@ -513,8 +481,8 @@
       "id": "tirth:trailer:012",
       "namespace": "tirth",
       "title": {
-        "en": "Orchha Ram Vivah Darshan",
-        "hi": "ओरछा राम विवाह दर्शन"
+        "en": "Orchha Ram Vivah",
+        "hi": "ओरछा राम विवाह"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/OrchhaRamVivahDarshan.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/RamVivah/master.m3u8",
@@ -555,8 +523,8 @@
       "id": "tirth:trailer:009",
       "namespace": "tirth",
       "title": {
-        "en": "Shri Gangotri Darshan",
-        "hi": "श्री गंगोत्रि दर्शन"
+        "en": "Gangotri Dham",
+        "hi": "गंगोत्री धाम"
       },
       "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3DVr/gangotri.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/gangotridham_02/master.m3u8",
@@ -607,7 +575,7 @@
         "id": "bhakti:2d:video:028"
       }
     },
-       {
+    {
       "id": "bhakti:trailer:045",
       "namespace": "bhakti",
       "title": {
@@ -621,7 +589,6 @@
         "id": "bhakti:2d:video:006"
       }
     },
-    
     {
       "id": "bhakti:trailer:047",
       "namespace": "bhakti",
@@ -655,7 +622,7 @@
       "namespace": "theatre",
       "title": {
         "en": "Hanuman Charit",
-        "hi": "हनुमन चरित्र"
+        "hi": "हनुमान चरित्र"
       },
       "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/HanumanCharit.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/hanumancharittrim/master.m3u8",
@@ -753,7 +720,7 @@
       "namespace": "bhakti",
       "title": {
         "en": "Hanuman Charit",
-        "hi": "हनुमन चरित्र"
+        "hi": "हनुमान चरित्र"
       },
       "thumbnail": "https://ddappcdn.techxr.co//DurlabhDarshanApp/Trailers/3dVrTrailers/Thumbnails/3Dtheater_v2/HanumanCharit.jpg",
       "videoUrl": "https://ddappcdn.techxr.co/ShubhDarshan/Videos/Trailers/hanumancharittrim/master.m3u8",
@@ -844,6 +811,680 @@
       "target": {
         "kind": "webseries",
         "id": "bhakti:2d:series:06"
+      }
+    },
+    {
+      "id": "tirth:trailer:031",
+      "namespace": "tirth",
+      "title": {
+        "en": "Annapurna Mata Mandir",
+        "hi": "अन्नपूर्णा माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/AnnapurnaMataMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/Annapurna/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:036"
+      }
+    },
+    {
+      "id": "tirth:trailer:032",
+      "namespace": "tirth",
+      "title": {
+        "en": "Bade Hanuman ji",
+        "hi": "बड़े हनुमान जी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/BadeHanumanJi_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BadeHanumanjiDarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:042"
+      }
+    },
+    {
+      "id": "tirth:trailer:033",
+      "namespace": "tirth",
+      "title": {
+        "en": "Banke Bihari",
+        "hi": "बाँके बिहारी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShriBankeBihari.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BankeBihari/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:041"
+      }
+    },
+    {
+      "id": "tirth:trailer:034",
+      "namespace": "tirth",
+      "title": {
+        "en": "Bhadrakali Shaktipeeth",
+        "hi": "भद्रकाली शक्तिपीठ"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/bhadrakali_shaktipeeth_thumbnail_v2.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/BhadrakaliShaktipeeth/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:049"
+      }
+    },
+    {
+      "id": "tirth:trailer:035",
+      "namespace": "tirth",
+      "title": {
+        "en": "Kedarnath Dham",
+        "hi": "केदारनाथ धाम"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Kedarnath_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/kedarnathdham_03/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:046"
+      }
+    },
+    {
+      "id": "tirth:trailer:036",
+      "namespace": "tirth",
+      "title": {
+        "en": "Badrinath Dham",
+        "hi": "बद्रीनाथ धाम"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Badrinath_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/badrinath_dham_04/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:047"
+      }
+    },
+    {
+      "id": "tirth:trailer:037",
+      "namespace": "tirth",
+      "title": {
+        "en": "Gopal Mandir Darshan",
+        "hi": "गोपाल मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/GopalMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/gopalmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:022"
+      }
+    },
+    {
+      "id": "tirth:trailer:038",
+      "namespace": "tirth",
+      "title": {
+        "en": "Radha Raman Ji",
+        "hi": "राधा रामन जी"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/radha_raman_ji_thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/radharaman/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:050"
+      }
+    },
+    {
+      "id": "tirth:trailer:039",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ram Van Gaman Path & Ram Mandir",
+        "hi": "राम वन गमन पथ एवं राम मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/RamVanGamanPathEvamRamMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ramvangamanpath/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:035"
+      }
+    },
+    {
+      "id": "tirth:trailer:040",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ramghat",
+        "hi": "रामघाट"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/RamghatMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ramghatmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:026"
+      }
+    },
+    {
+      "id": "tirth:trailer:041",
+      "namespace": "tirth",
+      "title": {
+        "en": "Sharda Mata Mandir",
+        "hi": "शारदा माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShardaMataMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shardamatamandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:029"
+      }
+    },
+    {
+      "id": "tirth:trailer:042",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Bhartrihari Gufa",
+        "hi": "श्री भर्तृहरि गुफा दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeBhartrihariGufaMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhartriharigufa/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:019"
+      }
+    },
+    {
+      "id": "tirth:trailer:043",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Bhojeshwar Mandir",
+        "hi": "श्री भोजेश्वर मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeBhojeshwarMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bhojpurmandirdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:032"
+      }
+    },
+    {
+      "id": "tirth:trailer:044",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Chintaman Ganesh Mandir",
+        "hi": "श्री चिंतामण गणेश मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeChintamanGaneshMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chintamanganesh/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:020"
+      }
+    },
+    {
+      "id": "tirth:trailer:045",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Gadhkalika Mata Mandir",
+        "hi": "श्री गढ़कालिका माता मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeGadhkalikaMataMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/GadhkalikaMataMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:021"
+      }
+    },
+    {
+      "id": "tirth:trailer:046",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Jagannath Rath Yatra",
+        "hi": "श्री जगन्नाथ रथ यात्रा"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/JagannathRathYatra.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/jagannathrathyathra/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:039"
+      }
+    },
+    {
+      "id": "tirth:trailer:047",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Kaal Bhairav Mandir",
+        "hi": "श्री काल भैरव मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeKaalBhairavMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/ShriKaalBhairavMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:023"
+      }
+    },
+    {
+      "id": "tirth:trailer:048",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Khajarana Ganesh Mandir",
+        "hi": "श्री खजराना गणेश मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeKhajaranaGaneshMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/khajranaganeshmandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:034"
+      }
+    },
+    {
+      "id": "tirth:trailer:049",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Mangalnath Mandir",
+        "hi": "श्री मंगलनाथ मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeMangalnathMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/shrimangalnathdarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:025"
+      }
+    },
+    {
+      "id": "tirth:trailer:050",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Sandipani Ashram",
+        "hi": "श्री संदीपनी आश्रम दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ShreeSandipaniAshramDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/sandipniashram/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:024"
+      }
+    },
+    {
+      "id": "tirth:trailer:051",
+      "namespace": "tirth",
+      "title": {
+        "en": "Spiritual Journey of Maa Narmada",
+        "hi": "माँ नर्मदा की आध्यात्मिक यात्रा"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/NarmadaParikramaThumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/maanarmadaparikma/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:038"
+      }
+    },
+    {
+      "id": "tirth:trailer:052",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Trimbakeshwar Jyotirlinga",
+        "hi": "श्री त्र्यंबकेश्वर ज्योतिर्लिंग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/TrimbakeshwarMandirDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/TrimbakeshwarMandir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:028"
+      }
+    },
+    {
+      "id": "tirth:trailer:055",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ambaji Temple",
+        "hi": "अम्बाजी मंदिर"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ambaji_temple_thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ambajidarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:053"
+      }
+    },
+    {
+      "id": "tirth:trailer:056",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ayodhya Deepotsav",
+        "hi": "अयोध्या दीपोत्सव"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ayodhya_deepostav_thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ayodhyadarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:058"
+      }
+    },
+    {
+      "id": "tirth:trailer:057",
+      "namespace": "tirth",
+      "title": {
+        "en": "Nageshwar Jyotirling",
+        "hi": "नगेशवर ज्योतिलिंग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Nageshwar.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/nageshwarjyotirlinga/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:106"
+      }
+    },
+    {
+      "id": "tirth:trailer:058",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Jagdamba Mahalaxmi",
+        "hi": "श्री जगदम्बा महालक्ष्मी"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Jagdamba_Mahalaxmi_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/jagdambamahalaxmikoradi//master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:119"
+      }
+    },
+    {
+      "id": "tirth:trailer:059",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Baidyanath Jyotirlinga",
+        "hi": "श्री बैद्यनाथ ज्योतिर्लिंग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Baidyanath.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/baidyanath_jyotirlinga/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:121"
+      }
+    },
+    {
+      "id": "tirth:trailer:060",
+      "namespace": "tirth",
+      "title": {
+        "en": "Hanuman Garhi",
+        "hi": "हनुमानगढ़ी"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/hanuman_garhi.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/hanuman_garhi/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:122"
+      }
+    },
+    {
+      "id": "tirth:trailer:061",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Bijasan Mata",
+        "hi": "श्री बिजासन माता"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/141.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/bijasanmata/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:141"
+      }
+    },
+    {
+      "id": "tirth:trailer:062",
+      "namespace": "tirth",
+      "title": {
+        "en": "Guptar Ghat",
+        "hi": "गुप्तर घाट"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/144.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/guptarghatayodhya/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:144"
+      }
+    },
+    {
+      "id": "tirth:trailer:063",
+      "namespace": "tirth",
+      "title": {
+        "en": "Dwarka Darshan",
+        "hi": "द्वारका दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/149.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/dwarkadarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:149"
+      }
+    },
+    {
+      "id": "tirth:trailer:064",
+      "namespace": "tirth",
+      "title": {
+        "en": "Radha Vallabh Ji",
+        "hi": "राधा वल्लभ जी"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/151.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/radhavallab//master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:151"
+      }
+    },
+    {
+      "id": "tirth:trailer:065",
+      "namespace": "tirth",
+      "title": {
+        "en": "Kashi Chaurasi Ghats - Part 1",
+        "hi": "काशी चौरासी घाटों - भाग 1"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/152.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/kashichaurasighat_part01/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:152"
+      }
+    },
+    {
+      "id": "tirth:trailer:066",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ujjain Nagar",
+        "hi": "उज्जैन नगर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/UjjainNagarDarshan.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ujjaindarshan/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:012"
+      }
+    },
+    {
+      "id": "tirth:trailer:067",
+      "namespace": "tirth",
+      "title": {
+        "en": "Chamunda Devi",
+        "hi": "चामुंडा देवी दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ChamudaDevi_Thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/chamundadevi/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:043"
+      }
+    },
+    {
+      "id": "tirth:trailer:068",
+      "namespace": "tirth",
+      "title": {
+        "en": "Ganpati Pule",
+        "hi": "गणपति पुले"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/ganpati_pule_thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ganpati_pule_2d/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:051"
+      }
+    },
+    {
+      "id": "tirth:trailer:069",
+      "namespace": "tirth",
+      "title": {
+        "en": "Mahalaxmi Kolhapur",
+        "hi": "महालक्ष्मी कोल्हापुर"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/mahalaxmi_kolhapur_thumbnail.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/mahalaxmitemplekohlapur/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:055"
+      }
+    },
+    {
+      "id": "tirth:trailer:070",
+      "namespace": "tirth",
+      "title": {
+        "en": "Maa Baglamukhi",
+        "hi": "माँ बगलामुखी"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/MaaBaglamukhi.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/maabaglamukhi/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:104"
+      }
+    },
+    {
+      "id": "tirth:trailer:071",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Ram Ki Ayodhya with Ashutosh Rana",
+        "hi": "श्री राम की अयोध्या आशुतोष राना के संग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/156_v3.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ayodhyadarshanranasir/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:156"
+      }
+    },
+    {
+      "id": "tirth:trailer:072",
+      "namespace": "tirth",
+      "title": {
+        "en": "Dashrath Mahal",
+        "hi": "दशरथ महल"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/145.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/dashrathmahal/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:145"
+      }
+    },
+    {
+      "id": "tirth:trailer:003",
+      "namespace": "tirth",
+      "title": {
+        "en": "Shri Chhind Dham Mandir",
+        "hi": "श्री छिंद धाम मंदिर दर्शन"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/ShriChhindDhamMandirDarshan.png",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Trailers/3dVrTrailers/Videos/ChhindDham/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:031"
+      }
+    },
+    {
+      "id": "tirth:trailer:073",
+      "namespace": "tirth",
+      "title": {
+        "en": "Pashupatinath Temple",
+        "hi": "पशुपतिनाथ ज्योतिर्लिंग"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Pashupatinath.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/pashupatinath_jyotirlinga/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:118"
+      }
+    },
+    {
+      "id": "tirth:trailer:074",
+      "namespace": "tirth",
+      "title": {
+        "en": "Maha Kumbh Mela 2025",
+        "hi": "महाकुंभ मेला 2025"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/Mahakumbh2025.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/mahakumbh/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:040"
+      }
+    },
+    {
+      "id": "tirth:trailer:075",
+      "namespace": "tirth",
+      "title": {
+        "en": "Saryu Aarti",
+        "hi": "सरयू आरती"
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/saryu_aarti.jpg",
+      "videoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/saryunadiayodhya/master.m3u8",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:125"
+      }
+    },
+    {
+      "id": "tirth:trailer:076",
+      "namespace": "tirth",
+      "title": {
+        "en": "",
+        "hi": ""
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/ashutosh_badrinathdham.png",
+      "videoUrl": "",
+      "target": {
+        "kind": "show",
+        "id": ""
+      },
+      "portraitVideoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ashutoshchardham/master.m3u8"
+    },
+    {
+      "id": "tirth:trailer:077",
+      "namespace": "tirth",
+      "title": {
+        "en": "",
+        "hi": ""
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/AushutoshGangotri.jpg",
+      "videoUrl": "",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:163"
+      }
+    },
+    {
+      "id": "tirth:trailer:078",
+      "namespace": "tirth",
+      "title": {
+        "en": "",
+        "hi": ""
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/ashutosh_kedarnathdham.png",
+      "videoUrl": "",
+      "target": {
+        "kind": "show",
+        "id": ""
+      },
+      "portraitVideoUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Trailers/ashutoshchardham/master.m3u8"
+    },
+    {
+      "id": "tirth:trailer:079",
+      "namespace": "tirth",
+      "title": {
+        "en": "",
+        "hi": ""
+      },
+      "thumbnail": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/premium-trailers-thumb/AushutoshYamunotri.jpg",
+      "videoUrl": "",
+      "target": {
+        "kind": "show",
+        "id": "tirth:vr:161"
       }
     }
   ]

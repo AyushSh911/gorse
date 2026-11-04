@@ -6,6 +6,7 @@
       "id": "tirth:vr:001",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Jyotirling Aarti",
         "hi": "श्री महाकालेश्वर ज्योतिर्लिंग आरती"
@@ -24,7 +25,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/ShreeMahakaleshwarJyotirlingAarti.png"
       },
       "playback": {
-        "durationSeconds": 509,
+        "durationSeconds": 191,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Missing/Android/MahakaleshwarJyotirlingAarti_encrypted/master.m3u8",
@@ -103,6 +104,7 @@
       "id": "tirth:vr:002",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Sawari Darshan",
         "hi": "श्री महाकालेश्वर सवारी दर्शन"
@@ -121,7 +123,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/ShreeMahakaleshwarSawariDarshan.png"
       },
       "playback": {
-        "durationSeconds": 185,
+        "durationSeconds": 266,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/MahakalSawari_encrypted/master.m3u8",
@@ -140,7 +142,19 @@
             "sizeLabel": "1.07 GB",
             "iosSizeLabel": "763 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAHAKAL_SAWARI_DARSHAN_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKAL_SAWARI_DARSHAN.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Sawari_Mono_Encrypted/master.m3u8",
@@ -186,6 +200,7 @@
       "id": "tirth:vr:003",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Omkareshwar Shayan Shringar",
         "hi": "श्री ओंकारेश्वर शयन श्रृंगार"
@@ -245,6 +260,7 @@
       "id": "tirth:vr:004",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Omkareshwar Shayan Aarti",
         "hi": "श्री ओंकारेश्वर शयन आरती"
@@ -309,6 +325,7 @@
       "id": "tirth:vr:005",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Jyotirlinga",
         "hi": "श्री महाकालेश्वर दर्शन"
@@ -364,6 +381,7 @@
       "id": "tirth:vr:006",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bhimashankar Marathi Aarti",
         "hi": "श्री भीमाशंकर मराठी आरती"
@@ -427,6 +445,7 @@
       "id": "tirth:vr:007",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Maa Harsiddhi Devi Shaktipeeth Aarti",
         "hi": "माँ हरिसिद्धी देवी शक्तिपीठ आरती"
@@ -491,6 +510,7 @@
       "id": "tirth:vr:008",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Maa Sharda Devi Bhajan",
         "hi": "माँ शारदा देवी भजन"
@@ -575,6 +595,7 @@
       "id": "tirth:vr:009",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Hanuman Aarti ",
         "hi": "श्री हनुमान आरती दर्शन"
@@ -637,6 +658,7 @@
       "id": "tirth:vr:010",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ganga Aarti",
         "hi": "गंगा आरती"
@@ -721,6 +743,7 @@
       "id": "tirth:vr:011",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Chitrakoot",
         "hi": "श्री महाकालेश्वर ज्योतिर्लिंग आरती"
@@ -739,7 +762,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/ChitrakootDarshan.png"
       },
       "playback": {
-        "durationSeconds": 500,
+        "durationSeconds": 316,
         "qualities": {
           "adaptive": {
             "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/CitrakootDarshanAdap_Encrypted/master.m3u8",
@@ -779,6 +802,7 @@
       "id": "tirth:vr:012",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ujjain Nagar",
         "hi": "उज्जैन नगर दर्शन"
@@ -822,6 +846,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Ujjain_Darshan_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/UJJAIN_NAGAR.mp3"
           }
         ]
       },
@@ -868,6 +897,7 @@
       "id": "tirth:vr:013",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Maa Sharda Devi Jaikara",
         "hi": "माँ शारदा देवी जैकारा"
@@ -950,6 +980,7 @@
       "id": "tirth:vr:014",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Bhog Aarti",
         "hi": "श्री महाकालेश्वर भोग आरती"
@@ -987,7 +1018,19 @@
             "sizeLabel": "1 GB",
             "iosSizeLabel": "1.18 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAHAKALWSHWAR_BHOG_AARTI_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKALWSHWAR_BHOG_AARTI.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/All_Missing_Mono_videos/MahakaleshwarBhogAarti_mono/master.m3u8",
@@ -1036,6 +1079,7 @@
       "id": "tirth:vr:015",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Dadhyodak Aarti",
         "hi": "श्री महाकालेश्वर दध्योदक आरती दर्शन"
@@ -1073,7 +1117,19 @@
             "sizeLabel": "1.18 GB",
             "iosSizeLabel": "1.15 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAHAKALESHWAR_DADHYODAK_AARTI_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKALESHWAR_DADHYODAK_AARTI.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Shree_Mahakaleshwar_Jyotirlinga_Dadhyodak_Aarti_Mono_Encrypted/master.m3u8",
@@ -1122,6 +1178,7 @@
       "id": "tirth:vr:016",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Shayan Aarti",
         "hi": "श्री महाकालेश्वर शयन आरती दर्शन"
@@ -1159,7 +1216,19 @@
             "sizeLabel": "1.41 GB",
             "iosSizeLabel": "935 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAHAKALESHWAR_SHAYAN_AARTI_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKALESHWAR_SHAYAN_AARTI.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Shree_Mahakaleshwar_Jyotirlinga_Shayan_Aarti_Mono_Encrypted/master.m3u8",
@@ -1208,6 +1277,7 @@
       "id": "tirth:vr:017",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mahakaleshwar Sandhya Aarti",
         "hi": "श्री महाकालेश्वर संध्या आरती दर्शन"
@@ -1245,7 +1315,19 @@
             "sizeLabel": "1.08 GB",
             "iosSizeLabel": "1.08 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAHAKALESHWAR_SANDHYA_AARTI_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKALESHWAR_SANDHYA_AARTI.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Shree_Mahakaleshwar_Jyotirlinga_Sandhya_Aarti_Mono_Encrypted/master.m3u8",
@@ -1293,6 +1375,7 @@
       "id": "tirth:vr:018",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bhimashankar Jyotirling",
         "hi": "श्री भीमाशंकर ज्योतिर्लिंग दर्शन"
@@ -1330,7 +1413,19 @@
             "sizeLabel": "1.01 GB",
             "iosSizeLabel": "1.97 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/BHIMASHANKAR_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BHIMASHANKAR.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Bhimashankar_Darshan_Mono_Encrypted/master.m3u8",
@@ -1379,6 +1474,7 @@
       "id": "tirth:vr:019",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bhartrihari Gufa",
         "hi": "श्री भर्तृहरि गुफा दर्शन"
@@ -1459,6 +1555,7 @@
       "id": "tirth:vr:020",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Chintaman Ganesh Mandir",
         "hi": "श्री चिंतामण गणेश मंदिर दर्शन"
@@ -1496,7 +1593,19 @@
             "sizeLabel": "247 MB",
             "iosSizeLabel": "338 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/CHINTAMAN_GANESH_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/CHINTAMAN_GANESH.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Chintaman_Ganesh_Mandir_Mono_Encrypted/master.m3u8",
@@ -1543,6 +1652,7 @@
       "id": "tirth:vr:021",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Gadhkalika Mata Mandir",
         "hi": "श्री गढ़कालिका माता मंदिर दर्शन"
@@ -1580,7 +1690,19 @@
             "sizeLabel": "314 MB",
             "iosSizeLabel": "440 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAA_GADKALIKA_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAA_GADKALIKA.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gadkalika_Mandir_Mono_Encrypted/master.m3u8",
@@ -1625,6 +1747,7 @@
       "id": "tirth:vr:022",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Gopal Mandir Darshan",
         "hi": "गोपाल मंदिर दर्शन"
@@ -1662,7 +1785,14 @@
             "sizeLabel": "359 MB",
             "iosSizeLabel": "431 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GOPAL_MANDIR_UJJAIN.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gopal_Mandir_Mono_Encrypted/master.m3u8",
@@ -1708,6 +1838,7 @@
       "id": "tirth:vr:023",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Kaal Bhairav Mandir",
         "hi": "श्री काल भैरव मंदिर दर्शन"
@@ -1745,7 +1876,14 @@
             "sizeLabel": "490 MB",
             "iosSizeLabel": "452 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KAAL_BHAIRAV.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Kaal_Bhairav_Mono_Encrypted/master.m3u8",
@@ -1790,6 +1928,7 @@
       "id": "tirth:vr:024",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Sandipani Ashram",
         "hi": "श्री संदीपनी आश्रम दर्शन"
@@ -1877,6 +2016,7 @@
       "id": "tirth:vr:025",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mangalnath Mandir",
         "hi": "श्री मंगलनाथ मंदिर दर्शन"
@@ -1914,7 +2054,14 @@
             "sizeLabel": "519 MB",
             "iosSizeLabel": "578 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MANGALNATH.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mangalnath_Mono_Encrypted/master.m3u8",
@@ -1958,6 +2105,7 @@
       "id": "tirth:vr:026",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ramghat",
         "hi": "रामघाट"
@@ -1976,7 +2124,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/RamghatMandirDarshan.png"
       },
       "playback": {
-        "durationSeconds": 130,
+        "durationSeconds": 74,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Ramghat_Darshan/Ramghat_Darshan_encrypted/master.m3u8",
@@ -1995,7 +2143,19 @@
             "sizeLabel": "302 MB",
             "iosSizeLabel": "479 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/RAMGHAT_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RAMGHAT.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Ram_Ghat_Hindi_Mono_Encrypted/master.m3u8",
@@ -2037,6 +2197,7 @@
       "id": "tirth:vr:027",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Omkareshwar Jyotirlinga",
         "hi": "श्री ओंकारेश्वर ज्योतिर्लिंग"
@@ -2080,6 +2241,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Omakreshwar_Darshan_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/OMKARESHWAR_DARSHAN.mp3"
           }
         ]
       },
@@ -2128,6 +2294,7 @@
       "id": "tirth:vr:028",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Trimbakeshwar Jyotirlinga",
         "hi": "श्री त्र्यंबकेश्वर ज्योतिर्लिंग"
@@ -2165,7 +2332,19 @@
             "sizeLabel": "1.97 GB",
             "iosSizeLabel": "1.93 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/TRIMBAKESHWAR_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/TRIMBAKESHWAR.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Trimbakeshwar_Darshan_Mono_Encrypted/master.m3u8",
@@ -2213,6 +2392,7 @@
       "id": "tirth:vr:029",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Sharda Mata Mandir",
         "hi": "शारदा माता मंदिर दर्शन"
@@ -2231,7 +2411,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/ShardaMataMandirDarshan.png"
       },
       "playback": {
-        "durationSeconds": 375,
+        "durationSeconds": 372,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Missing/Android/ShardaDevi_encrypted/master.m3u8",
@@ -2250,7 +2430,19 @@
             "sizeLabel": "1.43 GB",
             "iosSizeLabel": "1.47 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MAA_SHARDA_DARSHAN_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAA_SHARDA_DARSHAN.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Maiher_Darshan_Mono_Encrypted/master.m3u8",
@@ -2297,6 +2489,7 @@
       "id": "tirth:vr:030",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Harsiddhi Mata Mandir",
         "hi": "हरसिद्धि माता मंदिर दर्शन"
@@ -2340,6 +2533,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Harsiddhit_Mata_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/HARSIDDHI.mp3"
           }
         ]
       },
@@ -2388,6 +2586,7 @@
       "id": "tirth:vr:031",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Chhind Dham Mandir",
         "hi": "श्री छिंद धाम मंदिर दर्शन"
@@ -2475,6 +2674,7 @@
       "id": "tirth:vr:032",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bhojeshwar Mandir ",
         "hi": "श्री भोजेश्वर मंदिर दर्शन"
@@ -2512,7 +2712,19 @@
             "sizeLabel": "474 MB",
             "iosSizeLabel": "462 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/BHOJESHWAR_MAHADEV_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BHOJESHWAR_MAHADEV.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Bhojpur_Temple_Mono_Encrypted/master.m3u8",
@@ -2556,6 +2768,7 @@
       "id": "tirth:vr:033",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Jagannath Mandir",
         "hi": "श्री जगन्नाथ मंदिर दर्शन"
@@ -2599,6 +2812,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Jagannath_Mandir_Koraput_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/JAGANNATH_DARSHAN_KORAPUT.mp3"
           }
         ]
       },
@@ -2642,6 +2860,7 @@
       "id": "tirth:vr:034",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Khajarana Ganesh Mandir ",
         "hi": "श्री खजराना गणेश मंदिर दर्शन"
@@ -2685,6 +2904,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Khajrana_Ganesh_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KHAJRANA_GANESH.mp3"
           }
         ]
       },
@@ -2731,6 +2955,7 @@
       "id": "tirth:vr:035",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ram Van Gaman Path & Ram Mandir ",
         "hi": "राम वन गमन पथ एवं राम मंदिर दर्शन"
@@ -2768,7 +2993,14 @@
             "sizeLabel": "1.45 GB",
             "iosSizeLabel": "540 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/SHREE_RAM_LALA_SURYA_TILAK.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Ram_Van_Gaman_Path_Mono_Encrypted/master.m3u8",
@@ -2813,6 +3045,7 @@
       "id": "tirth:vr:036",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Annapurna Mata Mandir",
         "hi": "अन्नपूर्णा माता मंदिर दर्शन"
@@ -2850,7 +3083,19 @@
             "sizeLabel": "1.12 GB",
             "iosSizeLabel": "1010 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/ANNAPURNA_MATA_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/ANNAPURNA_MATA.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Annapoorna_Mata_Mandir_Mono_Encrypted/master.m3u8",
@@ -2894,6 +3139,7 @@
       "id": "tirth:vr:037",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Chitrakoot",
         "hi": "चित्रकूट दर्शन"
@@ -2937,6 +3183,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Chitrakoot_Darshan_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/CHITRAKOOT.mp3"
           }
         ]
       },
@@ -2981,6 +3232,7 @@
       "id": "tirth:vr:038",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Spiritual Journey of Maa Narmada",
         "hi": "माँ नर्मदा की आध्यात्मिक यात्रा"
@@ -3059,6 +3311,7 @@
       "id": "tirth:vr:039",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Jagannath Rath Yatra",
         "hi": "श्री जगन्नाथ रथ यात्रा"
@@ -3102,6 +3355,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Jagannath_Ji_Rath_Yatra_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/JAGANNATH_RATH_YATRA.mp3"
           }
         ]
       },
@@ -3145,6 +3403,7 @@
       "id": "tirth:vr:040",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Maha Kumbh Mela 2025",
         "hi": "महाकुंभ मेला 2025"
@@ -3188,6 +3447,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Mahakumbh2025_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHAKUMBH.mp3"
           }
         ]
       },
@@ -3228,6 +3492,7 @@
       "id": "tirth:vr:041",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Banke Bihari",
         "hi": "बाँके बिहारी दर्शन"
@@ -3271,6 +3536,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/banke_bihari_vrindavan.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BANKE_BIHARI.mp3"
           }
         ]
       },
@@ -3317,6 +3587,7 @@
       "id": "tirth:vr:042",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Bade Hanuman ji",
         "hi": "बड़े हनुमान जी दर्शन"
@@ -3360,6 +3631,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Bade_Hanuman_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BADE_HANUMAN_JI.mp3"
           }
         ]
       },
@@ -3404,6 +3680,7 @@
       "id": "tirth:vr:043",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Chamunda Devi",
         "hi": "चामुंडा देवी दर्शन"
@@ -3446,7 +3723,12 @@
           {
             "code": "en",
             "label": "English",
-            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Chamuna_Devi_English.mp3"
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/CHAMUNDA_MATA_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/CHAMUNDA_MATA.mp3"
           }
         ]
       },
@@ -3492,6 +3774,7 @@
       "id": "tirth:vr:044",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Yamunotri Dham",
         "hi": "यमुनोत्री धाम"
@@ -3529,7 +3812,14 @@
             "sizeLabel": "984 MB",
             "iosSizeLabel": "841 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/YAMUNOTRI_DHAM.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamnotri_Darshan_Mono_Encrypted/master.m3u8",
@@ -3568,6 +3858,7 @@
       "id": "tirth:vr:045",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Gangotri Dham",
         "hi": "गंगोत्री धाम"
@@ -3611,6 +3902,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Gangotri_Dham_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GANGOTRI_DHAM.mp3"
           }
         ]
       },
@@ -3651,6 +3947,7 @@
       "id": "tirth:vr:046",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Kedarnath Dham",
         "hi": "केदारनाथ धाम"
@@ -3694,6 +3991,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Kedarnath_Dham_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KEDARNATH.mp3"
           }
         ]
       },
@@ -3742,6 +4044,7 @@
       "id": "tirth:vr:047",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Badrinath Dham",
         "hi": "बद्रीनाथ धाम"
@@ -3785,6 +4088,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/Badrinath_Dham_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BADRINATH.mp3"
           }
         ]
       },
@@ -3828,6 +4136,7 @@
       "id": "tirth:vr:049",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Bhadrakali Shaktipeeth ",
         "hi": "भद्रकाली शक्तिपीठ"
@@ -3865,7 +4174,14 @@
             "sizeLabel": "1.60 GB",
             "iosSizeLabel": "1.27 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAA_BHADRAKALI.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Bhadrakali_Mono_Encrypted/master.m3u8",
@@ -3910,6 +4226,7 @@
       "id": "tirth:vr:050",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Radha Raman Ji",
         "hi": "राधा रामन जी"
@@ -3947,7 +4264,19 @@
             "sizeLabel": "1.59 GB",
             "iosSizeLabel": "1.51 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/RADHA_RAMAN_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RADHA_RAMAN.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Radha_Raman_Mono_Encrypted/master.m3u8",
@@ -3992,6 +4321,7 @@
       "id": "tirth:vr:051",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ganpati Pule",
         "hi": "गणपति पुले"
@@ -4029,7 +4359,19 @@
             "sizeLabel": "1.12 GB",
             "iosSizeLabel": "1.01 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/GANPATI_PULE_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GANPATI_PULE.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Ganpati_Phule_Mono_Encrypted/master.m3u8",
@@ -4073,6 +4415,7 @@
       "id": "tirth:vr:052",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Thrissur Pooram",
         "hi": "त्रिशूर पूरम"
@@ -4091,7 +4434,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/thrissur_pooram_icon.png"
       },
       "playback": {
-        "durationSeconds": 300,
+        "durationSeconds": 321,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshan6K/Encrypted/Hindi/Banke_Bihari_Ji_hindi_Encrypted/master.m3u8"
@@ -4123,6 +4466,7 @@
       "id": "tirth:vr:053",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ambaji Temple",
         "hi": "अम्बाजी मंदिर"
@@ -4160,7 +4504,19 @@
             "sizeLabel": "1.50 GB",
             "iosSizeLabel": "1.32 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/AMBAJI_MATA_MANDIR_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/AMBAJI_MATA_MANDIR.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Amba_Ji_Mono_Encrypted/master.m3u8",
@@ -4205,6 +4561,7 @@
       "id": "tirth:vr:054",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ashapura Temple",
         "hi": "आशापुरा मंदिर"
@@ -4259,6 +4616,7 @@
       "id": "tirth:vr:055",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Mahalaxmi Kolhapur",
         "hi": "महालक्ष्मी कोल्हापुर"
@@ -4302,6 +4660,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/AMBABAI_MAHALAXMI/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAHALAXMI_KOLHAPUR.mp3"
           }
         ]
       },
@@ -4347,6 +4710,7 @@
       "id": "tirth:vr:056",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Radha Vallabh Ji",
         "hi": "राधा वल्लभ जी"
@@ -4431,6 +4795,7 @@
       "id": "tirth:vr:057",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Orchha Ram Vivah",
         "hi": "ओरछा राम विवाह"
@@ -4474,6 +4839,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/RAM_JANKI_VIVAH/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RAM_JANKI_VIVAH.mp3"
           }
         ]
       },
@@ -4520,6 +4890,7 @@
       "id": "tirth:vr:058",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ayodhya Deepotsav",
         "hi": "अयोध्या दीपोत्सव"
@@ -4563,6 +4934,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/AYODHYA_DEEPOTSAV/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/DEEPOTSAV.mp3"
           }
         ]
       },
@@ -4608,6 +4984,7 @@
       "id": "tirth:vr:101",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bageshwar Dham",
         "hi": "श्री बागेश्वर धाम"
@@ -4696,6 +5073,7 @@
       "id": "tirth:vr:104",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Maa Baglamukhi",
         "hi": "माँ बगलामुखी"
@@ -4739,6 +5117,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/BAGLAMUKHI_MANDIR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAA_BAGLAMUKHI.mp3"
           }
         ]
       },
@@ -4784,6 +5167,7 @@
       "id": "tirth:vr:106",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Nageshwar Jyotirling",
         "hi": "नगेशवर ज्योतिलिंग"
@@ -4821,7 +5205,19 @@
             "sizeLabel": "1.22 GB",
             "iosSizeLabel": "1.30 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/NAGESHWAR_JYOTIRLING_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/NAGESHWAR_JYOTIRLING.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Nageshwar_Jyotirling_Mono_Encrypted/master.m3u8",
@@ -4867,6 +5263,7 @@
       "id": "tirth:vr:118",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Pashupatinath Temple",
         "hi": "पशुपतिनाथ ज्योतिर्लिंग"
@@ -4910,6 +5307,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/PASHUPATINATH_MANDSAUR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/PASHUPATINATH_MANDSAUR.mp3"
           }
         ]
       },
@@ -4955,6 +5357,7 @@
       "id": "tirth:vr:119",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Jagdamba Mahalaxmi",
         "hi": "श्री जगदम्बा महालक्ष्मी"
@@ -4973,7 +5376,7 @@
         "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/Jagdamba_Mahalaxmi_Icon.jpg"
       },
       "playback": {
-        "durationSeconds": 440,
+        "durationSeconds": 473,
         "adaptiveHls": {
           "enabled": true,
           "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Missing/Android/Jagdamba_Mahalaxmi_encrypted/master.m3u8",
@@ -4992,7 +5395,14 @@
             "sizeLabel": "1.74 GB",
             "iosSizeLabel": "1.64 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MAA_JAGDAMBA_NAGPUR.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Jagdamba_Mahalaxmi_Mono_Encrypted/master.m3u8",
@@ -5038,6 +5448,7 @@
       "id": "tirth:vr:121",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Baidyanath Jyotirlinga",
         "hi": "श्री बैद्यनाथ ज्योतिर्लिंग"
@@ -5075,7 +5486,19 @@
             "sizeLabel": "1.75 GB",
             "iosSizeLabel": "1.84 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/BAIDYANATH_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BAIDYANATH.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Baidyanath_Jyotirlinga_Mono_Encrypted/master.m3u8",
@@ -5121,6 +5544,7 @@
       "id": "tirth:vr:122",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman Garhi",
         "hi": "हनुमानगढ़ी"
@@ -5164,6 +5588,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/HANUMAN_GARHI/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/HANUMAN_GARHI.mp3"
           }
         ]
       },
@@ -5209,6 +5638,7 @@
       "id": "tirth:vr:125",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Saryu Aarti",
         "hi": "सर्यु आरती"
@@ -5290,6 +5720,7 @@
       "id": "tirth:vr:126",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Dwadash Jyotirlinga",
         "hi": "श्री द्वादश ज्योतिर्लिंग"
@@ -5333,6 +5764,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/DWADASH_JYOTIRLINGA/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/DWADASH_JYOTIRLINGA.mp3"
           }
         ]
       },
@@ -5386,6 +5822,7 @@
       "id": "tirth:vr:127",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Nilkanth Dham",
         "hi": "श्री नीलकंठ धाम"
@@ -5442,6 +5879,7 @@
       "id": "tirth:vr:128",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Grishneshwar Jyotirlinga",
         "hi": "श्री घृष्णेश्वर ज्योतिर्लिंग"
@@ -5499,6 +5937,7 @@
       "id": "tirth:vr:129",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Somnath Jyotirlinga",
         "hi": "श्री सोमनाथ ज्योतिर्लिंग"
@@ -5557,6 +5996,7 @@
       "id": "tirth:vr:130",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Dwarkadhish Mandir",
         "hi": "द्वारकाधीश मंदिर"
@@ -5617,6 +6057,7 @@
       "id": "tirth:vr:131",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Rameshwar Jyotirlinga",
         "hi": "श्री रामेश्वर ज्योतिर्लिंग"
@@ -5674,6 +6115,7 @@
       "id": "tirth:vr:132",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Dev Deepawali",
         "hi": "देव दीपवली"
@@ -5729,6 +6171,7 @@
       "id": "tirth:vr:133",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ghats of Kashi",
         "hi": "काशी के घाट"
@@ -5783,6 +6226,7 @@
       "id": "tirth:vr:134",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Khatu Shyam Ji",
         "hi": "खाटू श्याम जी"
@@ -5837,6 +6281,7 @@
       "id": "tirth:vr:136",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Bada Ganpati",
         "hi": "बाड़ा गणपति"
@@ -5880,6 +6325,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/BADA_GANPATI_MANDIR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BADE_GANPATI.mp3"
           }
         ]
       },
@@ -5927,6 +6377,7 @@
       "id": "tirth:vr:137",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Pitra Parvat Temple",
         "hi": "पित्र पर्वत मंदिर"
@@ -5970,6 +6421,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/PITRA_PARWAT/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/PITRA_PARWAT.mp3"
           }
         ]
       },
@@ -6011,6 +6467,7 @@
       "id": "tirth:vr:138",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Gopal Temple",
         "hi": "गोपाल मंदिर"
@@ -6054,6 +6511,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/SHREEGOPALMANDIRIndore.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GOPAL_MANDIR_INDORE.mp3"
           }
         ]
       },
@@ -6099,6 +6561,7 @@
       "id": "tirth:vr:141",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Bijasan Mata",
         "hi": "श्री बिजासन माता"
@@ -6142,6 +6605,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/BIJASAN_MATA_MANDIR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/BIJASAN_MATA.mp3"
           }
         ]
       },
@@ -6186,6 +6654,7 @@
       "id": "tirth:vr:142",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Ranjeet Hanuman",
         "hi": "श्री रंजीत हनुमन"
@@ -6229,6 +6698,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/RANJEET_HANUMAAN_MANDIR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RANJEET_HANUMAN.mp3"
           }
         ]
       },
@@ -6273,6 +6747,7 @@
       "id": "tirth:vr:143",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Prachintam Shani",
         "hi": "प्रचिन्तम शनि"
@@ -6316,6 +6791,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/PRACHINTAM_SHANI_MANDIR/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/PRACHINTAM_SHANI_MANDIR.mp3"
           }
         ]
       },
@@ -6360,6 +6840,7 @@
       "id": "tirth:vr:144",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Guptar Ghat",
         "hi": "गुप्तर घाट"
@@ -6402,7 +6883,12 @@
           {
             "code": "en",
             "label": "English",
-            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/GUPTAR_GHAT/ENGLISH_1.mp3"
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/GUPTAR_GHAT_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GUPTAR_GHAT.mp3"
           }
         ]
       },
@@ -6446,6 +6932,7 @@
       "id": "tirth:vr:145",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Dashrath Mahal",
         "hi": "दशरथ महल"
@@ -6483,7 +6970,14 @@
             "sizeLabel": "808 MB",
             "iosSizeLabel": "738 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/DASHRATH_MAHAL.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Dashrath_Mahal_Mono_Encrypted/master.m3u8",
@@ -6527,6 +7021,7 @@
       "id": "tirth:vr:146",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Nageshwarnath Mandir",
         "hi": "नगेश्वरनाथ मंदिर"
@@ -6570,6 +7065,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/NAGESHWARNATH/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/NAGESHWARNATH_AYODHYA.mp3"
           }
         ]
       },
@@ -6615,6 +7115,7 @@
       "id": "tirth:vr:147",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Surya Kund",
         "hi": "सूर्य कुंड"
@@ -6658,6 +7159,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/SURYA_KUND/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/SURYA_KUND.mp3"
           }
         ]
       },
@@ -6700,6 +7206,7 @@
       "id": "tirth:vr:148",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Kanak Bhavan",
         "hi": "कनक भवन"
@@ -6743,6 +7250,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/vbr_quality/KANAKBHAWAN.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KANAK_BHAVAN.mp3"
           }
         ]
       },
@@ -6788,6 +7300,7 @@
       "id": "tirth:vr:149",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Dwarka",
         "hi": "द्वारका"
@@ -6809,19 +7322,19 @@
         "durationSeconds": 519,
         "adaptiveHls": {
           "enabled": true,
-          "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_encrypted/master.m3u8",
-          "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Encrypted/master.m3u8"
+          "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_stereo_encrypted/master.m3u8",
+          "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Stereo_Encrypted/master.m3u8"
         },
         "qualities": {
           "medium": {
-            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_encrypted/2k/playlist.m3u8",
-            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Encrypted/output_2k/playlist.m3u8",
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_stereo_encrypted/2k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Stereo_Encrypted/output_2k/playlist.m3u8",
             "sizeLabel": "717 MB",
             "iosSizeLabel": "947 MB"
           },
           "high": {
-            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_encrypted/4k/playlist.m3u8",
-            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Encrypted/output_4k/playlist.m3u8",
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Dwarka_Darshan_stereo_encrypted/4k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Dwarka_Darshan_Stereo_Encrypted/output_4k/playlist.m3u8",
             "sizeLabel": "1.79 GB",
             "iosSizeLabel": "1.81 GB"
           }
@@ -6831,6 +7344,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/DWARKA_DARSHAN/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/DWARKA_DARSHAN.mp3"
           }
         ]
       },
@@ -6875,6 +7393,7 @@
       "id": "tirth:vr:151",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Radha Vallabh Ji",
         "hi": "राधा वल्लभ जी"
@@ -6918,6 +7437,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/RADHA_VALLABH/ENGLISH_1.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RADHA_VALLABH.mp3"
           }
         ]
       },
@@ -6965,6 +7489,7 @@
       "id": "tirth:vr:152",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Kashi Chaurasi Ghats - Part 1",
         "hi": "काशी चौरासी घाटों - भाग 1"
@@ -7002,7 +7527,19 @@
             "sizeLabel": "2.00 GB",
             "iosSizeLabel": "2.05 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/KASHI_CHAURASSI_GHAT_PART_I_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KASHI_CHAURASSI_GHAT_PART_I.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Kashi_Chaurasi_Ghat_Part_01_Mono_Encrypted/master.m3u8",
@@ -7045,6 +7582,7 @@
       "id": "tirth:vr:153",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Durlabh Darshan Introduction",
         "hi": "दुर्लभ दर्शन इंट्रोडक्शन"
@@ -7094,6 +7632,7 @@
       "id": "tirth:vr:154",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Kashi Chaurasi Ghats - Part 2",
         "hi": "काशी चौरासी घाटों - भाग 2"
@@ -7131,7 +7670,19 @@
             "sizeLabel": "1.92 GB",
             "iosSizeLabel": "2.00 GB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/KASHI_GHAT_II_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KASHI_GHAT_II.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Kashi_Chaurasi_Ghat_Part_02_mono_Encrypted/master.m3u8",
@@ -7173,6 +7724,7 @@
       "id": "tirth:vr:155",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Kashi Chaurasi Ghats - Part 3",
         "hi": "काशी चौरासी घाट - भाग 03"
@@ -7214,6 +7766,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/MultiLingualAudios/NewAudios_4Aug/KASHI_CHAURASI_GHAT_PART_03.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KASHI_GHAT_3.mp3"
           }
         ]
       },
@@ -7257,13 +7814,14 @@
       "id": "tirth:vr:156",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Ram Ki Ayodhya with Ashutosh Rana",
         "hi": "श्री राम की अयोध्या आशुतोष राना के संग"
       },
       "description": {
         "en": "• <indent=1em>This app is not intended for commercial use.</indent>\n• <indent=1em>Embark on a divine journey through the sacred city of Ayodhya with renowned actor Ashutosh Rana</indent>\n• <indent=1em>Discover the timeless history, revered temples, and spiritual heritage associated with Lord Shri Ram</indent>\n• <indent=1em>Experience the devotion, grandeur, and divine atmosphere of Ram Janmabhoomi in immersive 360° VR</indent>",
-        "hi": "• <indent=1em>यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।</indent>\n• <indent=1em>प्रसिद्ध अभिनेता आशुतोष राणा के साथ पवित्र नगरी अयोध्या की दिव्य यात्रा पर निकलें</indent>\n• <indent=1em>भगवान श्रीराम से जुड़ी कालजयी इतिहास, पूजनीय मंदिरों और आध्यात्मिक विरासत को जानें</indent>\n• <indent=1em>360° वीआर में राम जन्मभूमि की भक्ति, भव्यता और दिव्य वातावरण का सजीव अनुभव करें</indent>"
+        "hi": "• <indent=1em>यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।</indent>\n• <indent=1em>प्रसिद्ध अभिनेता आशुतोष राना के साथ पवित्र नगरी अयोध्या की दिव्य यात्रा पर निकलें</indent>\n• <indent=1em>भगवान श्रीराम से जुड़ी कालजयी इतिहास, पूजनीय मंदिरों और आध्यात्मिक विरासत को जानें</indent>\n• <indent=1em>360° वीआर में राम जन्मभूमि की भक्ति, भव्यता और दिव्य वातावरण का सजीव अनुभव करें</indent>"
       },
       "location": {
         "en": "Ayodhya",
@@ -7337,6 +7895,7 @@
       "id": "tirth:vr:157",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Ujjaini Ke Mahakal with Ashutosh Rana",
         "hi": "उज्जयिनी के महाकाल आशुतोष राना के संग"
@@ -7416,6 +7975,7 @@
       "id": "tirth:vr:159",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Nagchandreshwar Darshan",
         "hi": "नागचंद्रेश्वर दर्शन"
@@ -7451,7 +8011,14 @@
             "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Naag_Chandreshwar_Stereo_Encrypted/output_4k/playlist.m3u8",
             "sizeLabel": "767 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/NAGCHANDRESHWAR_DARSHAN.mp3"
+          }
+        ]
       },
       "mono": {
         "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Naag_Chandreshwar_Mono_Encrypted/master.m3u8",
@@ -7495,6 +8062,7 @@
       "id": "tirth:vr:160",
       "surface": "tirth",
       "kind": "vr360",
+      "TimeCounter": 5,
       "title": {
         "en": "Test 02",
         "hi": "टेस्ट हाई क्वालिटी"
@@ -7577,9 +8145,251 @@
       ]
     },
     {
+      "id": "tirth:vr:161",
+      "surface": "tirth",
+      "kind": "vr360",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Yamunotri Yatra with Shri Ashutosh Rana",
+        "hi": "श्री आशुतोष राना के संग यमुनोत्री यात्रा"
+      },
+      "description": {
+        "en": "• <indent=1em>This app is not intended for commercial use.</indent>\n• <indent=1em>Experience the divine beauty of Yamunotri Dham through an immersive 360° VR journey.</indent>\n• <indent=1em>Discover the sacred legends and spiritual significance of Yamunotri with Shri Ashutosh Rana Ji's captivating narration.</indent>\n• <indent=1em>Witness the holy Yamuna, ancient temple, and majestic Himalayan surroundings as if you were there in person.</indent>",
+        "hi": "• <indent=1em>यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।</indent>\n• <indent=1em>360° VR यात्रा के माध्यम से यमुनोत्री धाम की दिव्य सुंदरता और आध्यात्मिक वातावरण का अनुभव करें।</indent>\n• <indent=1em> श्री आशुतोष राना जी की प्रभावशाली आवाज़ में यमुनोत्री की पवित्र कथाओं और आध्यात्मिक महिमा को जानें।</indent>\n• <indent=1em>पवित्र यमुना, प्राचीन मंदिर और भव्य हिमालय के मनमोहक दृश्यों का अनुभव करें, मानो आप स्वयं वहाँ उपस्थित हों।</indent>"
+      },
+      "location": {
+        "en": "Uttarkashi",
+        "hi": "उत्तरकाशी"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshan/ThumbnailsPng/161_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/portrait/161_new_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshan/IconsPng/161.jpg"
+      },
+      "playback": {
+        "durationSeconds": 618,
+        "adaptiveHls": {
+          "enabled": true,
+          "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Yamunotri_by_rana_sir_encrypted/master.m3u8",
+          "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Yamunotri_by_rana_sir_Stereo_Encrypted/master.m3u8"
+        },
+        "qualities": {
+          "medium": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Yamunotri_by_rana_sir_encrypted/2k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Yamunotri_by_rana_sir_Stereo_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "788 MB",
+            "iosSizeLabel": "1.00 GB"
+          },
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Yamunotri_by_rana_sir_encrypted/4k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Yamunotri_by_rana_sir_Stereo_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.82 GB",
+            "iosSizeLabel": "1.94 GB"
+          }
+        }
+      },
+      "mono": {
+        "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamunotri_by_rana_sir_Mono_Encrypted/master.m3u8",
+        "qualities": {
+          "4k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamunotri_by_rana_sir_Mono_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.91 GB"
+          },
+          "2.5k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamunotri_by_rana_sir_Mono_Encrypted/output_2.5k/playlist.m3u8",
+            "sizeLabel": "994 MB"
+          },
+          "2k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamunotri_by_rana_sir_Mono_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "1011 MB"
+          },
+          "1k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Yamunotri_by_rana_sir_Mono_Encrypted/output_1k/playlist.m3u8",
+            "sizeLabel": "581 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "metaTags": [
+        "Yamunotri",
+        "Ashutosh Rana",
+        "Char Dham",
+        "Yamuna",
+        "Mandir",
+        "Temple"
+      ]
+    },
+    {
+      "id": "tirth:vr:162",
+      "surface": "tirth",
+      "kind": "vr360",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Mathura Darshan",
+        "hi": "मथुरा दर्शन"
+      },
+      "description": {
+        "en": "• <indent=1em>This app is not intended for commercial use.</indent>\n• <indent=1em>Experience Mathura in immersive 360° VR.</indent>",
+        "hi": "• <indent=1em>यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।</indent>\n• <indent=1em>360° VR में मथुरा दर्शन का अनुभव करें।</indent>"
+      },
+      "location": {
+        "en": "Mathura",
+        "hi": "मथुरा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/162.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DVRDarshan/VerticalThumbnails_v3/162_new.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/icon/162_icon.jpg"
+      },
+      "playback": {
+        "durationSeconds": 488,
+        "adaptiveHls": {
+          "enabled": true,
+          "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Mathura_Darshan_stereo_encrypted/master.m3u8",
+          "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Mathura_Darshan_Stereo_Encrypted/master.m3u8"
+        },
+        "qualities": {
+          "medium": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Mathura_Darshan_stereo_encrypted/2k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Mathura_Darshan_Stereo_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "771 MB",
+            "iosSizeLabel": "995.6 MB"
+          },
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/Mathura_Darshan_stereo_encrypted/4k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Mathura_Darshan_Stereo_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.79 GB",
+            "iosSizeLabel": "1.9 GB"
+          }
+        }
+      },
+      "mono": {
+        "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mathura_Darshan_Mono_Encrypted/master.m3u8",
+        "qualities": {
+          "4k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mathura_Darshan_Mono_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.91 GB"
+          },
+          "2.5k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mathura_Darshan_Mono_Encrypted/output_2.5k/playlist.m3u8",
+            "sizeLabel": "1 GB"
+          },
+          "2k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mathura_Darshan_Mono_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "921.3 MB"
+          },
+          "1k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Mathura_Darshan_Mono_Encrypted/output_1k/playlist.m3u8",
+            "sizeLabel": "558 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "metaTags": [
+        "Mathura",
+        "Krishna",
+        "Braj",
+        "Mandir",
+        "Temple"
+      ]
+    },
+    {
+      "id": "tirth:vr:163",
+      "surface": "tirth",
+      "kind": "vr360",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Gangotri Yatra with Shri Ashutosh Rana",
+        "hi": "श्री आशुतोष राना के संग गंगोत्री यात्रा"
+      },
+      "description": {
+        "en": "• <indent=1em>This app is not intended for commercial use.</indent>\n• <indent=1em>Experience the divine beauty of Gangotri Dham through an immersive 360° VR journey.</indent>\n• <indent=1em>Discover the sacred legends and spiritual significance of Gangotri with Shri Ashutosh Rana Ji's captivating narration.</indent>\n• <indent=1em>Witness the ancient Gangotri Temple, and majestic Himalayan surroundings as if you were there in person.</indent>",
+        "hi": "• <indent=1em>यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।</indent>\n• <indent=1em>360° VR यात्रा के माध्यम से गंगोत्री धाम की दिव्य सुंदरता और आध्यात्मिक वातावरण का अनुभव करें।</indent>\n• <indent=1em>श्री आशुतोष राना जी की प्रभावशाली आवाज़ में गंगोत्री की पवित्र कथाओं और आध्यात्मिक महिमा को जानें।</indent>\n• <indent=1em>प्राचीन गंगोत्री मंदिर और भव्य हिमालय के मनमोहक दृश्यों का अनुभव करें, मानो आप स्वयं वहाँ उपस्थित हों।</indent>"
+      },
+      "location": {
+        "en": "Uttarkashi",
+        "hi": "उत्तरकाशी"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/landscape/163.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/portrait/163_new.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Thumbnails/VideoThumbnail/icon/163.jpg"
+      },
+      "playback": {
+        "durationSeconds": 420,
+        "adaptiveHls": {
+          "enabled": true,
+          "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/GangotriDarshanwithRana_encrypted/master.m3u8",
+          "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Gangotri_with_rana_Stereo_Encrypted/master.m3u8"
+        },
+        "qualities": {
+          "medium": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/GangotriDarshanwithRana_encrypted/2k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Gangotri_with_rana_Stereo_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "479 MB",
+            "iosSizeLabel": "754 MB"
+          },
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/GangotriDarshanwithRana_encrypted/4k/playlist.m3u8",
+            "iosUrl": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth_Open/Gangotri_with_rana_Stereo_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.14 GB",
+            "iosSizeLabel": "1.41 GB"
+          }
+        }
+      },
+      "mono": {
+        "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gangotri_with_rana_Mono_Encrypted/master.m3u8",
+        "qualities": {
+          "4k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gangotri_with_rana_Mono_Encrypted/output_4k/playlist.m3u8",
+            "sizeLabel": "1.25 GB"
+          },
+          "2.5k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gangotri_with_rana_Mono_Encrypted/output_2.5k/playlist.m3u8",
+            "sizeLabel": "657 MB"
+          },
+          "2k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gangotri_with_rana_Mono_Encrypted/output_2k/playlist.m3u8",
+            "sizeLabel": "663 MB"
+          },
+          "1k": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Tirth/01Tirth_Mono/Gangotri_with_rana_Mono_Encrypted/output_1k/playlist.m3u8",
+            "sizeLabel": "387 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "metaTags": [
+        "Gangotri",
+        "Ashutosh Rana",
+        "Char Dham",
+        "Ganga",
+        "Uttarkashi",
+        "Himalaya",
+        "Mandir",
+        "Temple"
+      ]
+    },
+    {
       "id": "bhakti:3d:ep:01:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Vishnu Dashavatar",
         "hi": "श्री विष्णु दशवतार"
@@ -7620,6 +8430,7 @@
       "id": "bhakti:3d:ep:01:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Matsya Avatar",
         "hi": "मत्स्य अवतार"
@@ -7660,6 +8471,7 @@
       "id": "bhakti:3d:ep:01:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kurma Avatar",
         "hi": "कूर्म अवतार"
@@ -7700,6 +8512,7 @@
       "id": "bhakti:3d:ep:01:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Varaha Avatar",
         "hi": "वराह अवतार"
@@ -7740,6 +8553,7 @@
       "id": "bhakti:3d:ep:01:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Narasimha Avatar",
         "hi": "नरसिंह अवतार"
@@ -7780,6 +8594,7 @@
       "id": "bhakti:3d:ep:01:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vamana Avatar",
         "hi": "वामन अवतार"
@@ -7820,6 +8635,7 @@
       "id": "bhakti:3d:ep:01:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Parashurama Avatar",
         "hi": "परशुराम अवतार"
@@ -7860,6 +8676,7 @@
       "id": "bhakti:3d:ep:01:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Rama Avatar",
         "hi": "श्री राम अवतार"
@@ -7900,6 +8717,7 @@
       "id": "bhakti:3d:ep:01:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Krishna Avatar",
         "hi": "श्री कृष्ण अवतार"
@@ -7940,6 +8758,7 @@
       "id": "bhakti:3d:ep:01:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Buddha Avatar",
         "hi": "श्री बुद्ध अवतार"
@@ -7980,6 +8799,7 @@
       "id": "bhakti:3d:ep:01:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kalki Avatar",
         "hi": "कल्कि अवतार"
@@ -8020,6 +8840,7 @@
       "id": "bhakti:3d:ep:02:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Durga Saptashati",
         "hi": "श्री दुर्गा सप्तशती"
@@ -8060,6 +8881,7 @@
       "id": "bhakti:3d:ep:02:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Devi's Glory",
         "hi": "देवी की महिमा"
@@ -8100,6 +8922,7 @@
       "id": "bhakti:3d:ep:02:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Madhu Kaitabha Vadh",
         "hi": "मधु कैटभ वध"
@@ -8140,6 +8963,7 @@
       "id": "bhakti:3d:ep:02:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Devi's Birth",
         "hi": "देवी की उत्पत्ति"
@@ -8180,6 +9004,7 @@
       "id": "bhakti:3d:ep:02:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Mahishasura Mardini",
         "hi": "महिषासुर मर्दिनी"
@@ -8220,6 +9045,7 @@
       "id": "bhakti:3d:ep:02:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Gods' Hymn",
         "hi": "देवताओं की स्तुति"
@@ -8260,6 +9086,7 @@
       "id": "bhakti:3d:ep:02:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ambika's Manifestation",
         "hi": "माँ अंबिका का प्राकट्य"
@@ -8300,6 +9127,7 @@
       "id": "bhakti:3d:ep:02:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Dhoomralochan & Chand-Mund Vadh",
         "hi": "धूम्रलोचन और चण्ड-मुण्ड वध"
@@ -8340,6 +9168,7 @@
       "id": "bhakti:3d:ep:02:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Raktabeej Vadh",
         "hi": "रक्तबीज वध"
@@ -8380,6 +9209,7 @@
       "id": "bhakti:3d:ep:02:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Nishumbh Vadh",
         "hi": "निशुम्भ वध"
@@ -8420,6 +9250,7 @@
       "id": "bhakti:3d:ep:02:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shumbh Vadh",
         "hi": "शुम्भ वध"
@@ -8460,6 +9291,7 @@
       "id": "bhakti:3d:ep:02:011",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Durga Saptshati Mahatmya",
         "hi": "दुर्गा सप्तशती महात्म्य"
@@ -8500,6 +9332,7 @@
       "id": "bhakti:3d:ep:03:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Hanuman Charit",
         "hi": "श्री हनुमान चरित"
@@ -8540,6 +9373,7 @@
       "id": "bhakti:3d:ep:03:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman Janam Katha, Part 1",
         "hi": "हनुमान जन्म कथा, खंड 1"
@@ -8580,6 +9414,7 @@
       "id": "bhakti:3d:ep:03:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman Janam Katha, Part 2",
         "hi": "हनुमान जन्म कथा, खंड 2"
@@ -8620,6 +9455,7 @@
       "id": "bhakti:3d:ep:03:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Surya ko Nigalna",
         "hi": "सूर्य को निगलना"
@@ -8660,6 +9496,7 @@
       "id": "bhakti:3d:ep:03:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Devtaon ke Vardaan",
         "hi": "देवताओं के वरदान"
@@ -8700,6 +9537,7 @@
       "id": "bhakti:3d:ep:03:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shaap Aur Smaran",
         "hi": "शाप और स्मरण"
@@ -8740,6 +9578,7 @@
       "id": "bhakti:3d:ep:03:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Samudra Langhan",
         "hi": "समुद्र लंघन"
@@ -8780,6 +9619,7 @@
       "id": "bhakti:3d:ep:03:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lanka Pravesh",
         "hi": "लंका प्रवेश"
@@ -8820,6 +9660,7 @@
       "id": "bhakti:3d:ep:03:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Swarn Lanka Dahan",
         "hi": "स्वर्ण लंका दहन"
@@ -8860,6 +9701,7 @@
       "id": "bhakti:3d:ep:03:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sanjeevani Aur Vijay",
         "hi": "संजीवनी और विजय"
@@ -8900,6 +9742,7 @@
       "id": "bhakti:3d:ep:04:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Krishna Leela Part 1",
         "hi": "श्री कृष्ण लीला पार्ट 1"
@@ -8940,6 +9783,7 @@
       "id": "bhakti:3d:ep:04:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Putna Vadh",
         "hi": "पूतना वध"
@@ -8980,6 +9824,7 @@
       "id": "bhakti:3d:ep:04:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Viraat Roop Darshan",
         "hi": "विराट रूप दर्शन"
@@ -9020,6 +9865,7 @@
       "id": "bhakti:3d:ep:04:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Krishna ka Ukhal Bandhan",
         "hi": "श्री कृष्ण का ऊखल बन्धन"
@@ -9060,6 +9906,7 @@
       "id": "bhakti:3d:ep:04:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Nalkuwar & Manigriv Uddhar",
         "hi": "नलकुवर और मणिग्रीव उद्धार"
@@ -9100,6 +9947,7 @@
       "id": "bhakti:3d:ep:04:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vatsasur & Bakasur Vadh",
         "hi": "मत्स्य अवतार"
@@ -9140,6 +9988,7 @@
       "id": "bhakti:3d:ep:04:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Aghasur Vadh",
         "hi": "अघासुर वध"
@@ -9180,6 +10029,7 @@
       "id": "bhakti:3d:ep:04:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Dhenukasur Vadh",
         "hi": "धेनुकासुर वध"
@@ -9220,6 +10070,7 @@
       "id": "bhakti:3d:ep:04:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kaliya Daman",
         "hi": "कालिया दमन"
@@ -9260,6 +10111,7 @@
       "id": "bhakti:3d:ep:04:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Pralambhasur Vadh",
         "hi": "प्रलंभासुर वध"
@@ -9300,6 +10152,7 @@
       "id": "bhakti:3d:ep:04:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Indra Yagya Bhang",
         "hi": "इंद्र यज्ञ भंग"
@@ -9340,6 +10193,7 @@
       "id": "bhakti:3d:ep:04:011",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Govardhan Dhaaran",
         "hi": "गोवर्धन धारण"
@@ -9380,6 +10234,7 @@
       "id": "bhakti:3d:ep:05:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Krishna Leela Part 2",
         "hi": "श्री कृष्ण लीला पार्ट 2"
@@ -9420,6 +10275,7 @@
       "id": "bhakti:3d:ep:05:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vidhyadhar Moksh",
         "hi": "विद्याधर मोक्ष"
@@ -9460,6 +10316,7 @@
       "id": "bhakti:3d:ep:05:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sankhchood Vadh",
         "hi": "संखचूड़ वध"
@@ -9500,6 +10357,7 @@
       "id": "bhakti:3d:ep:05:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kuvalyapeedh ka Uddhaar",
         "hi": "कुवल्यापीढ़ का उद्धार"
@@ -9540,6 +10398,7 @@
       "id": "bhakti:3d:ep:05:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Guruputra Ki Punha Prapti",
         "hi": "गुरुपुत्र की पुनः प्राप्ति"
@@ -9580,6 +10439,7 @@
       "id": "bhakti:3d:ep:05:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Muchukund Ki Mukti",
         "hi": "मुचुकुंद की मुक्ति"
@@ -9620,6 +10480,7 @@
       "id": "bhakti:3d:ep:05:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ranchhod Shri Krishna",
         "hi": "रणछोड़ श्री कृष्ण"
@@ -9660,6 +10521,7 @@
       "id": "bhakti:3d:ep:05:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Rukmani Haran",
         "hi": "रुक्मणी हरण"
@@ -9700,6 +10562,7 @@
       "id": "bhakti:3d:ep:05:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Krishna ka Rajaon ko Harana",
         "hi": "कृष्ण का राजाओं को हराना"
@@ -9740,6 +10603,7 @@
       "id": "bhakti:3d:ep:05:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Syamantak Mani Ki Kahani",
         "hi": "स्यामंतक मढ़ी की कहानी"
@@ -9780,6 +10644,7 @@
       "id": "bhakti:3d:ep:05:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Bhaumasur Ka Uddhaar",
         "hi": "भौमासुर का उद्धार"
@@ -9820,6 +10685,7 @@
       "id": "bhakti:3d:ep:05:011",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Banasur se sangram",
         "hi": "बाणासुर से संग्राम"
@@ -9860,6 +10726,7 @@
       "id": "bhakti:3d:ep:05:012",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vanar dvivid  Ka Uddhaar",
         "hi": "वानर द्विविद का उद्धार"
@@ -9900,6 +10767,7 @@
       "id": "bhakti:3d:ep:05:013",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Jarasand ki Mukti",
         "hi": "जरासंद की मुक्ति"
@@ -9940,6 +10808,7 @@
       "id": "bhakti:3d:ep:05:014",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shishupal Vadh",
         "hi": "शिशुपाल का वध"
@@ -9980,6 +10849,7 @@
       "id": "bhakti:3d:ep:05:015",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shalva Ka Uddhaar",
         "hi": "शाल्व का उद्धार"
@@ -10020,6 +10890,7 @@
       "id": "bhakti:3d:ep:05:016",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kans ka Uddhar",
         "hi": "कंस का उद्धार"
@@ -10060,6 +10931,7 @@
       "id": "bhakti:3d:ep:05:017",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sudama Milan",
         "hi": "सुदमा मिलन"
@@ -10100,6 +10972,7 @@
       "id": "bhakti:3d:ep:06:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Baal Kand",
         "hi": "श्री बाल कंद"
@@ -10140,6 +11013,7 @@
       "id": "bhakti:3d:ep:06:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Putra Prapti ka Mahan Yagya",
         "hi": "पुत्र प्राप्ति का महान यज्ञ"
@@ -10180,6 +11054,7 @@
       "id": "bhakti:3d:ep:06:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Aahutiyon ka Phal, Chaar Avataar",
         "hi": "आहुतियों का फल, चार अवतार"
@@ -10220,6 +11095,7 @@
       "id": "bhakti:3d:ep:06:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Tadaka Vadh - Pehla Mahayuddh",
         "hi": "तड़का वध - पहला महायुद्ध"
@@ -10260,6 +11136,7 @@
       "id": "bhakti:3d:ep:06:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ahilya ka uddhar",
         "hi": "अहिल्या का उद्धार"
@@ -10300,6 +11177,7 @@
       "id": "bhakti:3d:ep:06:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Janak ka Pran - Shiv Dhanush ki Pratigya",
         "hi": "जनक का प्राण - शिव धनुष की प्रतिज्ञा"
@@ -10340,6 +11218,7 @@
       "id": "bhakti:3d:ep:06:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shiv Dhanush Bhang - Sita ka Varan",
         "hi": "शिव धनुष भंग - सीता का वरण"
@@ -10380,6 +11259,7 @@
       "id": "bhakti:3d:ep:06:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Parshuram ka Aagman - Vishnu Dhanush ki Chunauti",
         "hi": "परशुराम का आगमन - विष्णु धनुष की चुनौति"
@@ -10420,6 +11300,7 @@
       "id": "bhakti:3d:ep:06:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vishnu Dhanush ka Dwandv - Ram ka Param Swaroop",
         "hi": "विष्णु धनुष का द्वन्द्व - राम का परम स्वरूप"
@@ -10460,6 +11341,7 @@
       "id": "bhakti:3d:ep:07:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Ayodhya Kand",
         "hi": "श्री अयोध्या कंद"
@@ -10500,6 +11382,7 @@
       "id": "bhakti:3d:ep:07:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Rajyabhishek ki Taiyari aur Shadyantra",
         "hi": "राज्याभिषेक की तैयारी और षड्यंत्र"
@@ -10540,6 +11423,7 @@
       "id": "bhakti:3d:ep:07:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kekayi ke do Vardaan",
         "hi": "केकयी के दो वरदान"
@@ -10580,6 +11464,7 @@
       "id": "bhakti:3d:ep:07:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vanvaas ka Nirnay",
         "hi": "वनवास का निर्णय"
@@ -10620,6 +11505,7 @@
       "id": "bhakti:3d:ep:07:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Pehla Padaav aur Sumantra ki Wapsi",
         "hi": "पहला पड़ाव और सुमंत्र की वापसी"
@@ -10660,6 +11546,7 @@
       "id": "bhakti:3d:ep:07:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Dashrath ka Nidhan aur Bharat ka Shok",
         "hi": "दशरथ का निधन और भरत का शोक"
@@ -10700,6 +11587,7 @@
       "id": "bhakti:3d:ep:07:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Bharat ka Van-Gaman",
         "hi": "भारत का वन-गमन"
@@ -10740,6 +11628,7 @@
       "id": "bhakti:3d:ep:07:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ram–Bharat Milaap",
         "hi": "राम-भरत मिलाप"
@@ -10780,6 +11669,7 @@
       "id": "bhakti:3d:ep:08:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ramcharitmanas - Aranya Kand",
         "hi": "श्री अरण्य कंद"
@@ -10820,6 +11710,7 @@
       "id": "bhakti:3d:ep:08:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Dandakaranya Van mein Pravesh aur Viradh Vadh",
         "hi": "दंडकारण्य वन में प्रवेश और विराध वध"
@@ -10860,6 +11751,7 @@
       "id": "bhakti:3d:ep:08:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Panchvati mein Nivaas aur Jatayu se Milan",
         "hi": "पंचवटी में निवास और जटायु से मिलन"
@@ -10900,6 +11792,7 @@
       "id": "bhakti:3d:ep:08:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shurpanakha ki Dhrishtata",
         "hi": "शूर्पणखा की धृष्टता"
@@ -10940,6 +11833,7 @@
       "id": "bhakti:3d:ep:08:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Khar–Dushan ke Saath Mahayuddh",
         "hi": "खर-दूषण के साथ महायुद्ध"
@@ -10980,6 +11874,7 @@
       "id": "bhakti:3d:ep:08:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ravan ka Shadyantra – Sita Haran",
         "hi": "रावण का शयंत्र - सीता हरण"
@@ -11020,6 +11915,7 @@
       "id": "bhakti:3d:ep:08:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Jatayu Balidaan aur Shabari ki Bhakti",
         "hi": "जटायु बलिदान और शबरी की भक्ति"
@@ -11060,6 +11956,7 @@
       "id": "bhakti:3d:ep:09:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ramcharitmanas - Kishkindha Kand",
         "hi": "श्री किष्किंधा कांड"
@@ -11100,6 +11997,7 @@
       "id": "bhakti:3d:ep:09:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman ji se Pehli Bhet",
         "hi": "हनुमान जी से पहली भेंट"
@@ -11140,6 +12038,7 @@
       "id": "bhakti:3d:ep:09:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Bali ki Katha",
         "hi": "बाली की कथा"
@@ -11180,6 +12079,7 @@
       "id": "bhakti:3d:ep:09:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Bali ka Ant",
         "hi": "बाली का अंत"
@@ -11220,6 +12120,7 @@
       "id": "bhakti:3d:ep:09:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Varsha, Bhool Aur Sulah",
         "hi": "वर्षा, भूल और सुलह"
@@ -11260,6 +12161,7 @@
       "id": "bhakti:3d:ep:09:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman Ka Lanka Prasthaan",
         "hi": "हनुमान का लंका प्रस्थान"
@@ -11300,6 +12202,7 @@
       "id": "bhakti:3d:ep:10:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sundar Kand",
         "hi": "सुंदर कांड"
@@ -11340,6 +12243,7 @@
       "id": "bhakti:3d:ep:10:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Hanuman ki Lanka Yaatra",
         "hi": "हनुमान की लंका यात्रा"
@@ -11380,6 +12284,7 @@
       "id": "bhakti:3d:ep:10:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lankini ka uddhar",
         "hi": "लंकिनी का उद्धार"
@@ -11420,6 +12325,7 @@
       "id": "bhakti:3d:ep:10:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sita ka adig dharm",
         "hi": "सीता का अडिग धर्म"
@@ -11460,6 +12366,7 @@
       "id": "bhakti:3d:ep:10:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lanka dahan",
         "hi": "लंका दहन"
@@ -11500,6 +12407,7 @@
       "id": "bhakti:3d:ep:11:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lanka Kand",
         "hi": "लंका कांड"
@@ -11540,6 +12448,7 @@
       "id": "bhakti:3d:ep:11:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Vibhishan ko Mila Desh Nikala",
         "hi": "विभीषण को मिला देश निकाला"
@@ -11580,6 +12489,7 @@
       "id": "bhakti:3d:ep:11:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ram-Setu ka Nirman",
         "hi": "राम-सेतु का निर्माण"
@@ -11620,6 +12530,7 @@
       "id": "bhakti:3d:ep:11:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Angad ka Pair",
         "hi": "अंगद का पैर"
@@ -11660,6 +12571,7 @@
       "id": "bhakti:3d:ep:11:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Mahabali Kumbhkaran ka Uddhar",
         "hi": "महाबली कुम्भकरण का उद्धार"
@@ -11700,6 +12612,7 @@
       "id": "bhakti:3d:ep:11:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Naagpaash Ka Jaal Aur Garud Ka Aagman",
         "hi": "नागपाश का जाल और गरुड़ का आगमन"
@@ -11740,6 +12653,7 @@
       "id": "bhakti:3d:ep:11:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lakshman Moorchhit Aur Sanjeevani Booti",
         "hi": "लक्ष्मण मूर्छित और संजीवनी बूटी"
@@ -11780,6 +12694,7 @@
       "id": "bhakti:3d:ep:11:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Indrajeet (Meghnad) Ka Ant",
         "hi": "इंद्रजीत (मेघनाद) का अंत"
@@ -11820,6 +12735,7 @@
       "id": "bhakti:3d:ep:11:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ram-Ravan Mahayudh Ki Shuruaat",
         "hi": "राम-रावण महायुद्ध की शुरुआत"
@@ -11860,6 +12776,7 @@
       "id": "bhakti:3d:ep:11:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ravan Vadh",
         "hi": "रावण वध"
@@ -11900,6 +12817,7 @@
       "id": "bhakti:3d:ep:11:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Agni Sakshi: Paavanata Ka Pramaan",
         "hi": "अग्नि साक्षी: पवित्रता का प्रमाण"
@@ -11940,6 +12858,7 @@
       "id": "bhakti:3d:ep:12:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Uttar Kand",
         "hi": "उत्तर काण्ड"
@@ -11980,6 +12899,7 @@
       "id": "bhakti:3d:ep:12:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ram-Rajya: Dharmayug Ka Uday",
         "hi": "राम-राज्य: धर्मयुग का उदय"
@@ -12020,6 +12940,7 @@
       "id": "bhakti:3d:ep:12:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sita Tyaag Aur Luv-Kush Ki Katha",
         "hi": "सीता त्याग और लव-कुश की कथा"
@@ -12060,6 +12981,7 @@
       "id": "bhakti:3d:ep:12:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Ashwamedh Yagya",
         "hi": "अश्वमेध यज्ञ"
@@ -12100,6 +13022,7 @@
       "id": "bhakti:3d:ep:12:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lav-Kush Dwara Ramayan Gaan",
         "hi": "लव-कुश द्वारा रामायण गान"
@@ -12140,6 +13063,7 @@
       "id": "bhakti:3d:ep:12:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sita Ka Prithvi Mein Sama Jana",
         "hi": "सीता का पृथ्वी में समा जाना"
@@ -12180,6 +13104,7 @@
       "id": "bhakti:3d:ep:13:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Mysterious Temples",
         "hi": "रहस्यमयी मंदिर"
@@ -12220,6 +13145,7 @@
       "id": "bhakti:3d:ep:13:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Pashupatinath Temple Darshan",
         "hi": "पशुपतिनाथ मंदिर दर्शन"
@@ -12252,6 +13178,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/3DTheaterAudios/MysteriousTemples/PASHUPATINATHTEMPLE.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/PASHUPATINATH.mp3"
           }
         ]
       },
@@ -12267,6 +13198,7 @@
       "id": "bhakti:3d:ep:13:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Tirupati Balaji Temple Darshan",
         "hi": "तिरुपति बालाजी दर्शन"
@@ -12314,6 +13246,7 @@
       "id": "bhakti:3d:ep:13:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Khatu Shyam Ji Temple Darshan",
         "hi": "खाटू श्याम जी दर्शन"
@@ -12346,6 +13279,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/3DTheaterAudios/MysteriousTemples/KHATUSHYAMJITEMPLE.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/KHATU_SHYAM.mp3"
           }
         ]
       },
@@ -12361,6 +13299,7 @@
       "id": "bhakti:3d:ep:13:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Meenakshi Amman Temple Darshan",
         "hi": "मीनाक्षी अम्मन मंदिर दर्शन"
@@ -12387,7 +13326,19 @@
             "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Meenakshi_Amman/master.m3u8",
             "sizeLabel": "62 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/MEENAKSHI_AMMAN_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MEENAKSHI_AMMAN.mp3"
+          }
+        ]
       },
       "flags": {
         "isFree": false,
@@ -12401,6 +13352,7 @@
       "id": "bhakti:3d:ep:13:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Rameshwaram Temple Darshan",
         "hi": "रामेश्वरम मंदिर दर्शन"
@@ -12433,6 +13385,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/3DTheaterAudios/MysteriousTemples/RAMESHWARAMTEMPLE.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/RAMESHWARAM.mp3"
           }
         ]
       },
@@ -12448,6 +13405,7 @@
       "id": "bhakti:3d:ep:13:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Guruvayur Temple Darshan",
         "hi": "गुरुवायूर मंदिर दर्शन"
@@ -12480,6 +13438,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/3DTheaterAudios/MysteriousTemples/GURUVAYURTEMPLE.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/GURUVAYUR.mp3"
           }
         ]
       },
@@ -12495,6 +13458,7 @@
       "id": "bhakti:3d:ep:13:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Jagannath Temple Darshan",
         "hi": "जगन्नाथ मंदिर दर्शन"
@@ -12521,7 +13485,19 @@
             "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Jaganath_Temple/master.m3u8",
             "sizeLabel": "110 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/JAGANNATH_AI_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/JAGANNATH_AI.mp3"
+          }
+        ]
       },
       "flags": {
         "isFree": false,
@@ -12535,6 +13511,7 @@
       "id": "bhakti:3d:ep:13:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shri Mallikarjuna Jyotirlinga Darshan",
         "hi": "मल्लिकार्जुन ज्योतिर्लिंग दर्शन"
@@ -12567,6 +13544,11 @@
             "code": "en",
             "label": "English",
             "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/EnglishAudioTracks/3DTheaterAudios/MysteriousTemples/MALIKARJUNA.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/MALIKARJUNA.mp3"
           }
         ]
       },
@@ -12582,6 +13564,7 @@
       "id": "bhakti:3d:ep:13:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sabarimala Temple",
         "hi": "सबरीमला मंदिर"
@@ -12608,7 +13591,19 @@
             "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Sabarimala_Temple/master.m3u8",
             "sizeLabel": "77 MB"
           }
-        }
+        },
+        "audioTracks": [
+          {
+            "code": "en",
+            "label": "English",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/English_Audios/SABRIMALA_English.mp3"
+          },
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/SABRIMALA.mp3"
+          }
+        ]
       },
       "flags": {
         "isFree": false,
@@ -12622,6 +13617,7 @@
       "id": "bhakti:3d:ep:13:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Thillai Nataraja Temple",
         "hi": "थिल्लई नटराज मंदिर"
@@ -12662,6 +13658,7 @@
       "id": "bhakti:3d:ep:13:011",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Lepakshi Temple",
         "hi": "लेपाक्षी मंदिर"
@@ -12688,6 +13685,218 @@
             "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Lepakshi_Temple/master.m3u8",
             "sizeLabel": "77 MB"
           }
+        },
+        "audioTracks": [
+          {
+            "code": "tel",
+            "label": "Telugu",
+            "audioUrl": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/MetaApp/VrDarshanAudios/3DVr/Telugu_Audios/LEPAKSHI_TEMPLE.mp3"
+          }
+        ]
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:13"
+    },
+    {
+      "id": "bhakti:3d:ep:13:012",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Ahobilam Temple",
+        "hi": "अहोबिलम मंदिर"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nSacred to Lord Narasimha, Ahobilam is renowned for its nine Narasimha shrines, each representing a unique divine form of the Lord.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nभगवान श्री नरसिंह का पवित्र धाम, अहोबिलम अपने नौ नरसिंह मंदिरों के लिए प्रसिद्ध है, जहाँ प्रभु के नौ दिव्य स्वरूपों की पूजा होती है।"
+      },
+      "location": {
+        "en": "Andhra Pradesh",
+        "hi": "आंध्र प्रदेश"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E12_L.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E12_L.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E12_L.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Portraits/3DT_S12_E12_P_new.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 484,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Ahobilam_Narsimha_Temple/master.m3u8",
+            "sizeLabel": "82 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:13"
+    },
+    {
+      "id": "bhakti:3d:ep:13:013",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Udupi Sri Krishna Temple",
+        "hi": "उडुपी श्रीकृष्ण मंदिर"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nA revered Krishna temple known for the unique Kanakana Kindi darshan and its deep association with Sri Madhvacharya.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nभगवान श्रीकृष्ण का प्रसिद्ध धाम, जो कनकना किंडी से होने वाले विशेष दर्शन और श्री मध्वाचार्य से अपने गहरे संबंध के लिए जाना जाता है।"
+      },
+      "location": {
+        "en": "Karnataka",
+        "hi": "कर्नाटक"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E13_L.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E13_L.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E13_L.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Portraits/3DT_S12_E13_P_new.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 538,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Krishna_Udupi_Temple/master.m3u8",
+            "sizeLabel": "90 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:13"
+    },
+    {
+      "id": "bhakti:3d:ep:13:014",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Sri Ranganathaswamy Temple",
+        "hi": "श्री रंगनाथस्वामी मंदिर"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nOne of the most revered Vishnu temples, famous for Lord Ranganatha in a reclining form and its magnificent Dravidian temple complex at Srirangam.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nभगवान विष्णु के प्रमुख धामों में से एक, जो शेषनाग पर विराजमान भगवान रंगनाथ के दिव्य स्वरूप और भव्य द्रविड़ स्थापत्य के लिए प्रसिद्ध है।"
+      },
+      "location": {
+        "en": "Tamil Nadu",
+        "hi": "तमिलनाडु"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E14_L.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E14_L.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E14_L.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Portraits/3DT_S12_E14_P_new.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 470,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Rangnathswamy/master.m3u8",
+            "sizeLabel": "75 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:13"
+    },
+    {
+      "id": "bhakti:3d:ep:13:015",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Thanumalayan Temple",
+        "hi": "थानुमलयन मंदिर"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nA unique sacred temple where Brahma, Vishnu and Shiva are worshipped together as the Trimurti, also renowned for its remarkable musical stone pillars.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nयह विशिष्ट मंदिर ब्रह्मा, विष्णु और शिव की त्रिमूर्ति के संयुक्त स्वरूप की आराधना तथा अपने अद्भुत संगीतमय पत्थर के स्तंभों के लिए प्रसिद्ध है।"
+      },
+      "location": {
+        "en": "Tamil Nadu",
+        "hi": "तमिलनाडु"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E15_L.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E15_L.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E15_L.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Portraits/3DT_S12_E15_P_new.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 475,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Thanumalayan_Swami/master.m3u8",
+            "sizeLabel": "79 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:13"
+    },
+    {
+      "id": "bhakti:3d:ep:13:016",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Kanaka Durga Temple",
+        "hi": "कनक दुर्गा मंदिर"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nSacred to Goddess Kanaka Durga, this revered shrine stands atop Indrakeeladri Hill on the banks of the Krishna River and is especially celebrated during Navaratri.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमाँ कनक दुर्गा को समर्पित यह पवित्र मंदिर कृष्णा नदी के तट पर इंद्रकीलाद्रि पर्वत पर स्थित है और नवरात्रि उत्सव के लिए विशेष रूप से प्रसिद्ध है।"
+      },
+      "location": {
+        "en": "Andhra Pradesh",
+        "hi": "आंध्र प्रदेश"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E16_L.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E16_L.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Landscape/3DT_S12_E16_L.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Mysterious_Temples/Portraits/3DT_S12_E16_P_new.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 465,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Mysterious_Temples_v2/Kanak_Durga_Temple/master.m3u8",
+            "sizeLabel": "80 MB"
+          }
         }
       },
       "flags": {
@@ -12702,6 +13911,7 @@
       "id": "bhakti:3d:ep:14:000",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shiv Puran",
         "hi": "शिव पुराण"
@@ -12742,6 +13952,7 @@
       "id": "bhakti:3d:ep:14:001",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Srishti Ka Aarambh",
         "hi": "सृष्टि का आरंभ"
@@ -12782,6 +13993,7 @@
       "id": "bhakti:3d:ep:14:002",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sati Ka Janm",
         "hi": "सती का जन्म"
@@ -12822,6 +14034,7 @@
       "id": "bhakti:3d:ep:14:003",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shiv Sati Vivah",
         "hi": "शिव सती विवाह"
@@ -12862,6 +14075,7 @@
       "id": "bhakti:3d:ep:14:004",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Daksh Yagya, Mata Sati Ka Aatmadah",
         "hi": "दक्ष यज्ञ, माता सती का आत्मदाह"
@@ -12902,6 +14116,7 @@
       "id": "bhakti:3d:ep:14:005",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Daksh Yagya Ka Vinash",
         "hi": "दक्ष यज्ञ का विनाश"
@@ -12942,6 +14157,7 @@
       "id": "bhakti:3d:ep:14:006",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sati Ka Viyog",
         "hi": "सती का वियोग"
@@ -12982,6 +14198,7 @@
       "id": "bhakti:3d:ep:14:007",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Sati Ke Baad Ka Shunya",
         "hi": "सती के बाद का शून्य"
@@ -13022,6 +14239,7 @@
       "id": "bhakti:3d:ep:14:008",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Narad Dwara Parvati Ka Bhavishya Varnan",
         "hi": "नारद द्वारा पार्वती का भविष्य वर्णन"
@@ -13062,6 +14280,7 @@
       "id": "bhakti:3d:ep:14:009",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Tarakasur Ka Aatank",
         "hi": "तारकासुर का आतंक"
@@ -13102,6 +14321,7 @@
       "id": "bhakti:3d:ep:14:010",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Kamdev Dahan",
         "hi": "कामदेव दहन"
@@ -13142,6 +14362,7 @@
       "id": "bhakti:3d:ep:14:011",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Narad Dwara Parvati Ko Updesh",
         "hi": "नारद द्वारा पार्वती को उपदेश"
@@ -13182,6 +14403,7 @@
       "id": "bhakti:3d:ep:14:012",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Parvati Ki Pariksha",
         "hi": "पार्वती की परीक्षा"
@@ -13222,6 +14444,7 @@
       "id": "bhakti:3d:ep:14:013",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Mahadev Ka Nat Roop Aur Divya Darshan",
         "hi": "महादेव का नट रूप और दिव्य दर्शन"
@@ -13262,6 +14485,7 @@
       "id": "bhakti:3d:ep:14:014",
       "surface": "bhakti",
       "kind": "theatre3d",
+      "TimeCounter": 5,
       "title": {
         "en": "Shiv-Parvati Vivah",
         "hi": "शिव-पार्वती विवाह"
@@ -13297,6 +14521,498 @@
         "isDocumentary": true
       },
       "seriesId": "bhakti:3d:series:14"
+    },
+    {
+      "id": "bhakti:3d:ep:15:000",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Navratri Specials",
+        "hi": "नवरात्रि स्पेशल"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E0_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E0_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E0_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E0_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 587,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri01/master.m3u8",
+            "sizeLabel": "67 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": true,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:001",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Introduction: The Nine Forms of Maa Durga",
+        "hi": "प्रस्तावना: मां के नौ स्वरूप"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_Intro_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_Intro_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_Intro_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_Intro_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 587,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri01/master.m3u8",
+            "sizeLabel": "67 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:002",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 1: Maa Shailputri",
+        "hi": "प्रकरण 1: माँ शैलपुत्री"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Navratri begin with the worship of Maa Shailputri? What deeper life lessons can we discover through the first form of Navdurga?",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nनवरात्रि की शुरुआत मां शैलपुत्री की पूजा से क्यों होती है? मां शैलपुत्री के स्वरूप में जीवन, आत्मपहचान, धैर्य और मजबूत आधार का कौन-सा गहरा संदेश छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E1_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E1_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E1_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E1_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 642,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri02/master.m3u8",
+            "sizeLabel": "63 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:003",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 2: Maa Brahmacharini",
+        "hi": "प्रकरण 2: माँ ब्रह्मचारिणी"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E2_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E2_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E2_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E2_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 857,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri03/master.m3u8",
+            "sizeLabel": "219 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:004",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 3: Maa Chandraghanta",
+        "hi": "प्रकरण 3: माँ चंद्रघंटा"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E3_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E3_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E3_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E3_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 845,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri04/master.m3u8",
+            "sizeLabel": "215 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:005",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 4: Maa Kushmanda",
+        "hi": "प्रकरण 4: माँ कूष्मांडा"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E4_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E4_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E4_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E4_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 916,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri05/master.m3u8",
+            "sizeLabel": "234 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:006",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 5: Maa Skandamata",
+        "hi": "प्रकरण 5: माँ स्कंदमाता"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E5_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E5_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E5_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E5_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 598,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri06/master.m3u8",
+            "sizeLabel": "156 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:007",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 6: Maa Katyayani",
+        "hi": "प्रकरण 6: माँ कात्यायनी"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E6_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E6_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E6_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E6_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 814,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri07/master.m3u8",
+            "sizeLabel": "207 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:008",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 7: Maa Kaalratri",
+        "hi": "प्रकरण 7: माँ कालरात्रि"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E7_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E7_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E7_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E7_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 706,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri08/master.m3u8",
+            "sizeLabel": "180 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:009",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 8: Maa Mahagauri",
+        "hi": "प्रकरण 8: माँ महागौरी"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E8_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E8_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E8_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E8_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 567,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri09/master.m3u8",
+            "sizeLabel": "146 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:010",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 9: Maa Siddhidatri",
+        "hi": "प्रकरण 9: माँ सिद्धिदात्री"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E9_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E9_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E9_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E9_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 956,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri10/master.m3u8",
+            "sizeLabel": "242 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
+    },
+    {
+      "id": "bhakti:3d:ep:15:011",
+      "surface": "bhakti",
+      "kind": "theatre3d",
+      "TimeCounter": 5,
+      "title": {
+        "en": "Episode 10: Vijayadashami (Dussehra)",
+        "hi": "प्रकरण 10: विजयादशमी (दशहरा)"
+      },
+      "description": {
+        "en": "This app is not intended for commercial use.\nWhy does Goddess Durga appear in nine different forms during Navratri? From Shailputri and Brahmacharini to Katyayani, Kaalratri, Mahagauri and Siddhidatri, each form carries a distinct story, symbolism and deeper meaning.",
+        "hi": "यह ऐप कमर्शियल इस्तेमाल के लिए नहीं है।\nमां के नौ रूपों का रहस्य आखिर क्या है? नवरात्रि में हम मां शैलपुत्री से लेकर मां सिद्धिदात्री तक नौ स्वरूपों की पूजा करते हैं, लेकिन क्या इन नौ रूपों के पीछे जीवन और चेतना को समझने का कोई गहरा दर्शन भी छिपा है?"
+      },
+      "location": {
+        "en": "Maa Durga",
+        "hi": "माँ दुर्गा"
+      },
+      "thumbnails": {
+        "landscape": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E10_v3.jpg",
+        "portrait": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E10_v3.jpg",
+        "icon": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Landscape/3DT_S14_E10_v3.jpg",
+        "portraitAlt": "https://ddappcdn.techxr.co/DurlabhDarshanAssets/App/UIGraphics/3DTheatre/thumbnails_v4/Navratri_Specials/Portraits/3DT_S14_E10_P_v3.jpg",
+        "is3DTheatreThumbnail": true
+      },
+      "playback": {
+        "durationSeconds": 976,
+        "qualities": {
+          "high": {
+            "url": "https://ddappcdn.techxr.co/DurlabhDarshanApp/Flat3DVideos/3DTheater_Shows/Navratri_Specials/navratri11/master.m3u8",
+            "sizeLabel": "251 MB"
+          }
+        }
+      },
+      "flags": {
+        "isFree": false,
+        "isNew": true,
+        "isAarti": false,
+        "isDocumentary": true
+      },
+      "seriesId": "bhakti:3d:series:15"
     },
     {
       "id": "bhakti:2d:ep:12:001",
@@ -18650,6 +20366,28 @@
   ],
   "webseries": [
     {
+      "id": "bhakti:3d:series:15",
+      "kind": "theatre3d",
+      "title": {
+        "en": "Navratri Specials",
+        "hi": "नवरात्रि स्पेशल"
+      },
+      "introShowId": "bhakti:3d:ep:15:000",
+      "episodeShowIds": [
+        "bhakti:3d:ep:15:001",
+        "bhakti:3d:ep:15:002",
+        "bhakti:3d:ep:15:003",
+        "bhakti:3d:ep:15:004",
+        "bhakti:3d:ep:15:005",
+        "bhakti:3d:ep:15:006",
+        "bhakti:3d:ep:15:007",
+        "bhakti:3d:ep:15:008",
+        "bhakti:3d:ep:15:009",
+        "bhakti:3d:ep:15:010",
+        "bhakti:3d:ep:15:011"
+      ]
+    },
+    {
       "id": "bhakti:3d:series:01",
       "kind": "theatre3d",
       "title": {
@@ -18748,7 +20486,12 @@
         "bhakti:3d:ep:13:008",
         "bhakti:3d:ep:13:009",
         "bhakti:3d:ep:13:010",
-        "bhakti:3d:ep:13:011"
+        "bhakti:3d:ep:13:011",
+        "bhakti:3d:ep:13:012",
+        "bhakti:3d:ep:13:013",
+        "bhakti:3d:ep:13:014",
+        "bhakti:3d:ep:13:015",
+        "bhakti:3d:ep:13:016"
       ]
     },
     {

@@ -18,6 +18,9 @@
           },
           "itemKind": "show",
           "previewIds": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:041",
             "tirth:vr:046",
@@ -36,6 +39,9 @@
             "tirth:vr:020"
           ],
           "ids": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:041",
             "tirth:vr:046",
@@ -57,6 +63,24 @@
           ]
         },
         {
+          "id": "tirth:cat:ashutosh-rana-specials",
+          "title": {
+            "en": "Ashutosh Rana Specials",
+            "hi": "आशुतोष राना स्पेशल्स"
+          },
+          "itemKind": "show",
+          "previewIds": [
+            "tirth:vr:163",
+            "tirth:vr:156",
+            "tirth:vr:161"
+          ],
+          "ids": [
+            "tirth:vr:163",
+            "tirth:vr:156",
+            "tirth:vr:161"
+          ]
+        },
+        {
           "id": "tirth:cat:newly-launched",
           "title": {
             "en": "Newly Launched",
@@ -64,6 +88,9 @@
           },
           "itemKind": "show",
           "previewIds": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:159",
             "tirth:vr:155",
@@ -74,6 +101,9 @@
             "tirth:vr:148"
           ],
           "ids": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:159",
             "tirth:vr:155",
@@ -92,12 +122,16 @@
           },
           "itemKind": "show",
           "previewIds": [
+            "tirth:vr:163",
+            "tirth:vr:161",
             "tirth:vr:046",
             "tirth:vr:047",
             "tirth:vr:044",
             "tirth:vr:045"
           ],
           "ids": [
+            "tirth:vr:163",
+            "tirth:vr:161",
             "tirth:vr:047",
             "tirth:vr:046",
             "tirth:vr:045",
@@ -330,8 +364,7 @@
             "tirth:vr:031",
             "tirth:vr:137",
             "tirth:vr:143",
-            "tirth:vr:153",
-            "tirth:vr:160"
+            "tirth:vr:153"
           ]
         },
         {
@@ -342,6 +375,9 @@
           },
           "itemKind": "show",
           "previewIds": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:159",
             "tirth:vr:041",
@@ -363,6 +399,9 @@
             "tirth:vr:020"
           ],
           "ids": [
+            "tirth:vr:163",
+            "tirth:vr:162",
+            "tirth:vr:161",
             "tirth:vr:156",
             "tirth:vr:159",
             "tirth:vr:041",
@@ -443,8 +482,7 @@
             "tirth:vr:031",
             "tirth:vr:137",
             "tirth:vr:143",
-            "tirth:vr:153",
-            "tirth:vr:160"
+            "tirth:vr:153"
           ]
         },
         {
@@ -456,7 +494,6 @@
           "itemKind": "show",
           "previewIds": [
             "tirth:vr:157",
-            "tirth:vr:129",
             "tirth:vr:131",
             "tirth:vr:134",
             "tirth:vr:128",
@@ -466,7 +503,6 @@
           ],
           "ids": [
             "tirth:vr:157",
-            "tirth:vr:129",
             "tirth:vr:131",
             "tirth:vr:134",
             "tirth:vr:128",
@@ -670,6 +706,40 @@
       "enabled": true,
       "categories": [
         {
+          "id": "bhakti:cat:navratri-specials",
+          "title": {
+            "en": "Navratri Specials",
+            "hi": "नवरात्रि स्पेशल"
+          },
+          "itemKind": "show",
+          "previewIds": [
+            "bhakti:3d:ep:15:001",
+            "bhakti:3d:ep:15:002",
+            "bhakti:3d:ep:15:003",
+            "bhakti:3d:ep:15:004",
+            "bhakti:3d:ep:15:005",
+            "bhakti:3d:ep:15:006",
+            "bhakti:3d:ep:15:007",
+            "bhakti:3d:ep:15:008",
+            "bhakti:3d:ep:15:009",
+            "bhakti:3d:ep:15:010",
+            "bhakti:3d:ep:15:011"
+          ],
+          "ids": [
+            "bhakti:3d:ep:15:001",
+            "bhakti:3d:ep:15:002",
+            "bhakti:3d:ep:15:003",
+            "bhakti:3d:ep:15:004",
+            "bhakti:3d:ep:15:005",
+            "bhakti:3d:ep:15:006",
+            "bhakti:3d:ep:15:007",
+            "bhakti:3d:ep:15:008",
+            "bhakti:3d:ep:15:009",
+            "bhakti:3d:ep:15:010",
+            "bhakti:3d:ep:15:011"
+          ]
+        },
+        {
           "id": "bhakti:cat:shiv-puran",
           "title": {
             "en": "Shiv Puran",
@@ -717,30 +787,40 @@
           },
           "itemKind": "show",
           "previewIds": [
+            "bhakti:3d:ep:13:016",
+            "bhakti:3d:ep:13:015",
+            "bhakti:3d:ep:13:014",
+            "bhakti:3d:ep:13:013",
+            "bhakti:3d:ep:13:012",
             "bhakti:3d:ep:13:011",
             "bhakti:3d:ep:13:010",
             "bhakti:3d:ep:13:009",
-            "bhakti:3d:ep:13:006",
-            "bhakti:3d:ep:13:007",
             "bhakti:3d:ep:13:008",
-            "bhakti:3d:ep:13:001",
-            "bhakti:3d:ep:13:003",
-            "bhakti:3d:ep:13:004",
+            "bhakti:3d:ep:13:007",
+            "bhakti:3d:ep:13:006",
             "bhakti:3d:ep:13:005",
-            "bhakti:3d:ep:13:002"
+            "bhakti:3d:ep:13:004",
+            "bhakti:3d:ep:13:003",
+            "bhakti:3d:ep:13:002",
+            "bhakti:3d:ep:13:001"
           ],
           "ids": [
+            "bhakti:3d:ep:13:016",
+            "bhakti:3d:ep:13:015",
+            "bhakti:3d:ep:13:014",
+            "bhakti:3d:ep:13:013",
+            "bhakti:3d:ep:13:012",
             "bhakti:3d:ep:13:011",
             "bhakti:3d:ep:13:010",
             "bhakti:3d:ep:13:009",
-            "bhakti:3d:ep:13:006",
-            "bhakti:3d:ep:13:007",
             "bhakti:3d:ep:13:008",
-            "bhakti:3d:ep:13:001",
-            "bhakti:3d:ep:13:003",
-            "bhakti:3d:ep:13:004",
+            "bhakti:3d:ep:13:007",
+            "bhakti:3d:ep:13:006",
             "bhakti:3d:ep:13:005",
-            "bhakti:3d:ep:13:002"
+            "bhakti:3d:ep:13:004",
+            "bhakti:3d:ep:13:003",
+            "bhakti:3d:ep:13:002",
+            "bhakti:3d:ep:13:001"
           ]
         },
         {
@@ -1098,6 +1178,8 @@
   ],
   "homePreview": {
     "tirthShowIds": [
+      "tirth:vr:163",
+      "tirth:vr:162",
       "tirth:vr:041",
       "tirth:vr:156",
       "tirth:vr:159",
@@ -1114,9 +1196,11 @@
       "tirth:vr:029",
       "tirth:vr:030",
       "tirth:vr:122",
-      "tirth:vr:020"
+      "tirth:vr:020",
+      "tirth:vr:161"
     ],
     "bhaktiTheatreIntroShowIds": [
+      "bhakti:3d:ep:15:000",
       "bhakti:3d:ep:14:000",
       "bhakti:3d:ep:13:000",
       "bhakti:3d:ep:12:000",
@@ -1134,7 +1218,6 @@
     ],
     "tirthComingSoonShowIds": [
       "tirth:vr:157",
-      "tirth:vr:129",
       "tirth:vr:131",
       "tirth:vr:134",
       "tirth:vr:128",
@@ -1170,6 +1253,9 @@
         },
         "categoryId": "tirth:cat:newly-launched",
         "ids": [
+          "tirth:vr:163",
+          "tirth:vr:162",
+          "tirth:vr:161",
           "tirth:vr:156",
           "tirth:vr:159",
           "tirth:vr:152",
@@ -1187,6 +1273,8 @@
         },
         "categoryId": "tirth:cat:char-dham",
         "ids": [
+          "tirth:vr:163",
+          "tirth:vr:161",
           "tirth:vr:044",
           "tirth:vr:045",
           "tirth:vr:046",
@@ -1281,6 +1369,16 @@
       "bhakti:2d:ep:02:001",
       "bhakti:2d:video:002",
       "bhakti:2d:ep:04:001",
+      "bhakti:2d:ep:04:002",
+      "bhakti:2d:ep:04:003",
+      "bhakti:2d:ep:04:004",
+      "bhakti:2d:ep:04:005",
+      "bhakti:2d:ep:04:006",
+      "bhakti:2d:ep:04:007",
+      "bhakti:2d:ep:04:008",
+      "bhakti:2d:ep:04:009",
+      "bhakti:2d:ep:04:010",
+      "bhakti:2d:ep:04:011",
       "bhakti:2d:video:034",
       "bhakti:2d:video:003",
       "bhakti:2d:video:004",
@@ -1321,7 +1419,6 @@
       "bhakti:2d:video:035",
       "bhakti:2d:video:036",
       "bhakti:2d:video:037",
-      "bhakti:2d:video:039",
       "bhakti:2d:video:040",
       "bhakti:2d:video:041",
       "bhakti:2d:video:042",
@@ -1357,7 +1454,9 @@
       "tirth:vr:155",
       "tirth:vr:156",
       "tirth:vr:159",
-      "tirth:vr:160",
+      "tirth:vr:161",
+      "tirth:vr:162",
+      "tirth:vr:163",
       "bhakti:2d:ep:14:001",
       "bhakti:3d:ep:01:000",
       "bhakti:3d:ep:02:000",
@@ -1373,6 +1472,9 @@
       "bhakti:3d:ep:12:000",
       "bhakti:3d:ep:13:000",
       "bhakti:3d:ep:14:000",
+      "bhakti:3d:ep:15:000",
+      "bhakti:3d:ep:15:001",
+      "bhakti:3d:ep:15:002",
       "bhakti:3d:ep:01:001",
       "bhakti:3d:ep:01:002",
       "bhakti:3d:ep:01:003",
@@ -1487,6 +1589,11 @@
       "bhakti:3d:ep:13:009",
       "bhakti:3d:ep:13:010",
       "bhakti:3d:ep:13:011",
+      "bhakti:3d:ep:13:012",
+      "bhakti:3d:ep:13:013",
+      "bhakti:3d:ep:13:014",
+      "bhakti:3d:ep:13:015",
+      "bhakti:3d:ep:13:016",
       "bhakti:3d:ep:14:001",
       "bhakti:3d:ep:14:002",
       "bhakti:3d:ep:14:003",
@@ -1500,7 +1607,33 @@
       "bhakti:3d:ep:14:011",
       "bhakti:3d:ep:14:012",
       "bhakti:3d:ep:14:013",
-      "bhakti:3d:ep:14:014"
+      "bhakti:3d:ep:14:014",
+      "bhakti:3d:ep:15:003",
+      "bhakti:3d:ep:15:004",
+      "bhakti:3d:ep:15:005",
+      "bhakti:3d:ep:15:006",
+      "bhakti:3d:ep:15:007",
+      "bhakti:2d:ep:01:001",
+      "bhakti:2d:ep:01:002",
+      "bhakti:2d:ep:01:003",
+      "bhakti:2d:ep:01:004",
+      "bhakti:2d:ep:01:005",
+      "bhakti:2d:ep:01:006",
+      "bhakti:2d:ep:01:007",
+      "bhakti:2d:ep:01:008",
+      "bhakti:2d:ep:01:009",
+      "bhakti:2d:ep:01:010",
+      "bhakti:2d:ep:01:011",
+      "bhakti:2d:ep:01:012",
+      "bhakti:2d:ep:01:013",
+      "bhakti:2d:ep:01:014",
+      "bhakti:2d:ep:01:015",
+      "bhakti:2d:ep:01:016",
+      "bhakti:2d:ep:01:017",
+      "bhakti:3d:ep:15:008",
+      "bhakti:3d:ep:15:009",
+      "bhakti:3d:ep:15:010",
+      "bhakti:3d:ep:15:011"
     ],
     "disactiveShowIds": [
       "tirth:vr:003",
@@ -1511,11 +1644,18 @@
       "tirth:vr:009",
       "tirth:vr:011",
       "tirth:vr:014",
-      "bhakti:2d:video:038"
+      "tirth:vr:125",
+      "tirth:vr:127",
+      "tirth:vr:129",
+      "tirth:vr:130",
+      "tirth:vr:133",
+      "tirth:vr:160",
+      "bhakti:2d:video:038",
+      "bhakti:2d:video:039",
+      "bhakti:2d:video:013"
     ],
     "comingSoonTirthShowIds": [
       "tirth:vr:157",
-      "tirth:vr:129",
       "tirth:vr:131",
       "tirth:vr:134",
       "tirth:vr:128",

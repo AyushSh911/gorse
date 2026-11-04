@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, rename } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import {
@@ -8,7 +8,7 @@ import {
   toGorseItemId,
 } from "./ids.mjs";
 import { buildLabels } from "./labels.mjs";
-import { upsertItems, deleteItems } from "./gorse.mjs";
+import { upsertItems, deleteItems, listItems } from "./gorse.mjs";
 import { memoryGate } from "./memguard.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -68,12 +68,69 @@ export async function loadSource(key) {
 
 function clearSourceCache() {
   sourceCache.clear();
+  sourcesManifest = null;
 }
 
+const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 30_000);
+
 async function fetchJson(url) {
-  const res = await fetch(url, { headers: { Accept: "application/json" } });
+  const res = await fetch(url, {
+    headers: { Accept: "application/json" },
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+  });
   if (!res.ok) throw new Error(`${url} → ${res.status}`);
   return res.json();
+}
+
+/** Minimal shape checks so a broken CDN upload never replaces a good snapshot. */
+const SOURCE_CHECKS = {
+  content: (d) => Array.isArray(d?.shows) && d.shows.length > 0,
+  layout: (d) => d?.status && typeof d.status === "object",
+  trailers: (d) => Array.isArray(d?.trailers),
+  abhishek: (d) => Array.isArray(d),
+  home: (d) => homeRows(d).length > 0,
+  blogs: (d) => Array.isArray(d?.categories),
+  live: (d) => Array.isArray(d?.schedule) || Array.isArray(d),
+};
+
+export function validSourceData(key, data) {
+  const check = SOURCE_CHECKS[key];
+  return check ? Boolean(check(data)) : data != null && typeof data === "object";
+}
+
+/**
+ * Pull every sources.json entry that has a `url` from the CDN into jsons/.
+ * Failures keep the previous snapshot so sync still runs on last-known-good data.
+ */
+export async function refreshSources({ fetcher = fetchJson } = {}) {
+  const sources = JSON.parse(await readFile(SOURCES_FILE, "utf8"));
+  const refreshed = [];
+  const unchanged = [];
+  const failed = [];
+  await Promise.all(
+    Object.entries(sources).map(async ([key, { file, url } = {}]) => {
+      if (!file || !url) return;
+      const dest = join(JSONS_DIR, file);
+      try {
+        const data = await fetcher(url);
+        if (!validSourceData(key, data)) throw new Error("unexpected JSON shape");
+        const next = JSON.stringify(data, null, 2) + "\n";
+        const prev = await readFile(dest, "utf8").catch(() => "");
+        if (prev === next) {
+          unchanged.push(key);
+          return;
+        }
+        const tmp = `${dest}.tmp`;
+        await writeFile(tmp, next, "utf8");
+        await rename(tmp, dest);
+        refreshed.push(key);
+      } catch (e) {
+        failed.push({ source: key, error: String(e.message || e) });
+      }
+    }),
+  );
+  clearSourceCache();
+  return { refreshed: refreshed.sort(), unchanged: unchanged.sort(), failed };
 }
 
 function titleEn(title) {
@@ -631,14 +688,69 @@ function applyIndexMerge(oldIndex, itemsBySource, failedSources) {
   }
 }
 
-export async function syncCatalog() {
+function canonical(v) {
+  if (Array.isArray(v)) return `[${v.map(canonical).join(",")}]`;
+  if (v && typeof v === "object") {
+    return `{${Object.keys(v)
+      .sort()
+      .map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`)
+      .join(",")}}`;
+  }
+  return JSON.stringify(v ?? null);
+}
+
+/** Comparable fingerprint of a Gorse item (ours or one read back from Gorse). */
+export function itemFingerprint(it) {
+  return canonical({
+    h: Boolean(it?.IsHidden),
+    c: [...new Set(it?.Categories || [])].sort(),
+    t: Date.parse(it?.Timestamp || "") || 0,
+    l: it?.Labels || {},
+    m: it?.Comment || "",
+  });
+}
+
+/**
+ * Only new or changed items. Gorse re-patches every cached recommendation row
+ * for each upserted item (tens of thousands per popular item on MySQL), so
+ * re-upserting the full unchanged catalog makes sync take far longer than the
+ * cron timeout.
+ */
+export function changedItems(items, existing) {
+  return items.filter((it) => {
+    const prev = existing.get(it.ItemId);
+    return !prev || itemFingerprint(prev) !== itemFingerprint(it);
+  });
+}
+
+let running = null;
+
+/** Single-flight: concurrent callers (cron + manual) share one run. */
+export function syncCatalog(opts) {
+  if (!running) {
+    running = runSync(opts).finally(() => {
+      running = null;
+    });
+  }
+  return running;
+}
+
+async function runSync({ refresh = process.env.SYNC_REFRESH_CDN !== "0" } = {}) {
   if (itemIndex.size === 0) await loadItemIndex();
   const oldIndex = new Map(itemIndex);
+
+  const cdn = refresh ? await refreshSources() : { skipped: true };
 
   await memoryGate("sync-build");
   const built = await buildCatalogItems();
   await memoryGate("sync-upsert");
-  const upsert = await upsertItems(built.items);
+  let pending = built.items;
+  try {
+    pending = changedItems(built.items, await listItems());
+  } catch (e) {
+    built.errors.push({ source: "gorse-list", error: String(e.message || e) });
+  }
+  const upsert = await upsertItems(pending);
 
   const { toDelete, added, updated } = diffSourceIds(
     oldIndex,
@@ -652,6 +764,8 @@ export async function syncCatalog() {
 
   return {
     ...built,
+    cdn,
+    changed: pending.length,
     upsert,
     delete: deleted,
     added: added.length,

@@ -46,6 +46,21 @@ export async function upsertItems(items) {
   return { RowAffected: affected };
 }
 
+/** All items currently in Gorse, keyed by ItemId (cursor-paged GET /api/items). */
+export async function listItems(pageSize = 500) {
+  const out = new Map();
+  let cursor = "";
+  for (let page = 0; page < 1000; page++) {
+    const q = new URLSearchParams({ n: String(pageSize) });
+    if (cursor) q.set("cursor", cursor);
+    const r = await gorse("GET", `/api/items?${q}`);
+    for (const it of r?.Items || []) if (it?.ItemId) out.set(it.ItemId, it);
+    if (!r?.Cursor || r.Cursor === cursor || !(r.Items || []).length) break;
+    cursor = r.Cursor;
+  }
+  return out;
+}
+
 /** DELETE /api/item/{id}; 404 is treated as already gone. */
 export async function deleteItems(ids) {
   if (!ids?.length) return { RowAffected: 0 };

@@ -96,6 +96,8 @@ const server = http.createServer(async (req, res) => {
         itemCount: result.itemCount,
         counts: result.counts,
         errors: result.errors,
+        cdn: result.cdn,
+        changed: result.changed,
         upsert: result.upsert,
         added: result.added,
         updated: result.updated,
