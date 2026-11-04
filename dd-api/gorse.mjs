@@ -35,7 +35,10 @@ export async function health() {
 
 export async function upsertItems(items) {
   if (!items.length) return { RowAffected: 0 };
-  const chunk = 80;
+  // Gorse patches every cached recommend row per item before replying (~35s
+  // for a popular item on the MySQL cache). Node fetch gives up after 300s
+  // without headers and Gorse then drops the whole batch, so keep it small.
+  const chunk = Math.max(1, Number(process.env.UPSERT_CHUNK || 1));
   let affected = 0;
   for (let i = 0; i < items.length; i += chunk) {
     await memoryGate("upsert");
