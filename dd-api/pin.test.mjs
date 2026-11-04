@@ -66,3 +66,20 @@ describe("pinFeatured", () => {
     assert.deepEqual(ids(out), ["tirth:vr:163"]);
   });
 });
+
+describe("pinFeatured flat2d (Bhakti TV)", () => {
+  const f = (id) => hit(id, "flat2d");
+  it("leads with Dashavatar then Krishna Leelayein and drops the two single videos", () => {
+    const out = pinFeatured(
+      [f("bhakti:2d:series:14"), f("bhakti:2d:video:034"), f("bhakti:2d:series:04"), f("bhakti:2d:video:033"), f("bhakti:2d:video:042")],
+      { category: "flat2d", n: 4, now: after },
+    );
+    assert.deepEqual(ids(out), ["bhakti:2d:series:03", "bhakti:2d:series:04", "bhakti:2d:series:14", "bhakti:2d:video:042"]);
+    assert.equal(out[0].kind, "flat2d");
+    assert.equal(out[0].pinned, true);
+  });
+  it("does not apply flat2d pins to other categories", () => {
+    const out = pinFeatured([hit("bhakti:2d:video:033", "flat2d")], { category: "theatre3d", n: 5, now: after });
+    assert.deepEqual(ids(out), ["bhakti:2d:video:033"]);
+  });
+});
