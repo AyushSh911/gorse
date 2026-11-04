@@ -1,9 +1,11 @@
 import http from "node:http";
 import {
-  flat2dRailVideoIds,
+  catalogWatchStatus,
+  flat2dPlan,
   itemIndex,
   loadApprovedShowIds,
   loadItemIndex,
+  startCatalogWatch,
   syncCatalog,
 } from "./catalog.mjs";
 import {
@@ -18,7 +20,7 @@ import {
   impressionRows,
   parseFeedback,
 } from "./freshness.mjs";
-import { pickFlat2dVideos, pinFeatured } from "./pin.mjs";
+import { legacyVideoSet, pinFeatured } from "./pin.mjs";
 
 const PORT = Number(process.env.PORT || 8090);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -67,10 +69,23 @@ function mapHits(rows) {
   }).filter((x) => x.kind && x.id);
 }
 
-/** Same visible standalone videos for every flat2d response (see pin.mjs). */
-async function flat2dVideos(category) {
-  if (category !== "flat2d") return undefined;
-  return pickFlat2dVideos(mapHits(await gorse.latest(200, "flat2d")), flat2dRailVideoIds);
+/**
+ * flat2d shaping options. Visibility comes from the CDN JSON plan; app builds
+ * that send shape=v2 get every visible id, older builds get the legacy budget.
+ */
+async function flat2dOpts(category, url) {
+  if (category !== "flat2d") return {};
+  const legacy = url.searchParams.get("shape") !== "v2";
+  const opts = { flat2dPlan, legacy };
+  if (legacy && flat2dPlan) {
+    opts.legacyVideoIds = legacyVideoSet(mapHits(await gorse.latest(200, "flat2d")), flat2dPlan);
+  }
+  return opts;
+}
+
+/** Overfetch when shaping will drop ids so callers still get n rows. */
+function fetchN(n, category) {
+  return category === "flat2d" ? Math.max(n * 3, 120) : n;
 }
 
 function dedupeSeries(hits) {
@@ -99,7 +114,7 @@ const server = http.createServer(async (req, res) => {
   try {
     if (req.method === "GET" && url.pathname === "/v1/health") {
       const h = await gorse.health();
-      return send(res, h.ok ? 200 : 503, h);
+      return send(res, h.ok ? 200 : 503, { ...h, catalog: catalogWatchStatus() });
     }
 
     if (req.method === "POST" && url.pathname === "/v1/sync") {
@@ -151,11 +166,11 @@ const server = http.createServer(async (req, res) => {
       const n = Number(url.searchParams.get("n") || 20);
       const category = url.searchParams.get("category") || undefined;
       if (!profileId) {
-        const hits = pinFeatured(mapHits(await gorse.latest(n, category)), {
+        const hits = pinFeatured(mapHits(await gorse.latest(fetchN(n, category), category)), {
           category,
           n,
           now: Date.now(),
-          videos: await flat2dVideos(category),
+          ...(await flat2dOpts(category, url)),
         });
         return send(res, 200, { source: "latest", items: hits, watchedIds: [] });
       }
@@ -190,7 +205,7 @@ const server = http.createServer(async (req, res) => {
           category,
           n,
           now: Date.now(),
-          videos: await flat2dVideos(category),
+          ...(await flat2dOpts(category, url)),
         }),
         watchedIds: fresh.watchedIds,
       });
@@ -210,11 +225,11 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/v1/latest") {
       const n = Number(url.searchParams.get("n") || 20);
       const category = url.searchParams.get("category") || undefined;
-      const hits = pinFeatured(mapHits(await gorse.latest(n, category)), {
+      const hits = pinFeatured(mapHits(await gorse.latest(fetchN(n, category), category)), {
         category,
         n,
         now: Date.now(),
-        videos: await flat2dVideos(category),
+        ...(await flat2dOpts(category, url)),
       });
       return send(res, 200, { items: hits });
     }
@@ -227,9 +242,10 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, HOST, () => {
   console.log(`dd-api listening on http://${HOST}:${PORT} (gorse ${gorse.GORSE_URL})`);
-  void loadApprovedShowIds().then(() =>
-    console.log(`flat2d rail videos loaded ${flat2dRailVideoIds.size}`),
-  );
+  void loadApprovedShowIds().then(() => {
+    console.log(`flat2d plan loaded: ${flat2dPlan?.visible.size || 0} visible, legacy video slots ${flat2dPlan?.legacyVideoSlots}`);
+    startCatalogWatch();
+  });
   void loadItemIndex().then((n) => {
     console.log(`itemIndex loaded ${n} rows`);
     if (process.env.SKIP_BOOT_SYNC === "1") return;

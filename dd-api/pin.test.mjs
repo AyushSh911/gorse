@@ -1,13 +1,12 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import {
-  FLAT2D_APP_VIDEO_SLOTS,
-  FLAT2D_HIDE_IDS,
   PIN_IDS,
   PIN_UNTIL,
-  pickFlat2dVideos,
+  legacyVideoSet,
   pinFeatured,
 } from "./pin.mjs";
+import { computeFlat2dPlan } from "./catalog.mjs";
 
 function hit(id, kind = "vr360") {
   return { kind, id, score: 1, itemId: id };
@@ -74,36 +73,57 @@ describe("pinFeatured", () => {
   });
 });
 
-describe("pinFeatured flat2d (Bhakti TV, released app)", () => {
+describe("flat2d is JSON-driven (Gorse only orders)", () => {
   const f = (id) => hit(id, "flat2d");
-  const vid = (n) => f("bhakti:2d:video:" + n);
-  const vids = ["042", "034", "041", "033", "040", "037", "036", "035", "032"].map(vid);
-
-  it("pickFlat2dVideos returns exactly six visible videos, never 033/034", () => {
-    const out = pickFlat2dVideos(vids, null);
-    assert.equal(FLAT2D_APP_VIDEO_SLOTS, 6);
-    assert.deepEqual(ids(out), ["042", "041", "040", "037", "036", "035"].map((n) => "bhakti:2d:video:" + n));
-    for (const id of FLAT2D_HIDE_IDS) assert.ok(!ids(out).includes(id));
+  const ep = (s, e) => ({ id: `bhakti:2d:ep:${s}:${e}`, kind: "flat2d", seriesId: `bhakti:2d:series:${s}`, title: { en: `S${s}E${e}` } });
+  const vid = (n, t = `Video ${n}`) => ({ id: `bhakti:2d:video:${n}`, kind: "flat2d", title: { en: t } });
+  const content = {
+    shows: [ep("01", "001"), ep("01", "002"), ep("03", "001"), vid("010"), vid("011"), vid("012"), vid("013", "Sundar Kand")],
+    webseries: [
+      { id: "bhakti:2d:series:01", kind: "flat2d", title: { en: "Krishna" } },
+      { id: "bhakti:2d:series:03", kind: "flat2d", title: { en: "Dashavatar" } },
+    ],
+  };
+  const layout = (approved, dtv, disactive = []) => ({
+    status: { approvedShowIds: approved, disactiveShowIds: disactive },
+    homePreview: { bhaktiDarshanTvShowIds: dtv },
   });
+  const all = ["bhakti:2d:ep:01:001", "bhakti:2d:ep:03:001", "bhakti:2d:video:010", "bhakti:2d:video:011", "bhakti:2d:video:012"];
 
-  it("pickFlat2dVideos honours the rail-eligible set", () => {
-    const out = pickFlat2dVideos(vids, new Set(["bhakti:2d:video:041", "bhakti:2d:video:033"]));
-    assert.deepEqual(ids(out), ["bhakti:2d:video:041"]);
-  });
-
-  it("leads with Dashavatar then Krishna Leelayein, one hit per series, then the fixed videos", () => {
-    const fixed = pickFlat2dVideos(vids, null);
+  it("returns only ids the layout makes visible, one per series, in Gorse order", () => {
+    const plan = computeFlat2dPlan(content, layout(all, []));
     const out = pinFeatured(
-      [f("bhakti:2d:ep:04:003"), f("bhakti:2d:series:14"), vid("099"), f("bhakti:2d:ep:14:002"), vid("034")],
-      { category: "flat2d", n: 36, now: after, videos: fixed },
+      [f("bhakti:2d:video:099"), f("bhakti:2d:ep:01:002"), f("bhakti:2d:series:01"), f("bhakti:2d:video:011"), f("bhakti:2d:series:03")],
+      { category: "flat2d", n: 10, flat2dPlan: plan, legacy: false },
     );
-    assert.deepEqual(ids(out), ["bhakti:2d:series:03", "bhakti:2d:series:04", "bhakti:2d:series:14", ...ids(fixed)]);
-    assert.equal(out[0].pinned, true);
-    assert.equal(out[0].kind, "flat2d");
+    assert.deepEqual(ids(out), ["bhakti:2d:ep:01:002", "bhakti:2d:video:011", "bhakti:2d:series:03"]);
   });
 
-  it("does not touch other categories", () => {
-    const out = pinFeatured([vid("033")], { category: "theatre3d", n: 5, now: after });
-    assert.deepEqual(ids(out), ["bhakti:2d:video:033"]);
+  it("reflects JSON edits: disabling a show removes it, approving one adds it", () => {
+    const hits = [f("bhakti:2d:video:010"), f("bhakti:2d:video:011"), f("bhakti:2d:series:03")];
+    const before = computeFlat2dPlan(content, layout(all, []));
+    const after = computeFlat2dPlan(content, layout(all, [], ["bhakti:2d:video:010", "bhakti:2d:ep:03:001"]));
+    const opts = (plan) => ({ category: "flat2d", n: 10, flat2dPlan: plan, legacy: false });
+    assert.deepEqual(ids(pinFeatured(hits, opts(before))), ids(hits));
+    assert.deepEqual(ids(pinFeatured(hits, opts(after))), ["bhakti:2d:video:011"]);
+  });
+
+  it("legacy builds get 12 - layout rail shows standalone videos, from one shared set", () => {
+    // rail: series 01 + series 03 + video 010 = 3 shows, Ramayana titles excluded
+    const plan = computeFlat2dPlan(content, layout([...all, "bhakti:2d:video:013"], ["bhakti:2d:ep:01:001", "bhakti:2d:ep:03:001", "bhakti:2d:video:010", "bhakti:2d:video:013"]));
+    assert.deepEqual(plan.railShows, ["bhakti:2d:series:01", "bhakti:2d:series:03", "bhakti:2d:video:010"]);
+    assert.equal(plan.legacyVideoSlots, 9);
+    const shared = legacyVideoSet([f("bhakti:2d:video:012"), f("bhakti:2d:video:011")], { ...plan, legacyVideoSlots: 1 });
+    assert.deepEqual([...shared], ["bhakti:2d:video:012"]);
+    const out = pinFeatured(
+      [f("bhakti:2d:video:011"), f("bhakti:2d:video:012"), f("bhakti:2d:series:01")],
+      { category: "flat2d", n: 10, flat2dPlan: { ...plan, legacyVideoSlots: 1 }, legacy: true, legacyVideoIds: shared },
+    );
+    assert.deepEqual(ids(out), ["bhakti:2d:video:012", "bhakti:2d:series:01"]);
+  });
+
+  it("passes hits through untouched when no plan is loaded", () => {
+    const hits = [f("bhakti:2d:video:099")];
+    assert.deepEqual(ids(pinFeatured(hits, { category: "flat2d", n: 5 })), ["bhakti:2d:video:099"]);
   });
 });

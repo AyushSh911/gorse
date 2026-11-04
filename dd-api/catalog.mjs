@@ -134,6 +134,45 @@ export async function refreshSources({ fetcher = fetchJson } = {}) {
   return { refreshed: refreshed.sort(), unchanged: unchanged.sort(), failed };
 }
 
+let watchState = { lastCheck: null, lastChange: null, lastError: null, lastSync: null };
+export function catalogWatchStatus() {
+  return { ...watchState, flat2dVisible: flat2dPlan?.visible.size || 0, legacyVideoSlots: flat2dPlan?.legacyVideoSlots ?? null };
+}
+
+/**
+ * Poll the CDN catalog JSONs. Any change reloads the visibility plan right away
+ * (API responses follow the JSON within one poll) and then runs a full sync so
+ * Gorse learns new / removed items. Failures keep last-known-good data.
+ */
+export function startCatalogWatch({ intervalMs = Number(process.env.CATALOG_POLL_MS || 120_000), log = console.log } = {}) {
+  if (!(intervalMs > 0)) return () => {};
+  let busy = false;
+  const tick = async () => {
+    if (busy) return;
+    busy = true;
+    try {
+      const r = await refreshSources();
+      watchState.lastCheck = new Date().toISOString();
+      watchState.lastError = r.failed.length ? r.failed : null;
+      if (r.refreshed.length) {
+        watchState.lastChange = { at: watchState.lastCheck, sources: r.refreshed };
+        await loadApprovedShowIds();
+        log(`catalog watch: ${r.refreshed.join(",")} changed, plan reloaded, syncing`);
+        const s = await syncCatalog({ refresh: false });
+        watchState.lastSync = { at: new Date().toISOString(), changed: s.changed, deleted: s.deleted, errors: s.errors };
+      }
+    } catch (e) {
+      watchState.lastError = String(e?.message || e);
+    } finally {
+      busy = false;
+    }
+  };
+  const timer = setInterval(tick, intervalMs);
+  timer.unref?.();
+  void tick();
+  return () => clearInterval(timer);
+}
+
 function titleEn(title) {
   if (!title) return "";
   if (typeof title === "string") return title;
@@ -217,39 +256,68 @@ export let approvedShowIds = new Set();
 
 /** Mirrors the app's Ramayana rail split (rankExploreBhaktiRails.RAMAYANA_TITLE_RE). */
 const RAMAYANA_TITLE_RE = /ramayan|रामायण|\bkand\b|काण्ड|कांड/i;
+const APP_RAIL_SIZE = 12;
 
 /**
- * Standalone 2D videos that land in the app's Explore "Bhakti TV" rail:
- * approved, not disactive / coming soon, not Ramayana-titled.
+ * What the CDN JSON says Bhakti TV (flat2d) may show. Built only from
+ * premium-content + premium-layout, so editing those files is the single way
+ * to add / remove / reorder content; Gorse just ranks within it.
+ *
+ * visible:  flat2d ids the app would render (approved, not disactive, not
+ *           coming soon), including series ids whose episodes are approved.
+ * seriesOf: episode id -> series id.
+ * railShows: layout Darshan TV list (homePreview.bhaktiDarshanTvShowIds)
+ *           resolved to shows, non-Ramayana, in layout order.
+ * legacyVideoSlots: standalone-video budget for builds <= 5.4.1.
  */
-export let flat2dRailVideoIds = new Set();
+export let flat2dPlan = null;
 
-export function computeFlat2dRailVideoIds(content, layout) {
+export function computeFlat2dPlan(content, layout) {
   const { keep, comingSoon } = keepSet(layout);
-  const out = new Set();
+  const ok = (id) => keep.has(id) && !comingSoon.has(id);
+  const webseries = new Map((content?.webseries || []).map((w) => [w.id, w]));
+  const seriesOf = new Map();
+  const titleOf = new Map();
+  const visible = new Set();
   for (const show of content?.shows || []) {
-    const id = String(show?.id || "");
-    if (show?.kind !== "flat2d" || !id.startsWith("bhakti:2d:video:")) continue;
-    if (!keep.has(id) || comingSoon.has(id)) continue;
-    const t = show.title || {};
-    if (RAMAYANA_TITLE_RE.test(`${t.en || ""} ${t.hi || ""}`)) continue;
-    out.add(id);
+    if (show?.kind !== FLAT2D_KIND_ID) continue;
+    const ref = show.seriesId || show.webseriesId;
+    const series = ref && webseries.has(ref) ? ref : null;
+    const t = (series ? webseries.get(series).title : show.title) || {};
+    if (series) seriesOf.set(show.id, series);
+    titleOf.set(series || show.id, `${t.en || ""} ${t.hi || ""}`);
+    if (!ok(show.id)) continue;
+    visible.add(show.id);
+    if (series) visible.add(series);
   }
-  return out;
+  for (const [id] of webseries) if (ok(id)) visible.add(id);
+
+  const railShows = [];
+  for (const id of layout?.homePreview?.bhaktiDarshanTvShowIds || []) {
+    if (!ok(id)) continue;
+    const key = seriesOf.get(id) || id;
+    if (railShows.includes(key) || !titleOf.has(key)) continue;
+    if (RAMAYANA_TITLE_RE.test(titleOf.get(key))) continue;
+    railShows.push(key);
+  }
+  const legacyVideoSlots = Math.max(0, APP_RAIL_SIZE - railShows.length);
+  return { visible, seriesOf, railShows, legacyVideoSlots };
 }
 
-/** Load layout-derived sets from the on-disk snapshots (boot, no network). */
+const FLAT2D_KIND_ID = "flat2d";
+
+/** Load layout-derived plan from the on-disk snapshots (boot, no network). */
 export async function loadApprovedShowIds() {
   try {
     const content = mergePremiumContent(
       await loadSource("content"),
       await loadSource("contentV2").catch(() => null),
     );
-    flat2dRailVideoIds = computeFlat2dRailVideoIds(content, await loadSource("layout"));
+    flat2dPlan = computeFlat2dPlan(content, await loadSource("layout"));
   } catch {
     /* keep previous */
   }
-  return approvedShowIds.size;
+  return flat2dPlan?.visible.size || 0;
 }
 
 export function keepSet(layout) {
@@ -707,7 +775,7 @@ export async function buildCatalogItems() {
     );
     const layout = await loadSource("layout");
     ({ keep, comingSoon } = keepSet(layout));
-    flat2dRailVideoIds = computeFlat2dRailVideoIds(premium, layout);
+    flat2dPlan = computeFlat2dPlan(premium, layout);
     counts.keep = keep.size;
   } catch (e) {
     failedSources.push("shows", "series");
