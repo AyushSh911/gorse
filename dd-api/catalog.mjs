@@ -8,7 +8,7 @@ import {
   toGorseItemId,
 } from "./ids.mjs";
 import { buildLabels } from "./labels.mjs";
-import { upsertItems, deleteItems, listItems } from "./gorse.mjs";
+import { upsertItems, retireItems, listItems } from "./gorse.mjs";
 import { memoryGate } from "./memguard.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -757,7 +757,7 @@ async function runSync({ refresh = process.env.SYNC_REFRESH_CDN !== "0" } = {}) 
     built.itemsBySource,
     built.failedSources,
   );
-  const deleted = await deleteItems(toDelete);
+  const deleted = await retireItems(toDelete);
 
   applyIndexMerge(oldIndex, built.itemsBySource, built.failedSources);
   await saveItemIndex();

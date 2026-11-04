@@ -64,6 +64,25 @@ export async function listItems(pageSize = 500) {
   return out;
 }
 
+/**
+ * Retire removed catalog items by upserting them hidden instead of deleting.
+ * A DELETE does not stick: impressions for still-cached recommendations make
+ * Gorse (auto_insert_item) recreate the id as a visible empty item. A hidden
+ * row blocks that, and Gorse filters hidden ids out of every cached list.
+ */
+export async function retireItems(ids) {
+  const list = [...new Set((ids || []).filter(Boolean))];
+  if (!list.length) return { RowAffected: 0 };
+  const rows = list.map((ItemId) => ({
+    ItemId,
+    IsHidden: true,
+    Categories: [],
+    Labels: { retired: 1 },
+    Comment: "retired",
+  }));
+  return upsertItems(rows);
+}
+
 /** DELETE /api/item/{id}; 404 is treated as already gone. */
 export async function deleteItems(ids) {
   if (!ids?.length) return { RowAffected: 0 };
