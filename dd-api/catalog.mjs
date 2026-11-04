@@ -85,6 +85,7 @@ async function fetchJson(url) {
 /** Minimal shape checks so a broken CDN upload never replaces a good snapshot. */
 const SOURCE_CHECKS = {
   content: (d) => Array.isArray(d?.shows) && d.shows.length > 0,
+  contentV2: (d) => Array.isArray(d?.shows) && d.shows.length > 0,
   layout: (d) => d?.status && typeof d.status === "object",
   trailers: (d) => Array.isArray(d?.trailers),
   abhishek: (d) => Array.isArray(d),
@@ -152,6 +153,9 @@ export function timestampForItem(itemId, kind) {
   if (vr) return new Date(Date.UTC(2026, 0, Number(vr[1]) || 1)).toISOString();
   const ep = id.match(/:ep:[^:]+:(\d+)/);
   if (ep) return new Date(Date.UTC(2025, 6, Number(ep[1]) || 1)).toISOString();
+  // Bhakti TV leads with series; keep them ahead of standalone 2D videos (2025-08-01).
+  const s2d = id.match(/^bhakti:2d:series:(\d+)$/);
+  if (s2d) return new Date(Date.UTC(2025, 7, 2, Number(s2d[1]) || 0)).toISOString();
   const rank = {
     live: "2025-12-01T00:00:00.000Z",
     aarti: "2025-11-15T00:00:00.000Z",
@@ -613,6 +617,24 @@ export function diffSourceIds(oldIndex, newItemsBySource, failedSources) {
   return { toDelete, added, updated };
 }
 
+/**
+ * The app reads premium-content.json; premium-content_v2.json can lag or lead
+ * it. Primary file wins per id, the other only contributes ids it lacks.
+ */
+export function mergePremiumContent(primary, secondary) {
+  if (!secondary) return primary;
+  if (!primary) return secondary;
+  const mergeById = (a = [], b = []) => {
+    const seen = new Set(a.map((x) => x?.id));
+    return [...a, ...b.filter((x) => x?.id && !seen.has(x.id))];
+  };
+  return {
+    ...primary,
+    shows: mergeById(primary.shows, secondary.shows),
+    webseries: mergeById(primary.webseries, secondary.webseries),
+  };
+}
+
 export async function buildCatalogItems() {
   clearSourceCache();
   const errors = [];
@@ -638,7 +660,10 @@ export async function buildCatalogItems() {
   let keep = new Set();
   let comingSoon = new Set();
   try {
-    premium = await loadSource("content");
+    premium = mergePremiumContent(
+      await loadSource("content"),
+      await loadSource("contentV2").catch(() => null),
+    );
     const layout = await loadSource("layout");
     ({ keep, comingSoon } = keepSet(layout));
     counts.keep = keep.size;

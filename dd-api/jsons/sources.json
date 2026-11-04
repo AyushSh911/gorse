@@ -1,5 +1,9 @@
 {
   "content": {
+    "file": "premium-content.json",
+    "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-content.json"
+  },
+  "contentV2": {
     "file": "premium-content_v2.json",
     "url": "https://ddappcdn.techxr.co/DurlabhDarshanReact/Jsons/premium-content_v2.json"
   },

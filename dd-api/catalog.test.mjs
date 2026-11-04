@@ -11,6 +11,7 @@ import {
   changedItems,
   validSourceData,
   refreshSources,
+  mergePremiumContent,
 } from "./catalog.mjs";
 import { toGorseItemId, kindFromGorseItemId, appIdFromGorseItemId } from "./ids.mjs";
 
@@ -232,5 +233,28 @@ describe("refreshSources", () => {
     assert.deepEqual(r.refreshed, []);
     assert.ok(r.failed.some((f) => f.source === "layout"));
     assert.deepEqual(await loadSource("layout"), before);
+  });
+});
+
+describe("mergePremiumContent", () => {
+  it("keeps primary entries and adds ids only the secondary has", () => {
+    const merged = mergePremiumContent(
+      { schemaVersion: "2", shows: [{ id: "a", v: 1 }], webseries: [{ id: "s16" }] },
+      { schemaVersion: "2", shows: [{ id: "a", v: 2 }, { id: "b" }], webseries: [{ id: "s15" }] },
+    );
+    assert.deepEqual(merged.shows, [{ id: "a", v: 1 }, { id: "b" }]);
+    assert.deepEqual(merged.webseries.map((w) => w.id), ["s16", "s15"]);
+    assert.equal(mergePremiumContent(null, { shows: [] }).shows.length, 0);
+  });
+});
+
+describe("flat2d series recency", () => {
+  it("ranks 2D series above standalone 2D videos and episodes", () => {
+    const series = Date.parse(timestampForItem("bhakti:2d:series:03", "flat2d"));
+    const video = Date.parse(timestampForItem("bhakti:2d:video:042", "flat2d"));
+    const ep = Date.parse(timestampForItem("bhakti:2d:ep:03:001", "flat2d"));
+    const theatre = Date.parse(timestampForItem("bhakti:3d:series:01", "theatre3d"));
+    assert.ok(series > video && video > ep);
+    assert.ok(theatre > series);
   });
 });
