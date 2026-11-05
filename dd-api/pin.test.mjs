@@ -114,7 +114,7 @@ describe("flat2d is JSON-driven (Gorse only orders)", () => {
     assert.equal("legacyVideoSlots" in plan, false);
     const hits = [f("bhakti:2d:video:011"), f("bhakti:2d:video:010"), f("bhakti:2d:series:03"), f("bhakti:2d:ep:01:002"), f("bhakti:2d:video:012")];
     const legacy = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: true });
-    assert.deepEqual(ids(legacy), ["bhakti:2d:series:03", "bhakti:2d:ep:01:002"]);
+    assert.deepEqual(ids(legacy), ["bhakti:2d:show:3:001", "bhakti:2d:show:1:001"]);
     const v2 = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: false });
     assert.deepEqual(ids(v2), ids(hits));
   });

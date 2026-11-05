@@ -49,9 +49,32 @@ export function shapeFlat2d(items, plan, { legacy = true } = {}) {
     if (seen.has(key)) continue;
     if (legacy && !series && !id.startsWith("bhakti:2d:series:")) continue;
     seen.add(key);
+    if (legacy) {
+      const appId = legacySeriesId(key, plan);
+      if (!appId) continue;
+      out.push({ ...hit, id: appId, itemId: appId });
+      continue;
+    }
     out.push(hit);
   }
   return out;
+}
+
+/**
+ * Released app builds drop every `bhakti:2d:series:N` / `bhakti:2d:ep:N:E` hit
+ * (they check the series id, which premium-layout never approves) and keep
+ * their old cached order whenever the list comes back empty. They do accept the
+ * legacy v1 id `bhakti:2d:show:N:EEE`: it aliases to the approved v2 episode
+ * `bhakti:2d:ep:NN:EEE` and maps back to series N for ranking. So legacy flat2d
+ * responses name each series by one of its JSON-approved episodes in v1 form.
+ */
+export function legacySeriesId(seriesId, plan) {
+  const m = String(seriesId || "").match(/^bhakti:2d:series:(\d+)$/);
+  if (!m) return null;
+  const nn = String(Number(m[1])).padStart(2, "0");
+  const ep = [...plan.visible].filter((x) => x.startsWith(`bhakti:2d:ep:${nn}:`)).sort()[0];
+  const e = ep && ep.match(/^bhakti:2d:ep:(\d+):(\d+)$/);
+  return e ? `bhakti:2d:show:${Number(e[1])}:${e[2]}` : null;
 }
 
 export function pinFeatured(items, { category, n, now, flat2dPlan, legacy } = {}) {
