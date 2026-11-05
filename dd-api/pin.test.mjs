@@ -3,7 +3,6 @@ import assert from "node:assert/strict";
 import {
   PIN_IDS,
   PIN_UNTIL,
-  legacyVideoSet,
   pinFeatured,
 } from "./pin.mjs";
 import { computeFlat2dPlan } from "./catalog.mjs";
@@ -108,18 +107,16 @@ describe("flat2d is JSON-driven (Gorse only orders)", () => {
     assert.deepEqual(ids(pinFeatured(hits, opts(after))), ["bhakti:2d:video:011"]);
   });
 
-  it("legacy builds get 12 - layout rail shows standalone videos, from one shared set", () => {
-    // rail: series 01 + series 03 + video 010 = 3 shows, Ramayana titles excluded
+  it("legacy builds: standalone videos only if the layout Darshan TV list has them (no numeric cap)", () => {
+    // rail: series 01 + series 03 + video 010; Ramayana titles excluded
     const plan = computeFlat2dPlan(content, layout([...all, "bhakti:2d:video:013"], ["bhakti:2d:ep:01:001", "bhakti:2d:ep:03:001", "bhakti:2d:video:010", "bhakti:2d:video:013"]));
     assert.deepEqual(plan.railShows, ["bhakti:2d:series:01", "bhakti:2d:series:03", "bhakti:2d:video:010"]);
-    assert.equal(plan.legacyVideoSlots, 9);
-    const shared = legacyVideoSet([f("bhakti:2d:video:012"), f("bhakti:2d:video:011")], { ...plan, legacyVideoSlots: 1 });
-    assert.deepEqual([...shared], ["bhakti:2d:video:012"]);
-    const out = pinFeatured(
-      [f("bhakti:2d:video:011"), f("bhakti:2d:video:012"), f("bhakti:2d:series:01")],
-      { category: "flat2d", n: 10, flat2dPlan: { ...plan, legacyVideoSlots: 1 }, legacy: true, legacyVideoIds: shared },
-    );
-    assert.deepEqual(ids(out), ["bhakti:2d:video:012", "bhakti:2d:series:01"]);
+    assert.equal("legacyVideoSlots" in plan, false);
+    const hits = [f("bhakti:2d:video:011"), f("bhakti:2d:video:010"), f("bhakti:2d:series:03"), f("bhakti:2d:video:012")];
+    const legacy = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: true });
+    assert.deepEqual(ids(legacy), ["bhakti:2d:video:010", "bhakti:2d:series:03"]);
+    const v2 = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: false });
+    assert.deepEqual(ids(v2), ids(hits));
   });
 
   it("passes hits through untouched when no plan is loaded", () => {

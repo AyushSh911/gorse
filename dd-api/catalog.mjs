@@ -136,7 +136,7 @@ export async function refreshSources({ fetcher = fetchJson } = {}) {
 
 let watchState = { lastCheck: null, lastChange: null, lastError: null, lastSync: null };
 export function catalogWatchStatus() {
-  return { ...watchState, flat2dVisible: flat2dPlan?.visible.size || 0, legacyVideoSlots: flat2dPlan?.legacyVideoSlots ?? null };
+  return { ...watchState, flat2dVisible: flat2dPlan?.visible.size || 0, railShows: flat2dPlan?.railShows?.length ?? null };
 }
 
 /**
@@ -256,7 +256,6 @@ export let approvedShowIds = new Set();
 
 /** Mirrors the app's Ramayana rail split (rankExploreBhaktiRails.RAMAYANA_TITLE_RE). */
 const RAMAYANA_TITLE_RE = /ramayan|रामायण|\bkand\b|काण्ड|कांड/i;
-const APP_RAIL_SIZE = 12;
 
 /**
  * What the CDN JSON says Bhakti TV (flat2d) may show. Built only from
@@ -268,7 +267,6 @@ const APP_RAIL_SIZE = 12;
  * seriesOf: episode id -> series id.
  * railShows: layout Darshan TV list (homePreview.bhaktiDarshanTvShowIds)
  *           resolved to shows, non-Ramayana, in layout order.
- * legacyVideoSlots: standalone-video budget for builds <= 5.4.1.
  */
 export let flat2dPlan = null;
 
@@ -300,8 +298,7 @@ export function computeFlat2dPlan(content, layout) {
     if (RAMAYANA_TITLE_RE.test(titleOf.get(key))) continue;
     railShows.push(key);
   }
-  const legacyVideoSlots = Math.max(0, APP_RAIL_SIZE - railShows.length);
-  return { visible, seriesOf, railShows, legacyVideoSlots };
+  return { visible, seriesOf, railShows };
 }
 
 const FLAT2D_KIND_ID = "flat2d";

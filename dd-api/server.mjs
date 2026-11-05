@@ -20,7 +20,7 @@ import {
   impressionRows,
   parseFeedback,
 } from "./freshness.mjs";
-import { legacyVideoSet, pinFeatured } from "./pin.mjs";
+import { pinFeatured } from "./pin.mjs";
 
 const PORT = Number(process.env.PORT || 8090);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -71,16 +71,11 @@ function mapHits(rows) {
 
 /**
  * flat2d shaping options. Visibility comes from the CDN JSON plan; app builds
- * that send shape=v2 get every visible id, older builds get the legacy budget.
+ * that send shape=v2 get every visible id, older builds only the layout rail.
  */
-async function flat2dOpts(category, url) {
+function flat2dOpts(category, url) {
   if (category !== "flat2d") return {};
-  const legacy = url.searchParams.get("shape") !== "v2";
-  const opts = { flat2dPlan, legacy };
-  if (legacy && flat2dPlan) {
-    opts.legacyVideoIds = legacyVideoSet(mapHits(await gorse.latest(200, "flat2d")), flat2dPlan);
-  }
-  return opts;
+  return { flat2dPlan, legacy: url.searchParams.get("shape") !== "v2" };
 }
 
 /** Overfetch when shaping will drop ids so callers still get n rows. */
@@ -170,7 +165,7 @@ const server = http.createServer(async (req, res) => {
           category,
           n,
           now: Date.now(),
-          ...(await flat2dOpts(category, url)),
+          ...flat2dOpts(category, url),
         });
         return send(res, 200, { source: "latest", items: hits, watchedIds: [] });
       }
@@ -205,7 +200,7 @@ const server = http.createServer(async (req, res) => {
           category,
           n,
           now: Date.now(),
-          ...(await flat2dOpts(category, url)),
+          ...flat2dOpts(category, url),
         }),
         watchedIds: fresh.watchedIds,
       });
@@ -229,7 +224,7 @@ const server = http.createServer(async (req, res) => {
         category,
         n,
         now: Date.now(),
-        ...(await flat2dOpts(category, url)),
+        ...flat2dOpts(category, url),
       });
       return send(res, 200, { items: hits });
     }
@@ -243,7 +238,7 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, HOST, () => {
   console.log(`dd-api listening on http://${HOST}:${PORT} (gorse ${gorse.GORSE_URL})`);
   void loadApprovedShowIds().then(() => {
-    console.log(`flat2d plan loaded: ${flat2dPlan?.visible.size || 0} visible, legacy video slots ${flat2dPlan?.legacyVideoSlots}`);
+    console.log(`flat2d plan loaded: ${flat2dPlan?.visible.size || 0} visible, ${flat2dPlan?.railShows.length ?? 0} layout rail shows`);
     startCatalogWatch();
   });
   void loadItemIndex().then((n) => {
