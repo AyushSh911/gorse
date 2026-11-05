@@ -77,6 +77,9 @@ export function shapeFlat2d(items, plan, { legacy = true } = {}) {
 export function legacySeriesId(seriesId, plan) {
   const m = String(seriesId || "").match(/^bhakti:2d:series:(\d+)$/);
   if (!m) return null;
+  // Layout approves the series id itself: released builds accept it and can
+  // rank the series row with it (JSON-controlled switch).
+  if (plan.approvedSeries?.has(seriesId)) return seriesId;
   const nn = String(Number(m[1])).padStart(2, "0");
   const ep = [...plan.visible].filter((x) => x.startsWith(`bhakti:2d:ep:${nn}:`)).sort()[0];
   const e = ep && ep.match(/^bhakti:2d:ep:(\d+):(\d+)$/);

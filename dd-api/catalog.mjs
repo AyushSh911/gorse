@@ -289,6 +289,7 @@ export function computeFlat2dPlan(content, layout) {
     if (series) visible.add(series);
   }
   for (const [id] of webseries) if (ok(id)) visible.add(id);
+  const approvedSeries = new Set([...webseries.keys()].filter(ok));
 
   const railShows = [];
   for (const id of layout?.homePreview?.bhaktiDarshanTvShowIds || []) {
@@ -298,7 +299,7 @@ export function computeFlat2dPlan(content, layout) {
     if (RAMAYANA_TITLE_RE.test(titleOf.get(key))) continue;
     railShows.push(key);
   }
-  return { visible, seriesOf, railShows };
+  return { visible, seriesOf, railShows, approvedSeries };
 }
 
 const FLAT2D_KIND_ID = "flat2d";
