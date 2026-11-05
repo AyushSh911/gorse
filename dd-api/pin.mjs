@@ -1,5 +1,5 @@
 // Shown first, in this order, to every user.
-export const PIN_IDS = ["tirth:vr:163", "tirth:vr:161"];
+export const PIN_IDS = ["tirth:vr:157", "tirth:vr:163", "tirth:vr:161"];
 export const PIN_KIND = "vr360";
 // End of 15 Nov 2026 IST (20 days from 27 Oct).
 export const PIN_UNTIL = Date.parse("2026-11-15T18:29:59.000Z");

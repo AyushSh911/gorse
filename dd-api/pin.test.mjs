@@ -16,14 +16,14 @@ const after = PIN_UNTIL + 1000;
 const ids = (out) => out.map((x) => x.id);
 
 describe("pinFeatured", () => {
-  it("puts tirth:vr:163 then tirth:vr:161 first before the deadline", () => {
-    assert.deepEqual(PIN_IDS, ["tirth:vr:163", "tirth:vr:161"]);
+  it("puts tirth:vr:157, tirth:vr:163, tirth:vr:161 first before the deadline", () => {
+    assert.deepEqual(PIN_IDS, ["tirth:vr:157", "tirth:vr:163", "tirth:vr:161"]);
     const out = pinFeatured([hit("tirth:vr:001"), hit("tirth:vr:002")], {
       n: 5,
       now: before,
     });
-    assert.deepEqual(ids(out), ["tirth:vr:163", "tirth:vr:161", "tirth:vr:001", "tirth:vr:002"]);
-    for (const p of out.slice(0, 2)) {
+    assert.deepEqual(ids(out), ["tirth:vr:157", "tirth:vr:163", "tirth:vr:161", "tirth:vr:001", "tirth:vr:002"]);
+    for (const p of out.slice(0, 3)) {
       assert.equal(p.itemId, p.id);
       assert.equal(p.kind, "vr360");
       assert.equal(p.pinned, true);
@@ -39,7 +39,7 @@ describe("pinFeatured", () => {
     const now = Date.parse("2026-10-27T10:00:00.000+05:30");
     for (const category of ["vr360", undefined]) {
       const out = pinFeatured([hit("tirth:vr:001")], { category, n: 5, now });
-      assert.deepEqual(ids(out).slice(0, 2), PIN_IDS);
+      assert.deepEqual(ids(out).slice(0, 3), PIN_IDS);
     }
   });
 
@@ -60,15 +60,15 @@ describe("pinFeatured", () => {
 
   it("drops later duplicates and keeps length n", () => {
     const out = pinFeatured(
-      [hit("tirth:vr:161"), hit("tirth:vr:001"), hit("tirth:vr:163"), hit("tirth:vr:002")],
+      [hit("tirth:vr:161"), hit("tirth:vr:001"), hit("tirth:vr:157"), hit("tirth:vr:163"), hit("tirth:vr:002")],
       { category: "vr360", n: 4, now: before },
     );
-    assert.deepEqual(ids(out), ["tirth:vr:163", "tirth:vr:161", "tirth:vr:001", "tirth:vr:002"]);
+    assert.deepEqual(ids(out), ["tirth:vr:157", "tirth:vr:163", "tirth:vr:161", "tirth:vr:001"]);
   });
 
   it("returns only the first pin when n is 1", () => {
     const out = pinFeatured([hit("tirth:vr:001")], { n: 1, now: before });
-    assert.deepEqual(ids(out), ["tirth:vr:163"]);
+    assert.deepEqual(ids(out), ["tirth:vr:157"]);
   });
 });
 
