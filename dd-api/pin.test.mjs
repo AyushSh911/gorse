@@ -89,13 +89,13 @@ describe("flat2d is JSON-driven (Gorse only orders)", () => {
   });
   const all = ["bhakti:2d:ep:01:001", "bhakti:2d:ep:03:001", "bhakti:2d:video:010", "bhakti:2d:video:011", "bhakti:2d:video:012"];
 
-  it("returns only ids the layout makes visible, one per series, in Gorse order", () => {
+  it("returns only ids the layout makes visible, one per series, series first then singles", () => {
     const plan = computeFlat2dPlan(content, layout(all, []));
     const out = pinFeatured(
       [f("bhakti:2d:video:099"), f("bhakti:2d:ep:01:002"), f("bhakti:2d:series:01"), f("bhakti:2d:video:011"), f("bhakti:2d:series:03")],
       { category: "flat2d", n: 10, flat2dPlan: plan, legacy: false },
     );
-    assert.deepEqual(ids(out), ["bhakti:2d:ep:01:002", "bhakti:2d:video:011", "bhakti:2d:series:03"]);
+    assert.deepEqual(ids(out), ["bhakti:2d:ep:01:002", "bhakti:2d:series:03", "bhakti:2d:video:011"]);
   });
 
   it("reflects JSON edits: disabling a show removes it, approving one adds it", () => {
@@ -103,11 +103,11 @@ describe("flat2d is JSON-driven (Gorse only orders)", () => {
     const before = computeFlat2dPlan(content, layout(all, []));
     const after = computeFlat2dPlan(content, layout(all, [], ["bhakti:2d:video:010", "bhakti:2d:ep:03:001"]));
     const opts = (plan) => ({ category: "flat2d", n: 10, flat2dPlan: plan, legacy: false });
-    assert.deepEqual(ids(pinFeatured(hits, opts(before))), ids(hits));
+    assert.deepEqual(ids(pinFeatured(hits, opts(before))), ["bhakti:2d:series:03", "bhakti:2d:video:010", "bhakti:2d:video:011"]);
     assert.deepEqual(ids(pinFeatured(hits, opts(after))), ["bhakti:2d:video:011"]);
   });
 
-  it("legacy builds get no single videos (they would jump ahead of series); v2 gets everything", () => {
+  it("series first, single videos at the bottom (legacy and v2); nothing visible dropped", () => {
     // rail: series 01 + series 03 + video 010; Ramayana titles excluded
     const plan = computeFlat2dPlan(content, layout([...all, "bhakti:2d:video:013"], ["bhakti:2d:ep:01:001", "bhakti:2d:ep:03:001", "bhakti:2d:video:010", "bhakti:2d:video:013"]));
     assert.deepEqual(plan.railShows, ["bhakti:2d:series:01", "bhakti:2d:series:03", "bhakti:2d:video:010"]);
@@ -116,7 +116,7 @@ describe("flat2d is JSON-driven (Gorse only orders)", () => {
     const legacy = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: true });
     assert.deepEqual(ids(legacy), ["bhakti:2d:show:3:001", "bhakti:2d:show:1:001"]);
     const v2 = pinFeatured(hits, { category: "flat2d", n: 10, flat2dPlan: plan, legacy: false });
-    assert.deepEqual(ids(v2), ids(hits));
+    assert.deepEqual(ids(v2), ["bhakti:2d:series:03", "bhakti:2d:ep:01:002", "bhakti:2d:video:011", "bhakti:2d:video:010", "bhakti:2d:video:012"]);
   });
 
   it("passes hits through untouched when no plan is loaded", () => {

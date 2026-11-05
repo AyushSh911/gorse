@@ -28,45 +28,51 @@ function pinList(list, ids, kind) {
  *
  * - Drop any hit the JSON does not make visible (approved, not disactive, not
  *   coming soon). Episode hits collapse onto their series; one hit per series.
+ * - Order is always: every series first, then single videos at the bottom,
+ *   Gorse order inside each group. Nothing JSON-visible is dropped (v2).
  * - `legacy` = app builds that do not send shape=v2 (<= 5.4.1). Those builds
- *   always put whatever Gorse ranks FIRST and drop series hits, so any single
- *   video Gorse returns would jump ahead of every series. For them no single
- *   videos are returned: their rails / rows fall back to the layout order
- *   (series first, singles last, exactly as the JSON lists them).
- *   shape=v2 builds get every JSON-visible id and put singles last themselves,
- *   in Gorse order.
+ *   put every ranked single in front of all series and cannot resolve any
+ *   series id, so singles are omitted for them: their Bhakti TV rail then uses
+ *   the layout order, which lists series first and singles after. Series are
+ *   sent as v1 episode ids (legacySeriesId) so the list is never empty and the
+ *   app replaces any stale cached order.
  */
 export function shapeFlat2d(items, plan, { legacy = true } = {}) {
   const list = Array.isArray(items) ? items : [];
   if (!plan?.visible?.size) return list;
   const seen = new Set();
-  const out = [];
+  const seriesHits = [];
+  const singles = [];
   for (const hit of list) {
     const id = String(idOf(hit) || "");
-    const series = plan.seriesOf.get(id);
+    const series = plan.seriesOf.get(id) || (id.startsWith("bhakti:2d:series:") ? id : null);
     const key = series || id;
     if (!plan.visible.has(id) && !(series && plan.visible.has(series))) continue;
     if (seen.has(key)) continue;
-    if (legacy && !series && !id.startsWith("bhakti:2d:series:")) continue;
     seen.add(key);
+    if (!series) {
+      // Released builds put any ranked single FIRST; omit singles for them so
+      // their rails fall back to layout order (series first, singles after).
+      if (!legacy) singles.push(hit);
+      continue;
+    }
     if (legacy) {
       const appId = legacySeriesId(key, plan);
       if (!appId) continue;
-      out.push({ ...hit, id: appId, itemId: appId });
+      seriesHits.push({ ...hit, id: appId, itemId: appId });
       continue;
     }
-    out.push(hit);
+    seriesHits.push(hit);
   }
-  return out;
+  // Series first, single videos at the bottom; Gorse order inside each group.
+  return [...seriesHits, ...singles];
 }
 
 /**
- * Released app builds drop every `bhakti:2d:series:N` / `bhakti:2d:ep:N:E` hit
- * (they check the series id, which premium-layout never approves) and keep
- * their old cached order whenever the list comes back empty. They do accept the
- * legacy v1 id `bhakti:2d:show:N:EEE`: it aliases to the approved v2 episode
- * `bhakti:2d:ep:NN:EEE` and maps back to series N for ranking. So legacy flat2d
- * responses name each series by one of its JSON-approved episodes in v1 form.
+ * v1 alias of a series' first JSON-approved episode (`bhakti:2d:show:N:EEE`).
+ * Builds <= 5.4.1 accept it through their approval filter (alias of an
+ * approved v2 episode), so their cached Gorse list is refreshed instead of
+ * keeping an old order. It does not let those builds rank series.
  */
 export function legacySeriesId(seriesId, plan) {
   const m = String(seriesId || "").match(/^bhakti:2d:series:(\d+)$/);
