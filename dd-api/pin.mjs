@@ -29,15 +29,16 @@ function pinList(list, ids, kind) {
  * - Drop any hit the JSON does not make visible (approved, not disactive, not
  *   coming soon). Episode hits collapse onto their series; one hit per series.
  * - `legacy` = app builds that do not send shape=v2 (<= 5.4.1). Those builds
- *   discard series hits and pad their Bhakti TV rail from the layout Darshan TV
- *   list, so any standalone video Gorse returns becomes an extra card. For them
- *   standalone videos are limited to the ones the layout lists on that rail
- *   (`plan.railShows`): the rail then equals the layout list, Gorse-ordered.
+ *   always put whatever Gorse ranks FIRST and drop series hits, so any single
+ *   video Gorse returns would jump ahead of every series. For them no single
+ *   videos are returned: their rails / rows fall back to the layout order
+ *   (series first, singles last, exactly as the JSON lists them).
+ *   shape=v2 builds get every JSON-visible id and put singles last themselves,
+ *   in Gorse order.
  */
 export function shapeFlat2d(items, plan, { legacy = true } = {}) {
   const list = Array.isArray(items) ? items : [];
   if (!plan?.visible?.size) return list;
-  const rail = new Set(plan.railShows || []);
   const seen = new Set();
   const out = [];
   for (const hit of list) {
@@ -46,7 +47,7 @@ export function shapeFlat2d(items, plan, { legacy = true } = {}) {
     const key = series || id;
     if (!plan.visible.has(id) && !(series && plan.visible.has(series))) continue;
     if (seen.has(key)) continue;
-    if (legacy && !series && id.startsWith("bhakti:2d:video:") && !rail.has(id)) continue;
+    if (legacy && !series && !id.startsWith("bhakti:2d:series:")) continue;
     seen.add(key);
     out.push(hit);
   }
