@@ -2,7 +2,7 @@
 
 ## Connection
 - Name: `GCP Gorse`
-- Hostname: `35.200.209.133`
+- Hostname: `34.93.103.11` (was `35.200.209.133`; SSH: `ssh -i ~/.ssh/gcp_key ayush@34.93.103.11`)
 - Port: `3306`
 - Username: `gorse`
 - Password: (on VM at `~/DurlabhDarshan/MySQL/.env` → `MYSQL_PASSWORD`)
